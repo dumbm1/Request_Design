@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dining room equipment website</title>
+ <meta charset="UTF-8">
+ <title>Dining room equipment website</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <link rel="stylesheet" href="css/main.css">
+ <style>
+
+
+  div {
+   width: 1290px;
+   height: 200px;
+   margin: auto;
+   border: 2px dotted gray;
+  }
+
+  /*
+  adaptive layout for desktop
+  less or equal 1290px
+  */
+  @media (max-width: 1290px) {
+   div {
+    width: 100%;
+   }
+  }
+
+  /*
+  mobile layout
+  less or equal 767px
+  */
+  @media (max-width: 767px) {
+   div {
+    background: #9d0006;
+   }
+
+  }
+
+
+ </style>
 </head>
 <body>
-<div class="main">
-  <div class="main_menu">
-    <div class="main_menu_top"></div>
-    <div class="main_menu_middle"></div>
-    <div class="main_menu_catalog"></div>
-  </div>
-  <div class="main_slide">
-  </div>
-  <div class="main_sale"></div>
-  <div class="main_manufacturers"></div>
-  <div class="main_spec-offers"></div>
-  <div class="main_service"></div>
-  <div class="main_advice"></div>
-  <div class="main_seo"></div>
-  <div class="main_clients"></div>
-  <div class="main_footer"></div>
+<div class="menu">
+ <a href="#">
+  <img src="img/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.svg" alt="logo" height="20" width="20">
+ </a>
 </div>
+<div class="slide"></div>
+<div class="sale"></div>
+<div class="manufacturers"></div>
+<div class="spec-offers"></div>
+<div class="service"></div>
+<div class="advice"></div>
+<div class="seo"></div>
+<div class="clients"></div>
+<div class="footer"></div>
 </body>
 </html>
