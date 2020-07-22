@@ -1,0 +1,12 @@
+/*
+mobile layout
+less or equal 767px
+*/
+/*@media (max-width : 767px) {
+ div {
+  background : #9d0006;
+  }
+ }*/
+div {
+ background : #9d0006;
+ }

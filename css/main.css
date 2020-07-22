@@ -1,2 +1,11 @@
+.body {
+ margin  : 0;
+ padding : 0;
+ }
 
-
+div {
+ width      : 1920px;
+ min-height : 200px;
+ margin     : auto;
+ border     : 2px dotted gray;
+ }

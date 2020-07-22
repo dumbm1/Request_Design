@@ -1,0 +1,12 @@
+/*
+adaptive layout for desktop
+less or equal 1290px
+*/
+/*@media (max-width : 1920px) {
+ div {
+  width : 100%;
+  }
+ }*/
+div {
+ width : 100%;
+ }
