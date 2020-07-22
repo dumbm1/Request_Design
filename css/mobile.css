@@ -1,12 +1,40 @@
 /*
 mobile layout
-less or equal 767px
+vewport less or equal 767px
 */
-/*@media (max-width : 767px) {
- div {
-  background : #9d0006;
-  }
- }*/
-div {
- background : #9d0006;
- }
+.header {
+    min-height: 180px;
+}
+
+.header__item {
+    /*background: #2F6FAD;*/
+
+}
+
+.header__item_top {
+    height: 98px;
+    border-bottom: 1px solid lightslategray;
+}
+
+.top-menu {
+    border-radius: 36px;
+    background: orange;
+    height: 72px;
+    width: 72px;
+    display: inline-block;
+}
+
+
+.catalog {
+    height: 82px
+
+}
+
+.header__item_left {
+    float: left;
+
+}
+
+.header__item_right {
+    float: right;
+}
