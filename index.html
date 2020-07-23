@@ -1,76 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>Dining room equipment website</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
- <!--  <link rel="stylesheet" href="css/main.css">-->
+  <meta charset="UTF-8">
+  <title>Dining room equipment website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
+  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
- <style>
-
-
-  body {
-   margin: 0;
-   padding: 0;
-   font: 1em Myriad Pro;
-  }
-
-  .main {
-   background: #f3f2f2;
-   box-sizing: border-box;
-  }
+  <style>
 
 
-  .block {
-   width: 750px;
-   min-height: 200px;
-   margin: auto;
-   border: 1px dotted gray;
-   box-sizing: border-box;
-  }
+    body {
+      margin  : 0;
+      padding : 0;
+      font    : 1em Myriad Pro;
+      }
+
+    .main {
+      background : #f3f2f2;
+      box-sizing : border-box;
+      }
 
 
-  .menu__logo {
-   height: 53px;
-   width: 53px;
-   display: inline-block;
-  }
+    .block {
+      width      : 750px;
+      min-height : 200px;
+      margin     : auto;
+      border     : 1px dotted gray;
+      box-sizing : border-box;
+      }
 
- </style>
- <link rel="stylesheet" href="css/mobile.css">
- <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
- <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
+
+    .menu__logo {
+      height  : 53px;
+      width   : 53px;
+      display : inline-block;
+      }
+
+    /*
+    *** mobile layout vewport less or equal 767px ***
+    */
+    .header {
+      min-height : 180px;
+      }
+
+    .header__item {
+      /*background: #2F6FAD;*/
+
+      }
+
+    .header__item_top {
+      height        : 98px;
+      border-bottom : 1px solid lightslategray;
+      }
+
+    .top-menu {
+      border-radius : 36px;
+      background    : orange;
+      height        : 72px;
+      width         : 72px;
+      display       : inline-block;
+      }
+
+
+    .catalog {
+      height : 82px
+
+      }
+
+    .header__item_left {
+      float : left;
+
+      }
+
+    .header__item_right {
+      float : right;
+      }
+
+  </style>
+
 </head>
 
 <body>
 <div class="block main">
 
- <div class="block header">
+  <div class="block header">
 
-  <div class="header__item header__item_top">
-   <div class="top-menu"></div>
-   <a href="#">
-    <img class="menu__logo" src="img/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.svg" alt="logo"
-         height="53" width="53"> </a>
+    <div class="header__item header__item_top">
+      <div class="top-menu"></div>
+      <a href="#">
+        <img class="menu__logo" src="img/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.svg" alt="logo"
+             height="53" width="53"> </a>
+      <a href="#">
+        <img class="menu__search-icon" src="img/" alt="search"
+             height="53" width="53"> </a>
+      <a href="#">
+        <img class="menu__telephone-icon" src="img/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.svg" alt="telephone"
+             height="53" width="53"> </a>
+      <a href="#">
+        <img class="menu__baket-icon" src="img/online-shopping-cart.svg" alt="online-shopping-cart"
+             height="53" width="53"> </a>
+    </div>
+
+    <div class=" header__item catalog">
+      <span class="header__item_left">Оборудование</span>
+      <span class="header__item_right">&#x3E</span>
+    </div>
+
   </div>
 
-  <div class=" header__item catalog">
-   <span class="header__item_left">Оборудование</span>
-   <span class="header__item_right">&#x3E</span>
-  </div>
 
- </div>
-
-
- <div class="block slide"></div>
- <div class="block sale"></div>
- <div class="block logos"></div>
- <div class="block spec-offers"></div>
- <div class="block service"></div>
- <div class="block advice"></div>
- <div class="block seo"></div>
- <div class="block clients"></div>
- <div class="block footer"></div>
+  <div class="block slide"></div>
+  <div class="block sale"></div>
+  <div class="block logos"></div>
+  <div class="block spec-offers"></div>
+  <div class="block service"></div>
+  <div class="block advice"></div>
+  <div class="block seo"></div>
+  <div class="block clients"></div>
+  <div class="block footer"></div>
 </div>
 </body>
 </html>
