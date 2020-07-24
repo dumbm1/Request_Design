@@ -1,0 +1,130 @@
+.header {
+    width: 750px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    height: 180px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__top {
+    border-bottom: #ebebeb solid 1px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+
+.header__link {
+    text-decoration: none;
+}
+
+.top-menu {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background: #fda11c;
+    margin-top: 12px;
+    display: inline-block;
+    float: left;
+}
+
+.top-menu__icon {
+    height: 24px;
+    width: 30px;
+    display: block;
+    margin: 24px auto;
+}
+
+.logo {
+    margin: 22px 0 0 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo__icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+}
+
+.logo__title {
+    color: #353535;
+    display: block;
+    float: left;
+    margin: 0 0 0 11px;
+}
+
+.logo__title_top {
+    font: 30px "Myriad Pro Regular";
+    line-height: 36px;
+    display: block;
+}
+
+.logo__title_bottom {
+    font: 18px "Myriad Pro Light";
+    font-stretch: semi-expanded;
+    line-height: 19px;
+}
+
+.menu-action {
+    float: right;
+    margin-top: 22px;
+}
+
+.menu-action__search-icon {
+    width: 50px;
+    height: 56px;
+    margin-right: 38px;
+}
+
+.menu-action__telephon-icon {
+    width: 46px;
+    height: 56px;
+    margin-right: 32px;
+}
+
+.menu-action__basket {
+    float: right;
+    margin-top: -6px;
+}
+
+.menu-action__basket-icon {
+    width: 56px;
+    heith: 48px;
+}
+
+.menu-action__basket-number {
+    font: 25px "Myriad Pro Light";
+    font-stretch: semi-expanded;
+    line-height: 12px;
+    display: block;
+    color: #fda11c;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.catalog {
+    border-bottom: #ebebeb solid 1px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.catalog__title {
+    font: 30px "Myriad Pro Light";
+    font-stretch: semi-expanded;
+    line-height: 16px;
+    display: block;
+    float: left;
+    padding: 32px 0;
+}
+
+.catalog__arrow {
+    font: 30px "Myriad Pro Light";
+    font-stretch: semi-expanded;
+    line-height: 16px;
+    display: block;
+    float: right;
+    padding: 32px 0;
+}
