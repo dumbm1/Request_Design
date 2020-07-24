@@ -1,111 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>Dining room equipment website</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
- <!--  <link rel="stylesheet" href="css/main.css">-->
- <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
- <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
+  <meta charset="UTF-8">
+  <title>Dining room equipment website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
+  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
- <style>
-  body {
-   margin: 0;
-   padding: 0
-  }
+  <style>
+    .page {
+      margin  : 0;
+      padding : 0;
+      }
 
-  .header {
-   width: 750px;
-   margin: 0 auto;
-   background: #f1f1f1;
-   height: 180px;
-   padding: 0;
-   box-sizing: border-box;
-  }
+    .header {
+      width      : 750px;
+      margin     : 0 auto;
+      background : #f1f1f1;
+      height     : 180px;
+      padding    : 0;
+      box-sizing : border-box;
+      }
 
-  .header__top {
-   border-bottom: #ebebeb solid 1px;
-   height: 100px;
-   box-sizing: border-box;
-   padding: 0 30px;
-  }
+    .header__top {
+      border-bottom : #ebebeb solid 1px;
+      height        : 100px;
+      box-sizing    : border-box;
+      padding       : 0 30px;
+      }
 
-  .header__catalog {
-   border-bottom: #ebebeb solid 1px;
-   height: 80px;
-   box-sizing: border-box;
-   padding: 0 30px;
-  }
+    .header__catalog {
+      border-bottom : #ebebeb solid 1px;
+      height        : 80px;
+      box-sizing    : border-box;
+      padding       : 0 30px;
+      }
 
-  .top-menu {
-   width: 72px;
-   height: 72px;
-   border-radius: 36px;
-   background: #fda11c;
-   margin-top: 12px;
-   display: inline-block;
-   float: left;
-  }
+    .top-menu {
+      width         : 72px;
+      height        : 72px;
+      border-radius : 36px;
+      background    : #fda11c;
+      margin-top    : 12px;
+      display       : inline-block;
+      float         : left;
+      }
 
-  .top-menu__icon {
-   height: 24px;
-   width: 30px;
-   display: block;
-   margin: 24px auto;
-  }
+    .top-menu__icon {
+      height  : 24px;
+      width   : 30px;
+      display : block;
+      margin  : 24px auto;
+      }
 
-  .logo {
-   margin: 22px 0 0 30px;
-   display: inline-block;
-   text-decoration: none;
-  }
+    .logo {
+      margin          : 22px 0 0 30px;
+      display         : inline-block;
+      text-decoration : none;
+      }
 
-  .logo__icon {
-   width: 56px;
-   height: 56px;
-   float: left;
-  }
+    .logo__icon {
+      width  : 56px;
+      height : 56px;
+      float  : left;
+      }
 
-  .logo__title {
-   color: #353535;
-   display: block;
-   float: left;
-   margin: 0 0 0 11px;
-  }
+    .logo__title {
+      color   : #353535;
+      display : block;
+      float   : left;
+      margin  : 0 0 0 11px;
+      }
 
-  .logo__title_top {
-   font: 30px "Myriad Pro Regular";
-   line-height: 36px;
-   display: block;
-  }
+    .logo__title_top {
+      font        : 30px "Myriad Pro Regular";
+      line-height : 36px;
+      display     : block;
+      }
 
-  .logo__title_bottom {
-   font: 18px "Myriad Pro Light";
-   font-stretch: semi-expanded;
-   line-height: 19px;
-  }
+    .logo__title_bottom {
+      font         : 18px "Myriad Pro Light";
+      font-stretch : semi-expanded;
+      line-height  : 19px;
+      }
 
- </style>
+    .menu-action {
+      float : right;
+      }
+
+    .menu-action__search-icon {
+      width  : 50px;
+      height : 56px;
+
+      }
+
+    .menu-action__telephon-icon {
+      width  : 46px;
+      height : 56px;
+
+      }
+
+    .menu-action__baket-icon {
+      width : 56px;
+      heith : 48px;
+      float : right;
+      }
+
+  </style>
 
 </head>
 
-<body>
+<body class="page">
 
 <div class="header">
- <div class="header__top">
-  <div class="top-menu">
-   <a href="#">
-    <img class="top-menu__icon" src="img/top-menu-icon.svg" alt="top-menu-icon" height="24px" width="30px"></a>
-  </div>
-  <div class="logo">
-   <a href="#"><img src="img/logo-icon.svg" alt="logo-icon" class="logo__icon">
-    <p class="logo__title"><span class="logo__title_top">Столовая.РУ</span>
-     <span class="logo__title_bottom">Создание пищеблоков</span></p>
-   </a>
-  </div>
+  <div class="header__top">
+    <div class="top-menu">
+      <a href="#">
+        <img class="top-menu__icon" src="img/top-menu-icon.svg" alt="top-menu-icon" height="24px" width="30px"></a>
+    </div>
+    <div class="logo">
+      <a href="#"><img src="img/logo-icon.svg" alt="logo-icon" class="logo__icon">
+        <p class="logo__title"><span class="logo__title_top">Столовая.РУ</span>
+          <span class="logo__title_bottom">Создание пищеблоков</span></p>
+      </a>
+    </div>
+    <div class="menu-action">
+      <a href="#">
+        <img src="img/search.svg" alt="search-on-site" class="menu-action__search-icon" width="50px" height="56px">
+      </a>
+      <a href="#">
+        <img src="img/telephone.svg" alt="telephone" class="menu-action__telephon-icon" width="46px" height="56px">
+      </a>
+      <a href="#">
+        <img src="img/shopping.svg" alt="shopping" class="menu-action__shopping-icon" width="56px" height="48px">
+      </a>
+    </div>
 
- </div>
- <div class="header__catalog"></div>
+  </div>
+  <div class="header__catalog"></div>
 </div>
 
 </body>
