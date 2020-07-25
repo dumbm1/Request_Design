@@ -61,10 +61,17 @@
     display: block;
 }
 
-.logo__title_bottom {
+/*.logo__title_bottom {
     font: 18px "Myriad Pro Light";
     font-stretch: semi-expanded;
     line-height: 19px;
+}*/
+.logo__title_bottom {
+    line-height: 19px;
+    font-family: 'Myriad Pro Light SemiExtended';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
 }
 
 .menu-action {
