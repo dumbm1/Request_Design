@@ -1,0 +1,56 @@
+.swiper {
+    box-sizing: border-box;
+width: 100%;
+    text-align: center;
+    min-height: 32px;
+    padding: 40px ;
+}
+
+.swipper__theme_black {
+    background: black;
+    color: white;
+}
+
+.swiper__theme_orange {
+    background: #e19a32;
+    color: white;
+}
+
+.swiper__bullet {
+    paddint-top: 5px;
+    display: inline-block;
+}
+
+.swiper__bullet-elem {
+    display: inline-block;
+    border: 1px solid white;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.swiper__bullet-elem_active {
+    background: white;
+}
+
+
+.swiper__arrow {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.swiper__arrow_right {
+    transform: rotate(-45deg);
+    float: right;
+}
+
+.swiper__arrow_left {
+    transform: rotate(135deg);
+    float: left;
+}
+

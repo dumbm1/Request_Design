@@ -1,0 +1,63 @@
+.logo {
+    margin: 22px 0 0 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo__icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+}
+
+
+.logo__title {
+    color: #353535;
+    display: block;
+    float: left;
+    margin: 0 0 0 11px;
+}
+
+
+.logo__title_top {
+    font: 30px "Myriad Pro Regular";
+    line-height: 36px;
+    display: block;
+}
+
+.logo__title_bottom {
+    line-height: 19px;
+    font-family: 'Myriad Pro Light SemiExtended';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: #777777;
+}
+
+.logo__icon_l {
+    width: 250px;
+    height: 250px;
+    margin-left: 55px
+}
+
+.logo__title_l {
+    position: relative;
+    color: #353535;
+    margin-left: 55px;
+    margin-top: 54px
+}
+
+.logo__title_top_l {
+    font: 50px "Myriad Pro Regular";
+    display: block;
+    magrin-top: 62px;
+    line-height: 50px;
+}
+
+.logo__title_bottom_l {
+    display: block;
+    line-height: 18px;
+    color: #777777;
+    font: 25px "Myriad Pro Light SemiExtended";
+
+}

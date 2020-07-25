@@ -1,0 +1,12 @@
+.foot {
+    width: 100%;
+    height: auto;
+    background: #000;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100px;
+    color: #ffffff;
+    font: 30px "Myriad Pro Light SemiExtended";
+    line-height: 36px;
+    padding-top: 5px;
+}

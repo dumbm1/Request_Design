@@ -2,35 +2,22 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
- <title>Dining room equipment website</title>
+ <title>Dialog company. Dining room equipment</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
  <link rel="stylesheet" href="css/fonts.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="css/company-logo.css">
+ <link rel="stylesheet" href="css/seo.css">
+ <link rel="stylesheet" href="css/swiper.css">
+
 
  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
  <style>
-  .page {
-   margin: 0;
-   padding: 0;
-  }
 
-  .content {
-   width: 750px;
-   background: #f3f2f2;
-   margin: 0 auto;
-  }
 
-  .portfolio {
-   box-sizing: border-box;
-   width: 750px;
-   margin: 0 auto;
-   padding: 30px;
-   background: #000;
-   height: auto;
-   min-height: 200px;
-
-  }
 
   .clients {
    box-sizing: border-box;
@@ -42,31 +29,18 @@
    border-radius: 1px;
   }
 
-  .seo {
-   padding: 30px;
+  .portfolio {
+   background: border-box #000;
+   width: 750px;
+   min-height: 556px;
+
   }
 
-  .seo__p1 {
-   padding: 60px;
-   font: 30px "Myriad Pro Light";
-   font-stretch: semi-expanded;
-   line-height: 16px;
-  }
+  .service {
+   background: border-box #e19a32 no-repeat url("img/service-bg.png");
+   width: 750px;
+   min-height: 556px;
 
-  .seo__p2 {
-
-   font: 30px "Myriad Pro Light";
-   font-stretch: semi-expanded;
-   line-height: 36px;
-  }
-
-  .foot {
-   width: 100%;
-   height: auto;
-   background: #000;
-   margin: 0 auto;
-   text-align: center;
-   min-height: 100px;
   }
 
 
@@ -81,7 +55,7 @@
 <div class="content">
 
  <div class="header">
-  <div class="header__top">
+  <div class="header-top">
    <div class="top-menu">
     <a class="header__link" href="#">
      <img class="top-menu__icon" src="img/icon_menu.svg" alt="top menu icon" height="24px" width="30px"></a>
@@ -112,40 +86,76 @@
   </div>
  </div>
 
+ <div class="portfolio container">
+  <div class="service__info">
+   <span class="service__p1_title">Портфолио</span>
+   <div class="service__p1_plain">ГНИИ скорой помощи </div>
+   <div class="service__p1_plain">им. Н.В.</div>
+   <div class="seo__p1_plain">Склифосовского</div>
+   <span class="service__p1_link button swiper__theme_orange">Подробнее</span>
+  </div>
 
- <div class="content">
-  <div class="portfolio"></div>
-  <div class="clients"></div>
+  <div class="swiper swiper__theme_black container__footer">
+   <div class="swiper__arrow swiper__arrow_left"></div>
+   <div class="swiper__bullet">
+    <span class="swiper__bullet-elem"></span>
+    <span class="swiper__bullet-elem swiper__bullet-elem_active"></span>
+    <span class="swiper__bullet-elem"></span>
+    <span class="swiper__bullet-elem"></span>
+   </div>
+   <div class="swiper__arrow swiper__arrow_right"></div>
+  </div>
  </div>
+
+ <div class="clients"></div>
+
+ <div class="service container ">
+  <div class="service__info">
+   <span class="service__p1_title">Сервис</span>
+
+   <span class="service__p1_plain">Гарантийный ремонт, монтаж и т.д.</span>
+
+   <span class="service__p1_link">Подробнее ></span>
+
+  </div>
+  <div class="swiper swiper__theme_orange container__footer">
+   <div class="swiper__arrow swiper__arrow_left"></div>
+   <div class="swiper__bullet">
+    <span class="swiper__bullet-elem"></span>
+    <span class="swiper__bullet-elem swiper__bullet-elem_active"></span>
+    <span class="swiper__bullet-elem"></span>
+    <span class="swiper__bullet-elem"></span>
+   </div>
+   <div class="swiper__arrow swiper__arrow_right"></div>
+  </div>
+ </div>
+
+
  <div class="seo">
-  <a href="#">
-   <img src="img/icon_logo-fork-knife.svg" alt="company logotype" width="250px" height="250px">
+  <a class="header__link" href="#"><img src="img/icon_logo-fork-knife.svg" alt="logo fork & knife" class="logo__icon_l">
+   <p class="logo__title_l"><span class="logo__title_top_l">Столовая.РУ</span>
+    <span class="logo__title_bottom_l">cоздание оптимальных пищеблоков</span></p>
   </a>
+
   <div class="seo__p1">
-   <p>Группа компаний</p>
-   <p>Показатели:</p>
-   <p>Объем контрактов: 4 млрд.р.</p>
-   <p>Количество контрактов: 620</p>
-  </div>
+   <span class="seo__p1_title">Группа компаний</span>
+   <span class="seo__p1_plain">Показатели:</span>
+   <span class="seo__p1_plain seo__p1_plain_x2">На рынке: 5 лет</span>
+   <span class="seo__p1_plain">Объем контрактов: 4 млрд.р.</span>
+   <span class="seo__p1_plain">Количество контрактов: 620</span></div>
+
   <div class="seo__p2">
-   <h3>Комплексные решения оснащения столовых и кафе</h3>
-
-
-   Компания «Столовая.ру» предлагает комплексное оснащение
-   столовых, ресторанов, кафе и баров в Москве.
-   Наши услуги построены по принципу полного цикла
-   обслуживания предприятий общепита и бизнеса HoReCa.
-   Иными словами, мы предлагаем проектирование «под ключ»
-   и постгарантийное обслуживание. География работы компании
-   охватывает всю страну. География работы компании охватывает всю страну.
-   При этом в каждом регионе мы готовы предложить демократичные цены на
-   профессиональное технологическое оборудование для столовой и
-   оптимальные решения с точки зрения эффективности
-   бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
+   <span class="seo__p2_title">Комплексные решения оснащения столовых и кафе</span>
+   <span class="seo__p2_plain">
+    <div>Компания «Диалог» предлагает комплексное оснащение  столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.
+    </div>
+   <div>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
+   </div></span>
   </div>
  </div>
+
  <footer class="foot">
-  Подвал
+  Подвал для пыток
  </footer>
 </div>
 
