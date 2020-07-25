@@ -61,11 +61,6 @@
     display: block;
 }
 
-/*.logo__title_bottom {
-    font: 18px "Myriad Pro Light";
-    font-stretch: semi-expanded;
-    line-height: 19px;
-}*/
 .logo__title_bottom {
     line-height: 19px;
     font-family: 'Myriad Pro Light SemiExtended';
@@ -102,8 +97,7 @@
 }
 
 .menu-action__basket-number {
-    font: 25px "Myriad Pro Light";
-    font-stretch: semi-expanded;
+    font: 25px "Myriad Pro Light SemiExtended";
     line-height: 12px;
     display: block;
     color: #fda11c;
@@ -119,8 +113,7 @@
 }
 
 .catalog__title {
-    font: 30px "Myriad Pro Light";
-    font-stretch: semi-expanded;
+    font: 30px "Myriad Pro Light SemiExtended";
     line-height: 16px;
     display: block;
     float: left;
@@ -128,8 +121,7 @@
 }
 
 .catalog__arrow {
-    font: 30px "Myriad Pro Light";
-    font-stretch: semi-expanded;
+    font: 30px "Myriad Pro Light SemiExtended";
     line-height: 16px;
     display: block;
     float: right;
