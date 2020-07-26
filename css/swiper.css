@@ -6,15 +6,7 @@ width: 100%;
     padding: 40px ;
 }
 
-.swipper__theme_black {
-    background: black;
-    color: white;
-}
 
-.swiper__theme_orange {
-    background: #e19a32;
-    color: white;
-}
 
 .swiper__bullet {
     paddint-top: 5px;

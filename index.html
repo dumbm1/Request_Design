@@ -10,13 +10,17 @@
  <link rel="stylesheet" href="css/company-logo.css">
  <link rel="stylesheet" href="css/seo.css">
  <link rel="stylesheet" href="css/swiper.css">
+ <link rel="stylesheet" href="css/theme.css">
 
+ <link rel="stylesheet" href="css/button.css">
+ <link rel="stylesheet" href="css/service.css">
+ <link rel="stylesheet" href="css/header_mobile.css">
+ <link rel="stylesheet" href="css/portfolio.css">
 
  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
  <style>
-
 
 
   .clients {
@@ -29,23 +33,9 @@
    border-radius: 1px;
   }
 
-  .portfolio {
-   background: border-box #000;
-   width: 750px;
-   min-height: 556px;
-
-  }
-
-  .service {
-   background: border-box #e19a32 no-repeat url("img/service-bg.png");
-   width: 750px;
-   min-height: 556px;
-
-  }
-
 
  </style>
- <link rel="stylesheet" href="css/header_mobile.css">
+
 
 </head>
 
@@ -87,12 +77,18 @@
  </div>
 
  <div class="portfolio container">
-  <div class="service__info">
-   <span class="service__p1_title">Портфолио</span>
-   <div class="service__p1_plain">ГНИИ скорой помощи </div>
-   <div class="service__p1_plain">им. Н.В.</div>
-   <div class="seo__p1_plain">Склифосовского</div>
-   <span class="service__p1_link button swiper__theme_orange">Подробнее</span>
+  <div class="portfolio__info">
+   <div class="portfolio__info_title">Портфолио</div>
+   <div class="portfolio__info_client-name">НИИ скорой помощи</div>
+   <div class="portfolio__info_client-name">им. Н.В.</div>
+   <div class="portfolio__info_client-name">Склифосовского</div>
+   <div class="portfolio__info_equipment">Оборудование для пищеблоков</div>
+   <a class="header__link">
+    <button class="button theme-orange portfolio__info_button-view-more">Подробнее</button>
+   </a>
+  </div>
+  <div class="portfolio__image-container">
+   <img class="portfolio__image" src="img/from_base/portfolio/sklif-01.png" alt="Фото из портфолио">
   </div>
 
   <div class="swiper swiper__theme_black container__footer">
@@ -107,18 +103,22 @@
   </div>
  </div>
 
+
+
  <div class="clients"></div>
 
- <div class="service container ">
+ <div class="service container">
   <div class="service__info">
    <span class="service__p1_title">Сервис</span>
 
    <span class="service__p1_plain">Гарантийный ремонт, монтаж и т.д.</span>
 
-   <span class="service__p1_link">Подробнее ></span>
+   <a class="header__link">
+    <button class="button theme-orange">Подробнее ></button>
+   </a>
 
   </div>
-  <div class="swiper swiper__theme_orange container__footer">
+  <div class="swiper theme-orange container__footer">
    <div class="swiper__arrow swiper__arrow_left"></div>
    <div class="swiper__bullet">
     <span class="swiper__bullet-elem"></span>

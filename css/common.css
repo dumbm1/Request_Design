@@ -27,14 +27,3 @@
     position: relative;
 }
 
-.button {
-    padding: 15px 30px;
-    border-radius: 30px;
-}
-
-.button:active {
-    padding: 5px;
-    cursor: pointer;
-    background: rgba(0 0 0 0.3);
-
-}

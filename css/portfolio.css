@@ -1,0 +1,48 @@
+.portfolio {
+    background: border-box #000;
+    width: 750px;
+    min-height: 556px;
+    color: #fff;
+}
+
+.portfolio__info {
+    float: left;
+    padding: 84px 0 0 30px;
+}
+
+.portfolio__info_title {
+    font: 25px "Myriad Pro Light SemiExtended";
+    line-height: 33px;
+    color: #777;
+    margin-bottom: 42px;
+}
+
+.portfolio__info_client-name {
+    font: 40px "Myriad Pro Regular";
+    line-height: 42px;
+    color: #f3f1f1;
+}
+
+.portfolio__info_equipment {
+    font: 25px "Myriad Pro Light SemiExtended";
+    line-height: 33px;
+    color: #f3f1f1;
+    margin: 20px 0 34px 0;
+}
+
+.portfolio__info_button-view-more {
+    font: 30px "Myriad Pro Regular";
+    line-height: 40px;
+}
+
+.portfolio__image-container {
+    width: 36%;
+    float: right;
+    padding: 64px 40px 0 0;
+}
+
+.portfolio__image {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%
+}

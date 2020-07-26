@@ -1,0 +1,26 @@
+.button {
+    padding: 6px 34px;
+    font-family: "Myriad Pro Regular";
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 9999px;
+    border: none;
+}
+
+.button__open-more {
+    font-size: 50px;
+    font-family: "Myriad Pro Light SemiExtended";
+    line-height: 60px;
+    padding: 36px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.button__open-more_round_close {
+    content: "+";
+}
+
+.button__open-more_round_open {
+    content: "-"
+}
