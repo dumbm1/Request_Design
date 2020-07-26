@@ -10,17 +10,9 @@
 .button__open-more {
     font-size: 50px;
     font-family: "Myriad Pro Light SemiExtended";
-    line-height: 60px;
-    padding: 36px;
     width: 100px;
     height: 100px;
-}
-
-
-.button__open-more_round_close {
-    content: "+";
-}
-
-.button__open-more_round_open {
-    content: "-"
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
 }

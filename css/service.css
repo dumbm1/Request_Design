@@ -1,10 +1,11 @@
 .service {
-    background: border-box #e19a32 no-repeat url("img/service-bg.png");
+    background: #e19a32 url("../img/service-bg.png");
     width: 750px;
     min-height: 556px;
     color: #fff;
 
 }
-.service__button{
+
+.service__button {
     padding: inherit 0;
 }

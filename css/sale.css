@@ -1,0 +1,43 @@
+.sale-container {
+    box-sizing: border-box;
+    width: 750px;
+    height: 536px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.sale {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #fda11c;
+}
+
+.sale__info {
+    padding: 82px 0 0 60px;
+    color: #191919;
+}
+
+.sale__img {
+    height: 146px;
+    width: 116px;
+}
+
+.sale__ad-text {
+    font: 25px "Myriad Pro Light SemiExtended";
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.sale__title {
+    font: 50px "Myriad Pro Regular";
+    line-height: 55px;
+    margin-bottom: 24px;
+}
+
+.sale__link {
+    font: 30px "Myriad Pro Light SemiExtended";
+    line-height: 55px;
+    color: #e19a32;
+}
