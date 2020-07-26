@@ -1,0 +1,56 @@
+.brands-container {
+    padding: 0 30px 60px 30px;
+    height: 574px;
+    box-sizing: border-box;
+}
+
+.brands {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.brands__row {
+    height: 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands__row:not(:last-child) {
+    border-bottom: 2px solid #f3f2f2;
+}
+
+.brands__logo {
+    float: left;
+    width: 50%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands__logo:nth-child(odd) {
+    border-right: 2px solid #f3f2f2;
+}
+
+.brands__link {
+    cursor: pointer;
+    font: 30px "Myriad Pro Regular";
+    line-height: 67px;
+    margin-left: 32px;
+}
+
+.brands__logo:nth-child(odd) > .brands__logo_img { /*forgive me BEM*/
+    margin-left: -32px;
+}
+
+.brands__logo:nth-child(even) > .brands__logo_img { /*forgive me BEM*/
+    margin-left: 32px;
+
+}
+
+.brands__logo_img {
+    margin-top: 6px;
+}
