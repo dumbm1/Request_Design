@@ -1,11 +1,10 @@
 .swiper {
     box-sizing: border-box;
-width: 100%;
+    width: 100%;
     text-align: center;
     min-height: 32px;
-    padding: 40px ;
+    padding: 40px;
 }
-
 
 
 .swiper__bullet {
@@ -45,4 +44,3 @@ width: 100%;
     transform: rotate(135deg);
     float: left;
 }
-

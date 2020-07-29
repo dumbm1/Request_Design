@@ -1,315 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 <head>
  <meta charset="UTF-8">
- <title>Dialog company. Dining room equipment</title>
+ <title>Обороудование для кухни</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
- <link rel="stylesheet" href="css/fonts.css">
- <link rel="stylesheet" href="css/common.css">
- <link rel="stylesheet" href="css/footer.css">
- <link rel="stylesheet" href="css/company-logo.css">
- <link rel="stylesheet" href="css/seo.css">
- <link rel="stylesheet" href="css/swiper.css">
- <link rel="stylesheet" href="css/theme.css">
- <link rel="stylesheet" href="css/button.css">
- <link rel="stylesheet" href="css/service.css">
- <link rel="stylesheet" href="css/header_mobile.css">
- <link rel="stylesheet" href="css/portfolio.css">
- <link rel="stylesheet" href="css/sale.css">
- <link rel="stylesheet" href="css/brands.css">
- <link rel="stylesheet" href="css/spec-offers.css">
- <link rel="stylesheet" href="css/advice.css">
-
 
  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
  <style>
+  section {
+   border : 1px dotted black;
+  }
+
+  .html, .body {
+   height  : 100%;
+   margin  : 0;
+   padding : 0;
+  }
+
+  .body {
+   display        : flex;
+   flex-direction : column;
+  }
+
+  .content {
+   flex   : 1 0 auto;
+   margin : 0 auto;
+  }
+
+  .header {
+   color       : white;
+   background  : black;
+   flex-shrink : 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .main {}
+
+  .brands {}
+
+  .spec-offer {}
+
+  .advice {}
+
+  .seo {}
+
+  .clients {}
+
+  .footer {
+   flex-shrink : 0;
+   color       : white;
+   background  : black;
+  }
 
 
  </style>
 
-
 </head>
 
-<body class="page">
-
+<body class="body">
+<header class="header">
+ <div>Шапка</div>
+</header>
 <div class="content">
 
- <div class="header">
-  <div class="header-top">
-   <div class="top-menu">
-    <a class="header__link" href="#">
-     <img class="top-menu__icon" src="img/icon_menu.svg" alt="top menu icon" height="24px" width="30px"></a>
-   </div>
-   <div class="logo">
-    <a class="header__link" href="#"><img src="img/icon_logo-fork-knife.svg" alt="logo fork & knife" class="logo__icon">
-     <p class="logo__title"><span class="logo__title_top">Столовая.РУ</span>
-      <span class="logo__title_bottom">Создание пищеблоков</span></p>
-    </a>
-   </div>
-   <div class="menu-action">
-    <a class="header__link" href="#">
-     <img src="img/icon_search.svg" alt="search on site" class="menu-action__search-icon" width="50px" height="56px">
-    </a>
-    <a class="header__link" href="#">
-     <img src="img/icon_telephone.svg" alt="call us" class="menu-action__telephon-icon" width="46px" height="56px">
-    </a>
-    <div class="menu-action__basket">
-     <span class="menu-action__basket-number">0</span>
-     <a class="header__link" href="#">
-      <img src="img/icon_basked.svg" alt="shopping" width="56px" height="48px">
-     </a></div>
-   </div>
+ <section class="main">
+  Основное
+ </section>
 
-  </div>
-  <div class="catalog">
-   <span class="catalog__title">Оборудование</span><span class="catalog__arrow">></span>
-  </div>
- </div>
+ <section class="brands">
+  Бренды
+ </section>
 
- <div class="portfolio container">
-  <div class="portfolio__info">
-   <div class="portfolio__info_title">Портфолио</div>
-   <div class="portfolio__info_client-name">НИИ скорой помощи</div>
-   <div class="portfolio__info_client-name">им. Н.В.</div>
-   <div class="portfolio__info_client-name">Склифосовского</div>
-   <div class="portfolio__info_equipment">Оборудование для пищеблоков</div>
-   <a class="header__link">
-    <button class="button theme-orange portfolio__info_button-view-more">Подробнее</button>
-   </a>
-  </div>
-  <div class="portfolio__image-container">
-   <img class="portfolio__image" src="img/from_base/portfolio/sklif-01.png" alt="Фото из портфолио">
-  </div>
+ <section class="spec-offer">
+  Спец-предложения
+ </section>
 
-  <div class="swiper swiper__theme_black container__footer">
-   <div class="swiper__arrow swiper__arrow_left"></div>
-   <div class="swiper__bullet">
-    <span class="swiper__bullet-elem"></span>
-    <span class="swiper__bullet-elem swiper__bullet-elem_active"></span>
-    <span class="swiper__bullet-elem"></span>
-    <span class="swiper__bullet-elem"></span>
-   </div>
-   <div class="swiper__arrow swiper__arrow_right"></div>
-  </div>
- </div>
+ <section class="advice">
+  Рекомендуем
+ </section>
 
- <div class="sale-container">
-  <div class="sale">
-   <div class="sale__info">
-    <img src="img/giftbox.svg" alt="Распродажа" height="146px" width="116px">
-    <div class="sale__ad-text">Самые низкие цены</div>
-    <div class="sale__title">Распродажа</div>
-    <a class="header__link" href="#">
-     <span class="sale__link">Каталог распродаж ></span>
-    </a>
-   </div>
-  </div>
- </div>
+ <section class="seo">Рекламная информация о компании</section>
+ <section class="clients">Наши клиенты</section>
 
- <div class="brands-container">
-  <div class="brands">
-   <div class="brands__row">
-    <div class="brands__logo">
-     <img src="img/from_base/brand/abat.png" alt="Manufacturer logotype" class="brands__logo_img"></div>
-    <div class="brands__logo">
-     <img src="img/from_base/brand/atesy.png" alt="Manufacturer logotype" class="brands__logo_img"></div>
-   </div>
-   <div class="brands__row">
-    <div class="brands__logo">
-     <img src="img/from_base/brand/hicold.png" alt="Manufacturer logotype" class="brands__logo_img"></div>
-    <div class="brands__logo">
-     <img src="img/from_base/brand/rational.png" alt="Manufacturer logotype" class="brands__logo_img"></div>
-   </div>
-   <div class="brands__row">
-    <div class="brands__logo">
-     <img src="img/from_base/brand/simeco.png" alt="Manufacturer logotype" class="brands__logo_img"></div>
-    <div class="brands__logo"><a href="#" class="header__link brands__link">Все бренды</a></div>
-   </div>
-  </div>
- </div>
-
- <div class="spec-offers-container">
-
-  <a href="#" class="spec-offers__link header__link"><span>Специальные предложения ></span></a>
-
-  <div class="spec-offers">
-   <div class="spec-offers__img-container">
-    <img class="spec-offers__img" src="img/from_base/spec-offer/parokonvektmat_pkn-6.png">
-   </div>
-
-   <div class="spec-offers__info">
-    <img src="img/nation-standard/ru.svg" alt="Государственный флаг страны-производителя"
-         width="48px" height="30px">
-    <div class="spec-offers__info_equipment-name">
-     <div>Пароконвектмат</div>
-     <div>ПКН-6</div>
-    </div>
-    <div class="spec-offers__info_price">
-     <span class="spec-offers__info_price_number">160 000</span>
-     <span class="spec-offers__info_price_valuta">руб.</span></div>
-    <img class="spec-offers__brand" src="img/from_base/brand/rational.png"></img>
-   </div>
-
-  </div>
-  <div class="spec-offers">
-   <div class="spec-offers__img-container">
-    <img class="spec-offers__img" src="img/from_base/spec-offer/parokonvektmat_pkn-6.png">
-   </div>
-
-   <div class="spec-offers__info">
-    <img src="img/nation-standard/ru.svg" alt="Государственный флаг страны-производителя"
-         width="48px" height="30px">
-    <div class="spec-offers__info_equipment-name">
-     <div>Пароконвектмат</div>
-     <div>ПКН-6</div>
-    </div>
-    <div class="spec-offers__info_price">
-     <span class="spec-offers__info_price_number">160 000</span>
-     <span class="spec-offers__info_price_valuta">руб.</span></div>
-    <img class="spec-offers__brand" src="img/from_base/brand/rational.png"></img>
-   </div>
-
-  </div>
-  <div class="spec-offers">
-   <div class="spec-offers__img-container">
-    <img class="spec-offers__img" src="img/from_base/spec-offer/parokonvektmat_pkn-6.png">
-   </div>
-
-   <div class="spec-offers__info">
-    <img src="img/nation-standard/ru.svg" alt="Государственный флаг страны-производителя"
-         width="48px" height="30px">
-    <div class="spec-offers__info_equipment-name">
-     <div>Пароконвектмат</div>
-     <div>ПКН-6</div>
-    </div>
-    <div class="spec-offers__info_price">
-     <span class="spec-offers__info_price_number">160 000</span>
-     <span class="spec-offers__info_price_valuta">руб.</span></div>
-    <img class="spec-offers__brand" src="img/from_base/brand/rational.png"></img>
-   </div>
-
-  </div>
- </div>
-
- <div class="service container">
-  <div class="service__info">
-   <div class="service__title">Сервис</div>
-
-   <div class="service__plain">Гарантийный ремонт, монтаж и т.д.</div>
-
-   <a class="header__link"><span class="service__link">Подробнее ></span> </a>
-
-  </div>
-  <div class="swiper theme-orange container__footer">
-   <div class="swiper__arrow swiper__arrow_left"></div>
-   <div class="swiper__bullet">
-    <span class="swiper__bullet-elem"></span>
-    <span class="swiper__bullet-elem swiper__bullet-elem_active"></span>
-    <span class="swiper__bullet-elem"></span>
-    <span class="swiper__bullet-elem"></span>
-   </div>
-   <div class="swiper__arrow swiper__arrow_right"></div>
-  </div>
- </div>
-
- <div class="advice-container">
-
-  <div class="advice-header">
-   <div class="advice-header__title">Рекомендуем</div>
-   <div class="advice-header__plain">
-    В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых, ресторанов и кафе
-    ведущих производителей.
-   </div>
-  </div>
-
-  <div class="advice-block  theme-black">
-   <div class="advice__img-container">
-    <img src="img/from_base/advice/parokonvektomat_unox.png" alt="Рекомендуем" class="advice__img_theme_black">
-   </div>
-   <div class="advice__inf-container">
-    <div class="advice__inf_brand">Unox</div>
-    <div class="advice__inf_title">Пароконвектоматы</div>
-    <div class="advice__inf_plain">
-     Благодаря своей универсальности пароконвектоматы быстро завоевывают пользователей по всему миру.
-    </div>
-   </div>
-  </div>
-
-  <div class="advice-block advice-block_theme_white theme-white">
-
-   <div class="advice__inf-container advice__inf-container_theme_white">
-    <div class="advice__inf_brand">Hallde</div>
-    <div class="advice__inf_title">Овощерезки</div>
-    <div class="advice__inf_plain">
-     Мощный двигатель переводит высокий крутящий момент на режущий инструмент.
-    </div>
-   </div>
-   <div class="advice__img-container">
-    <img src="img/from_base/advice/mandolin_hallde.png" alt="Рекомендуем" class="advice__img_theme_white">
-   </div>
-  </div>
-
-  <div class="advice-block advice-block_theme_white theme-white">
-
-   <div class="advice__inf-container advice__inf-container_theme_white">
-    <div class="advice__inf_brand">Unox</div>
-    <div class="advice__inf_title">Пароконвектоматы</div>
-    <div class="advice__inf_plain">
-     Благодаря своей универсальности пароконвектоматы быстро завоевывают пользователей по всему миру.
-    </div>
-   </div>
-   <div class="advice__img-container">
-    <img src="img/from_base/advice/parokonvektomat_unox.png" alt="Рекомендуем" class="advice__img_theme_white">
-   </div>
-  </div>
-
-  <div class="advice-block  theme-black">
-   <div class="advice__img-container">
-    <img src="img/from_base/advice/thermal-equipment_abat.png" alt="Рекомендуем" class="advice__img_theme_black">
-   </div>
-   <div class="advice__inf-container">
-    <div class="advice__inf_brand">Abat</div>
-    <div class="advice__inf_title"><p>Тепловое оборудование</p></div>
-    <div class="advice__inf_plain">
-     Более 55 лет успешно работает на рынке  торгово- технологического оборудования, по праву занимая лидирующее положение в данном сегменте.
-    </div>
-   </div>
-  </div>
-
-
- </div>
-
- <div class="seo">
-  <a class="header__link" href="#"><img src="img/icon_logo-fork-knife.svg" alt="logo fork & knife" class="logo__icon_l">
-   <p class="logo__title_l"><span class="logo__title_top_l">Столовая.РУ</span>
-    <span class="logo__title_bottom_l">cоздание оптимальных пищеблоков</span></p>
-  </a>
-
-  <div class="seo__p1">
-   <span class="seo__p1_title">Группа компаний</span>
-   <span class="seo__p1_plain">Показатели:</span>
-   <span class="seo__p1_plain seo__p1_plain_x2">На рынке: 5 лет</span>
-   <span class="seo__p1_plain">Объем контрактов: 4 млрд.р.</span>
-   <span class="seo__p1_plain">Количество контрактов: 620</span></div>
-
-  <div class="seo__p2">
-   <span class="seo__p2_title">Комплексные решения оснащения столовых и кафе</span>
-   <span class="seo__p2_plain">
-    <div>Компания «Диалог» предлагает комплексное оснащение  столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.
-    </div>
-   <div>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
-   </div></span>
-  </div>
-  <div class="button__open-more theme-black">+</div>
- </div>
-
- <footer class="foot">
-  Подвал для пыток
- </footer>
- е
 </div>
+
+<footer class="footer">Подвал</footer>
 
 </body>
 </html>
