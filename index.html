@@ -9,86 +9,67 @@
  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
  <style>
-  section {
-   border : 1px dotted black;
-  }
-
-  .html, .body {
-   height  : 100%;
-   margin  : 0;
-   padding : 0;
-  }
-
   .body {
-   display        : flex;
-   flex-direction : column;
+   magrin : 0;
   }
 
-  .content {
-   flex   : 1 0 auto;
-   margin : 0 auto;
+  .contairer {
+   display   : flex;
+   flex-wrap : wrap
   }
 
-  .header {
-   color       : white;
-   background  : black;
-   flex-shrink : 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  .aside .main {
+   width      : 100%;
+   min-height : 200px;
+   color: white;
   }
 
-  .main {}
-
-  .brands {}
-
-  .spec-offer {}
-
-  .advice {}
-
-  .seo {}
-
-  .clients {}
-
-  .footer {
-   flex-shrink : 0;
-   color       : white;
-   background  : black;
+  .aside{
+   background: #0b97c4;
+  }
+  .main{
+   background: #0c5460;
   }
 
+
+  @media (min-width : 500px) {
+   .aside {
+    flex      : 0 0 33.333333%;
+    max-width : 33.333333%;
+    order     : 1;
+   }
+
+   .main {
+    flex      : 0 0 66.666667%;
+    max-width : 66.666667%;
+    order     : 2
+   }
+  }
+
+  @media (min-width : 1200px) {
+   .aside {
+    flex      : 0 0 25%;
+    max-width : 25%
+   }
+
+   .main {
+    flex      : 0 0 75%;
+    max-width : 75%;
+   }
+  }
 
  </style>
 
 </head>
 
 <body class="body">
-<header class="header">
- <div>Шапка</div>
-</header>
-<div class="content">
-
- <section class="main">
-  Основное
- </section>
-
- <section class="brands">
-  Бренды
- </section>
-
- <section class="spec-offer">
-  Спец-предложения
- </section>
-
- <section class="advice">
-  Рекомендуем
- </section>
-
- <section class="seo">Рекламная информация о компании</section>
- <section class="clients">Наши клиенты</section>
-
+<div class="container">
+ <main class="main">
+  MAIN
+ </main>
+ <aide class="aside">
+  ADIDE
+ </aide>
 </div>
-
-<footer class="footer">Подвал</footer>
-
 </body>
 </html>
