@@ -4,58 +4,63 @@
  <meta charset="UTF-8">
  <title>Обороудование для кухни</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+ <link rel="stylesheet" href="css/fonts.css">
 
  <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
  <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
 
  <style>
+
   .body {
-   magrin : 0;
+   margin     : 0;
+   background : #f3f1f1;
   }
 
-  .contairer {
-   display   : flex;
-   flex-wrap : wrap
+  .wrapper {
+   max-width : 1920px;
+   width     : 100%;
+   margin    : 0 auto;
+   padding   : 0;
   }
 
-  .aside .main {
-   width      : 100%;
-   min-height : 200px;
-   color: white;
+  .menu {
+   font        : 16px "Myriad Pro Regular";
+   line-height : 19px;
+   position    : fixed;
+   z-index     : 100;
+   width       : 100%;
+   top         : 0;
+   min-height  : 100px;
   }
 
-  .aside{
-   background: #0b97c4;
-  }
-  .main{
-   background: #0c5460;
-  }
-
-
-  @media (min-width : 500px) {
-   .aside {
-    flex      : 0 0 33.333333%;
-    max-width : 33.333333%;
-    order     : 1;
-   }
-
-   .main {
-    flex      : 0 0 66.666667%;
-    max-width : 66.666667%;
-    order     : 2
-   }
+  .menu-top {
+   background : #34a853;
+   position   : relative;
+   z-index    : 1000;
   }
 
-  @media (min-width : 1200px) {
-   .aside {
-    flex      : 0 0 25%;
-    max-width : 25%
-   }
+  .menu-top__nav {
+   height          : 48px;
+   display         : flex;
+   align-items     : center;
+   justify-content : space-between;
+  }
 
-   .main {
-    flex      : 0 0 75%;
-    max-width : 75%;
-   }
+  .menu-top__ul {
+   display         : flex;
+   /*width           : 28%;*/
+   list-style      : none;
+   justify-content : space-between;
+   align-items     : center;
+  }
+
+  .menu-top__li {
+   display        : inline-block;
+   vertical-align : middle;
+  }
+
+  .menu-top__ul:nth-child(n) {
+
   }
 
  </style>
@@ -63,13 +68,33 @@
 </head>
 
 <body class="body">
-<div class="container">
- <main class="main">
-  MAIN
- </main>
- <aide class="aside">
-  ADIDE
- </aide>
-</div>
+<header class="menu">
+ <div class="menu-top">
+  <div class="wrapper">
+   <nav class="menu-top__nav">
+    <ul class="menu-top__ul">
+     <li class="menu-top__li"><a href="#">Компания</a></li>
+     <li class="menu-top__li"><a href="#">Портфолио</a></li>
+     <li class="menu-top__li"><a href="#">Проектирование</a></li>
+    </ul>
+    <ul class="menu-top__ul">
+     <li class="menu-top__li"><a href="#">Ресторанам</a></li>
+     <li class="menu-top__li"><a href="#">Застройщикам</a></li>
+     <li class="menu-top__li"><a href="#">Госзаказчикам</a></li>
+     <li class="menu-top__li"><a href="#">Таблет-питание</a></li>
+    </ul>
+    <ul class="menu-top__ul">
+     <li class="menu-top__li"><a href="#">Сервис</a></li>
+     <li class="menu-top__li"><a href="#">Контакты</a></li>
+     <li class="menu-top__li"><a href="#">info@stolovaya.ru</a></li>
+     <li class="menu-top__li"><a href="#">8 800 333-88-31</a></li>
+    </ul>
+
+   </nav>
+
+  </div>
+ </div>
+
+</header>
 </body>
 </html>
