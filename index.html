@@ -8,15 +8,14 @@
  <link rel="stylesheet" href="css/styles.css">
  <link rel="stylesheet" href="css/menu.css">
  <link rel="stylesheet" href="css/swiper.css">
- <link rel="stylesheet" href="css/main.css">
  <link rel="stylesheet" href="css/footer.css">
  <link rel="stylesheet" href="css/clients.css">
  <link rel="stylesheet" href="css/brands.css">
  <link rel="stylesheet" href="css/advice.css">
- <link rel="stylesheet" href="css/main.css">
  <link rel="stylesheet" href="css/news.css">
  <link rel="stylesheet" href="css/spec-offers-service.css">
  <link rel="stylesheet" href="css/seo.css">
+ <link rel="stylesheet" href="css/main.css">
 
  <style>
 
@@ -51,7 +50,48 @@
   </div>
  </div>
  <div class="menu-search">
-
+  <div class="wrapper">
+   <div class="menu-search-content">
+    <div class="menu-logo">
+     <a href="#" class="menu-logo__link">
+      <div class="menu-logo-img-container">
+       <img src="img/icon_logo-fork-knife.svg" alt="Лого Столовая.РУ" width="40px" height="40px"></div>
+      <div class="menu-logo__title">Столовая.РУ</div>
+     </a>
+    </div>
+    <form action="get" class="menu-search-form">
+     <div class="menu-serch-form__filter-category">
+      <div class="menu-serch-form__filter-category_text">Все</div>
+     </div>
+     <div class="menu-search-field">
+      <input class="menu-search-field__input" type="text">
+     </div>
+     <div class="menu-search-button">
+      <button class="menu-search-button__button"></button>
+     </div>
+    </form>
+    <div class="we-on-suppliers-sites">
+     <a href="#" class="supplies__link">
+      <div class="menu-search-suppliers-img-container">
+       <img src="img/icon_portal-postavschikov.png" alt="Мы на порталах поставщиков" class="menu-search-suppliers__img">
+      </div>
+      <div class="menu-search-suppliers__title">
+       Мы на портале поставщиков
+      </div>
+     </a>
+    </div>
+    <a href="#" class="search-basket">
+     <div class="basket-left"><span class="basket-count">0</span>
+      <div class="basket-img">
+       <img src="img/icon_basked.svg" alt="Ваша корзина" width="28px" height="27px"></div>
+     </div>
+     <div class="basket-right">
+      <div class="basket-sum"><span>Сумма</span></div>
+      <div class="basket-num"><span>0 руб.</span></div>
+     </div>
+    </a>
+   </div>
+  </div>
  </div>
  <div class="menu-categories">
   <div class="wrapper">
@@ -98,37 +138,35 @@
  <div class="wrapper">
   <div class="main-content">
    <div class="target-offers">
-    <nav>
-     <h3>Целевые предложения</h3>
-     <ul class="target-offers__ul">
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Государственным заказчикам</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Кафе, барам, ресторанам</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Детским садам и школам</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Таблет-питание для больниц</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Оборудование для кондитерских</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Оборудование для пицерии</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Для малого бизнеса</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Оборудование для мини-кафе</a></li>
-      <li class="target-offers__li">
-       <a href="#" class="target-offers__link">Все предложения</a></li>
-     </ul>
-    </nav>
+    <h3 class="target-offers__title">Целевые предложения</h3>
+    <ul class="target-offers__ul">
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Государственным заказчикам</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Кафе, барам, ресторанам</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Детским садам и школам</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Таблет-питание для больниц</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Оборудование для кондитерских</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Оборудование для пицерии</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Для малого бизнеса</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Оборудование для мини-кафе</a></li>
+     <li class="target-offers__li">
+      <a href="#" class="target-offers__link">Все предложения</a></li>
+    </ul>
    </div>
    <div class="portfolio theme__black">
     <div class="portfolio-content">
      <div class="portfolio-text">
-      <div>Портфолио</div>
-      <div>НИИ скорой помощи им. Н.В. Склифосовского</div>
-      <div>Обороудование для пищеблоков</div>
-      <a class="button theme__orange" href="#">Подробнее</a>
+      <div class="portfolio__caption">Портфолио</div>
+      <div class="portfolio__object">НИИ скорой помощи им. Н.В. Склифосовского</div>
+      <div class="portfolio__equipment">Обороудование для пищеблоков</div>
+      <a class="button button__orange" href="#">Подробнее</a>
      </div>
      <div class="portfolio-img">
       <img class="portfolio-img__img" src="img/from_base/portfolio/sklif-01.png" alt="Портфолио">
@@ -141,7 +179,15 @@
      </div>
     </div>
    </div>
-   <div class="sell"></div>
+   <div class="sell">
+    <div class="sell-content-wrapper">
+     <div class="sell-content">
+      <img src="img/sell.svg" width="76px" height="104px" class="sell__img"></img>
+      <div class="sell__slogan">Самые низкие цены</div>
+      <div class="sell__caption">Распродажа</div>
+      <a href="#" class="sell__link">Каталог распродаж ></a></div>
+    </div>
+   </div>
   </div>
  </div>
 </section>
@@ -168,43 +214,48 @@
  <div class="wrapper">
   <div class="spec-offers-service-content">
    <div class="spec-offers">
-    <div class="spec-offers__title">Специальные предложения ></div>
-    <a href="#" class="spec-offer">
-     <div class="spec-offer-img">
-      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
-           class="spec-offer__img">
-     </div>
-     <div class="spec-offer-info">
-      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
-      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
-      <div class="spec-offer__price">160 000 руб.</div>
-      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
-     </div>
-    </a>
-    <a href="#" class="spec-offer">
-     <div class="spec-offer-img">
-      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
-           class="spec-offer__img">
-     </div>
-     <div class="spec-offer-info">
-      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
-      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
-      <div class="spec-offer__price">160 000 руб.</div>
-      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
-     </div>
-    </a>
-    <a href="#" class="spec-offer">
-     <div class="spec-offer-img">
-      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
-           class="spec-offer__img">
-     </div>
-     <div class="spec-offer-info">
-      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
-      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
-      <div class="spec-offer__price">160 000 руб.</div>
-      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
-     </div>
-    </a>
+    <a href="#" class="spec-offers__title link">Специальные предложения ></a>
+    <div class="spec-offers-content">
+     <a href="#" class="spec-offer__link">
+      <div class="spec-offer-img-wrap">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Спец-предложение" class="spec-offer__img">
+      </div>
+      <div class="spec-offer-info">
+       <div class="spec-offer__standard">
+        <img src="img/nation-standard/ru.svg" alt="" class="spec-offer__standard-img"></div>
+       <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+       <div class="spec-offer__price">160 000 руб.</div>
+       <div class="spec-offer__brand">
+        <img src="img/from_base/brand/abat.png" alt="Бренд" class="spec-offer__brand-img"></div>
+      </div>
+     </a>
+     <a href="#" class="spec-offer__link">
+      <div class="spec-offer-img-wrap">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Спец-предложение" class="spec-offer__img">
+      </div>
+      <div class="spec-offer-info">
+       <div class="spec-offer__standard">
+        <img src="img/nation-standard/ru.svg" alt="" class="spec-offer__standard-img"></div>
+       <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+       <div class="spec-offer__price">160 000 руб.</div>
+       <div class="spec-offer__brand">
+        <img src="img/from_base/brand/abat.png" alt="Бренд" class="spec-offer__brand-img"></div>
+      </div>
+     </a>
+     <a href="#" class="spec-offer__link">
+      <div class="spec-offer-img-wrap">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Спец-предложение" class="spec-offer__img">
+      </div>
+      <div class="spec-offer-info">
+       <div class="spec-offer__standard">
+        <img src="img/nation-standard/ru.svg" alt="" class="spec-offer__standard-img"></div>
+       <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+       <div class="spec-offer__price">160 000 руб.</div>
+       <div class="spec-offer__brand">
+        <img src="img/from_base/brand/abat.png" alt="Бренд" class="spec-offer__brand-img"></div>
+      </div>
+     </a>
+    </div>
    </div>
    <div class="service">
     <div class="service-info">
