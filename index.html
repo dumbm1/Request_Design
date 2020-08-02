@@ -5,96 +5,588 @@
  <title>Обороудование для кухни</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
  <link rel="stylesheet" href="css/fonts.css">
-
- <!--   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">-->
- <!--  <link rel="stylesheet" href="css/desktop.css" media="only screen and (max-width: 1920px)">-->
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/menu.css">
+ <link rel="stylesheet" href="css/swiper.css">
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="css/clients.css">
+ <link rel="stylesheet" href="css/brands.css">
+ <link rel="stylesheet" href="css/advice.css">
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/news.css">
+ <link rel="stylesheet" href="css/spec-offers-service.css">
+ <link rel="stylesheet" href="css/seo.css">
 
  <style>
-
-  .body {
-   margin     : 0;
-   background : #f3f1f1;
-  }
-
-  .wrapper {
-   max-width : 1920px;
-   width     : 100%;
-   margin    : 0 auto;
-   padding   : 0;
-  }
-
-  .menu {
-   font        : 16px "Myriad Pro Regular";
-   line-height : 19px;
-   position    : fixed;
-   z-index     : 100;
-   width       : 100%;
-   top         : 0;
-   min-height  : 100px;
-  }
-
-  .menu-top {
-   background : #34a853;
-   position   : relative;
-   z-index    : 1000;
-  }
-
-  .menu-top__nav {
-   height          : 48px;
-   display         : flex;
-   align-items     : center;
-   justify-content : space-between;
-  }
-
-  .menu-top__ul {
-   display         : flex;
-   /*width           : 28%;*/
-   list-style      : none;
-   justify-content : space-between;
-   align-items     : center;
-  }
-
-  .menu-top__li {
-   display        : inline-block;
-   vertical-align : middle;
-  }
-
-  .menu-top__ul:nth-child(n) {
-
-  }
 
  </style>
 
 </head>
 
 <body class="body">
+
 <header class="menu">
  <div class="menu-top">
   <div class="wrapper">
    <nav class="menu-top__nav">
     <ul class="menu-top__ul">
-     <li class="menu-top__li"><a href="#">Компания</a></li>
-     <li class="menu-top__li"><a href="#">Портфолио</a></li>
-     <li class="menu-top__li"><a href="#">Проектирование</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Компания</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Портфолио</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Проектирование</a></li>
     </ul>
     <ul class="menu-top__ul">
-     <li class="menu-top__li"><a href="#">Ресторанам</a></li>
-     <li class="menu-top__li"><a href="#">Застройщикам</a></li>
-     <li class="menu-top__li"><a href="#">Госзаказчикам</a></li>
-     <li class="menu-top__li"><a href="#">Таблет-питание</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Ресторанам</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Застройщикам</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Госзаказчикам</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Таблет-питание</a></li>
     </ul>
     <ul class="menu-top__ul">
-     <li class="menu-top__li"><a href="#">Сервис</a></li>
-     <li class="menu-top__li"><a href="#">Контакты</a></li>
-     <li class="menu-top__li"><a href="#">info@stolovaya.ru</a></li>
-     <li class="menu-top__li"><a href="#">8 800 333-88-31</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Сервис</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">Контакты</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">info@stolovaya.ru</a></li>
+     <li class="menu-top__li"><a class="menu-top__link" href="#">8 800 333-88-31</a></li>
     </ul>
-
    </nav>
+  </div>
+ </div>
+ <div class="menu-search">
+
+ </div>
+ <div class="menu-categories">
+  <div class="wrapper">
+   <div class="categories">
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/teplovoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Тепловое</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/holodilnoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Холодильное</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/electromehanicheskoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Электромеханическое</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/posudomoechnoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Посудомоечное</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/hlebopekarnoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Хлебопекарное</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/linii-razdachi.png" alt="Категория" class="category__img">
+     <span class="category__caption">Линии раздачи</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/neytralnoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Нейтральное</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/fastfood.png" alt="Категория" class="category__img">
+     <span class="category__caption">Для фаст-фуда</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/dlya-zalov.png" alt="Категория" class="category__img">
+     <span class="category__caption">Для залов</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/vesovoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Вспомогательное</span></a></div>
+    <div class="category"><a href="#" class="category__link">
+     <img src="img/menu_catalog/barnoe.png" alt="Категория" class="category__img">
+     <span class="category__caption">Для магазинов</span></a></div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section class="main">
+ <div class="wrapper">
+  <div class="main-content">
+   <div class="target-offers">
+    <nav>
+     <h3>Целевые предложения</h3>
+     <ul class="target-offers__ul">
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Государственным заказчикам</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Кафе, барам, ресторанам</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Детским садам и школам</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Таблет-питание для больниц</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Оборудование для кондитерских</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Оборудование для пицерии</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Для малого бизнеса</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Оборудование для мини-кафе</a></li>
+      <li class="target-offers__li">
+       <a href="#" class="target-offers__link">Все предложения</a></li>
+     </ul>
+    </nav>
+   </div>
+   <div class="portfolio theme__black">
+    <div class="portfolio-content">
+     <div class="portfolio-text">
+      <div>Портфолио</div>
+      <div>НИИ скорой помощи им. Н.В. Склифосовского</div>
+      <div>Обороудование для пищеблоков</div>
+      <a class="button theme__orange" href="#">Подробнее</a>
+     </div>
+     <div class="portfolio-img">
+      <img class="portfolio-img__img" src="img/from_base/portfolio/sklif-01.png" alt="Портфолио">
+     </div>
+     <div class="swiper">
+      <span class="swiper__bullet"></span>
+      <span class="swiper__bullet"></span>
+      <span class="swiper__bullet"></span>
+      <span class="swiper__bullet swiper__bullet_active"></span>
+     </div>
+    </div>
+   </div>
+   <div class="sell"></div>
+  </div>
+ </div>
+</section>
+
+<section class="brands">
+ <div class="wrapper">
+  <ul class="brands__ul">
+   <li class="brands__li"><a href="#" class="brands__link">
+    <img src="img/from_base/brand/abat.png" alt="Бренды" class="brands__img"></a></li>
+   <li class="brands__li"><a href="#" class="brands__link">
+    <img src="img/from_base/brand/atesy.png" alt="Бренды" class="brands__img"></a></li>
+   <li class="brands__li"><a href="#" class="brands__link">
+    <img src="img/from_base/brand/hicold.png" alt="Бренды" class="brands__img"></a></li>
+   <li class="brands__li"><a href="#" class="brands__link">
+    <img src="img/from_base/brand/rational.png" alt="Бренды" class="brands__img"></a></li>
+   <li class="brands__li"><a href="#" class="brands__link">
+    <img src="img/from_base/brand/simeco.png" alt="Бренды" class="brands__img"></a></li>
+   <li class="brands__li"><a href="#" class="brands__link">Все бренды </a></li>
+  </ul>
+ </div>
+</section>
+
+<section class="spec-offers-service">
+ <div class="wrapper">
+  <div class="spec-offers-service-content">
+   <div class="spec-offers">
+    <div class="spec-offers__title">Специальные предложения ></div>
+    <a href="#" class="spec-offer">
+     <div class="spec-offer-img">
+      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
+           class="spec-offer__img">
+     </div>
+     <div class="spec-offer-info">
+      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
+      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+      <div class="spec-offer__price">160 000 руб.</div>
+      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
+     </div>
+    </a>
+    <a href="#" class="spec-offer">
+     <div class="spec-offer-img">
+      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
+           class="spec-offer__img">
+     </div>
+     <div class="spec-offer-info">
+      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
+      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+      <div class="spec-offer__price">160 000 руб.</div>
+      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
+     </div>
+    </a>
+    <a href="#" class="spec-offer">
+     <div class="spec-offer-img">
+      <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" alt="Специальные предложения"
+           class="spec-offer__img">
+     </div>
+     <div class="spec-offer-info">
+      <div class="spec-offer__standard"><img src="img/nation-standard/ru.svg" alt=""></div>
+      <div class="spec-offer__title">Пароконвектомат ПКН-6</div>
+      <div class="spec-offer__price">160 000 руб.</div>
+      <div class="spec-offer__brand"><img src="img/from_base/brand/abat.png" alt="Бренд"></div>
+     </div>
+    </a>
+   </div>
+   <div class="service">
+    <div class="service-info">
+     <div class="service__title">Сервис</div>
+     <div class="service__text">Гарантийное обслуживание, монтажи и т.д.</div>
+     <div class="service__link">Подробнее ></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="news">
+ <div class="wrapper1400">
+  <div class="news-content">
+   <div class="news__title">Новости производителей</div>
+   <div class="news-cols">
+    <div class="news-left-col">
+     <a href="#">
+      <img src="img/from_base/news/2017-06-22_abat_rpsh-18-8-6mr.png" alt="News" class="news__img">
+     </a>
+     <div class="news-info">
+      <div class="news-date"><span class="news-date__brand">Abat</span><span class="news-date__date">22.06.2017</span>
+      </div>
+      <div class="news-info__title">Новый разборный ротационный пекарский
+       шкаф РПШ-18-8-6МР
+      </div>
+      <div class="news-info__text"><p>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР: в комплекте
+       тележка-шпилька
+       ТШГ-18
+       на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7
+       инжекционный тип парообразования разборная конструкция увеличенное стекло двери. Память на 110 программ (до
+       4-ех этапов в каждой программе) USB-порт. Таймер до 10 ч Регулировка влажности от 0
+       до 100%. 5 скоро</p>
+      </div>
+     </div>
+    </div>
+    <div class="news-right-col">
+     <div class="news-right-col-row">
+      <a class="news-right-col__link" href="#">
+       <img src="img/from_base/news/2017-06-22_abat_mpt_1.png" alt="Новости" class="news__img"></a>
+      <div class="news-right-col__info">
+       <div class="news-date"><span class="news-date__brand">Abat</span><span class="news-date__date">22.06.2017</span>
+       </div>
+       <div class="news-info__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+        Abat
+       </div>
+       <div class="news-info__text">
+        <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017
+         года
+         был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+       </div>
+      </div>
+     </div>
+     <div class="news-right-col-row">
+      <a class="news-right-col__link" href="#">
+       <img src="img/from_base/news/2017-06-22_abat_mpt_2.png" alt="Новости" class="news__img"></a>
+      <div class="news-right-col__info">
+       <div class="news-date"><span class="news-date__brand">Abat</span><span class="news-date__date">22.06.2017</span>
+       </div>
+       <div class="news-info__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+        Abat
+       </div>
+       <div class="news-info__text">
+        <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности m изделий с 1 июня 2017
+         года был изменен алгоритм</p>
+       </div>
+      </div>
+     </div>
+     <div class="news-right-col-row">
+      <a class="news-right-col__link" href="#">
+       <img src="img/from_base/news/2017-06-22_abat_mpt_1.png" alt="Новости" class="news__img"></a>
+      <div class="news-right-col__info">
+       <div class="news-date"><span class="news-date__brand">Abat</span><span class="news-date__date">22.06.2017</span>
+       </div>
+       <div class="news-info__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+        Abat
+       </div>
+       <div class="news-info__text">
+        <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017
+         года
+         был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <button class="news-button">Все новости</button>
+  </div>
+ </div>
+</section>
+
+<section class="advice">
+ <div class="wrapper1400">
+  <div class="advice-content">
+
+   <div class="advice-caption"><h2 class="h2">Рекомендуем</h2>
+    <div class="advice-caption__plain">В этих разделах вы можете получить подробную информацию о пищевом
+     оборудовании для столовых, ресторанов и кафе ведущих производителей.
+    </div>
+   </div>
 
   </div>
  </div>
+</section>
 
-</header>
+<section class="seo">
+ <div class="wrapper1400">
+  <h2 class="caption">Комплексные оснащения столовых и кафе</h2>
+  <div class="seo-content">
+   <div class="seo__col-left">
+    <h1 class="h1">Комплексные решения оснащения столовых и кафе</h1>
+
+    <p class="seo__plain">Компания предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши
+     услуги
+     построены по
+     принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
+    <p class="seo__plain">Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание.
+     География работы
+     компании
+     охватывает всю страну.</p>
+    <p class="seo__plain">При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное
+     технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым
+     уровнем производительности в условиях ограниченного бюджета.</p>
+
+    <h2>Что мы предлагаем</h2>
+
+    <ul class="seo__plain">
+     <li>разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;</li>
+     <li>составление меню согласно концепции и оснащения бара (кафе, столовой);</li>
+     <li>подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой
+      выбор
+     </li>
+     <li>современных моделей; доставку в любой регион РФ;</li>
+     <li>монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое
+      оборудование для бара;
+     </li>
+     <li>экспертную поддержку бизнеса;</li>
+     <li>гарантию на обслуживание, сервисное сопровождение выполненных нами проектов.</li>
+     <li>«Диалог» сотрудничает с ведущими мировыми брендами, поэтому имеет возможность предложить каждому клиенту</li>
+     <li>профессиональное барное оборудование и индивидуальное решение на его основе.</li>
+    </ul>
+
+   </div>
+   <div class="seo__col-right">
+    <div class="logo">
+     <a href="#" class="logo__link">
+      <img src="img/icon_logo-fork-knife.svg" alt="Логотип Сайта" class="logo__img" height="150px" width="150px"></a>
+    </div>
+    Столовая.РУ
+    создание оптимальных пищеблоков
+
+    Группа компаний
+    Показатели:
+
+    На рынке: 5 лет
+    Объем контрактов: 4 млрд.р.
+    Количество контрактов: 620
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="clients">
+ <div class="wrapper1400">
+  <h2 class="caption">Наши клиенты</h2>
+  <div class="clients-content">
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+   <div class="client">
+    <a href="#" class="client__link">
+     <div class="client-img-wrapper">
+      <img class="client__img" src="img/from_base/clients/minoboriny-rf.png" alt="Наши клиенты"></div>
+     <div class="client__name">Министерство обороны Российской Федерации</div>
+    </a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="links">
+ <div class="wrapper1400">
+  <div class="links-content">
+
+   <div class="links-col">
+    <div class="links__title">Информация</div>
+    <ul class="links__ul">
+     <li class="links__li"><a href="#" class="links__link">Компания</a></li>
+     <li class="links__li"><a href="#" class="links__link">Портфолио</a></li>
+     <li class="links__li"><a href="#" class="links__link">Проектирование</a></li>
+     <li class="links__li"><a href="#" class="links__link">Ресторанам</a></li>
+     <li class="links__li"><a href="#" class="links__link">Застройщикам</a></li>
+     <li class="links__li"><a href="#" class="links__link">Гос.заказчикам</a></li>
+     <li class="links__li"><a href="#" class="links__link">Таблет-питание</a></li>
+     <li class="links__li"><a href="#" class="links__link">Сервис</a></li>
+     <li class="links__li"><a href="#" class="links__link">Новости</a></li>
+     <li class="links__li"><a href="#" class="links__link">Контакты</a></li>
+    </ul>
+   </div>
+   <div class="links-col">
+    <div class="links__title">Оборудование</div>
+    <ul class="links__ul">
+     <li class="links__li"><a href="#" class="links__link">Тепловое </a></li>
+     <li class="links__li"><a href="#" class="links__link">Холодильное </a></li>
+     <li class="links__li"><a href="#" class="links__link">Электромеханическое </a></li>
+     <li class="links__li"><a href="#" class="links__link">Посудомоечное </a></li>
+     <li class="links__li"><a href="#" class="links__link">Барное </a></li>
+     <li class="links__li"><a href="#" class="links__link">Хлебопекарное </a></li>
+     <li class="links__li"><a href="#" class="links__link">Линии раздачи </a></li>
+     <li class="links__li"><a href="#" class="links__link">Нейтральное </a></li>
+     <li class="links__li"><a href="#" class="links__link">Для фаст фуда </a></li>
+     <li class="links__li"><a href="#" class="links__link">Для залов </a></li>
+     <li class="links__li"><a href="#" class="links__link">Весовое</a></li>
+    </ul>
+   </div>
+   <div class="links-col">
+    <div class="links__title">Предложения</div>
+    <ul class="links__ul">
+     <li class="links__li"><a href="#" class="links__link">Кафе, барам, ресторанам</a></li>
+     <li class="links__li"><a href="#" class="links__link">Дестким садам и школам</a></li>
+     <li class="links__li"><a href="#" class="links__link">Таблет-питание</a></li>
+     <li class="links__li"><a href="#" class="links__link">Для кондитерских</a></li>
+     <li class="links__li"><a href="#" class="links__link">Для пиццерий</a></li>
+     <li class="links__li"><a href="#" class="links__link">Для магазинов</a></li>
+     <li class="links__li"><a href="#" class="links__link">Для воинских частей</a></li>
+     <li class="links__li"><a href="#" class="links__link">Все предложения</a></li>
+    </ul>
+   </div>
+   <div class="links-col">
+    <div class="links__title">Контакты</div>
+    <ul class="links__ul">
+     <li class="links__li_contacts"><a href="#" class="links__link">8 495 150-31-71</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">8 800 500 43 44</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">звонок беспланый</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">Пн-Пт</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">09:00 до 18:00</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">com@stolovay.ru</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">info@stolovay.ru</a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">111524, Москва, </a></li>
+     <li class="links__li_contacts"><a href="#" class="links__link">Рязанский проспект 24к2 </a></li>
+    </ul>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+<section class="footer">
+ <div class="wrapper1400">
+  <div class="footer-content">
+   <div class="footer-logo">
+    <div class="footer-logo-img-container">
+     <img src="img/icon_logo-fork-knife.svg" alt="Логотип сайта" class="footer-logo__img" width="40px" height="40px">
+    </div>
+    <div class="footer-logo__title">
+     <div class="footer-logo__title_site">Столовая.РУ</div>
+     <div class="footer-logo__title_plain">Создание эффективных пищеблоков</div>
+    </div>
+   </div>
+   <div class="footer-developer">
+    Сайт разработан NTI-systems
+   </div>
+  </div>
+ </div>
+</section>
+
 </body>
 </html>

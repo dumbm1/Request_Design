@@ -1,0 +1,56 @@
+.main {
+ margin : 234px 0 20px 0;
+}
+
+.main-content {
+ display : flex;
+}
+
+.target-offers {
+ width      : 20%;
+ box-sizing : border-box;
+}
+
+.target-offers__ul {
+ list-style : none;
+}
+
+.target-offers__link {
+ text-decoration : none;
+}
+
+.portfolio {
+ width  : 59%;
+ margin : 0 20px;
+
+}
+
+.portfolio-content {
+ position      : relative;
+ box-sizing    : border-box;
+ height        : 476px;
+ padding       : 0 65px;
+ display       : flex;
+ align-content : center;
+}
+
+.portfolio-img {
+ width    : 45%;
+ position : absolute;
+ right    : 0;
+ bottom   : 0;
+}
+
+.portfolio-img__img {
+ width  : auto;
+ height : 100%;
+}
+
+.portfolio-text {
+ padding : 0 60px 0 0;
+ width   : 62%;
+}
+
+.sell {
+ width : 20%;
+}

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Myriad Pro Light SemiExtended';
+    font-family: 'Myriad Pro';
     src: url('../fonts/myriad-pro/MyriadPro-LightSemiExt.eot');
     src: local('Myriad Pro Light SemiExtended'), local('MyriadPro-LightSemiExt'),
     url('../fonts/myriad-pro/MyriadPro-LightSemiExt.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Myriad Pro Regular';
+    font-family: 'Myriad Pro';
     src: url('../fonts/myriad-pro/MyriadPro-Regular.eot');
     src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
     url('../fonts/myriad-pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'Myriad Pro SemiBold';
+    font-family: 'Myriad Pro';
     src: url('../fonts/myriad-pro/MyriadPro-Semibold.eot');
     src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold'),
     url('../fonts/myriad-pro/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),

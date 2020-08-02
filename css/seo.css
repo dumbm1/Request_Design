@@ -1,0 +1,25 @@
+.seo {
+ margin-bottom : 50px;
+}
+
+.seo__plain {
+ font-size      : 18px;
+ padding-top    : 0;
+ padding-bottom : 0;
+ margin-top     : 0;
+ margin-bottom  : 0;
+ line-height    : 24px;
+}
+
+.seo-content {
+ display : flex;
+}
+
+.seo__col-left {
+ width         : 75%;
+ padding-right : 250px;
+}
+
+.seo__col-right {
+ width : 25%;
+}
