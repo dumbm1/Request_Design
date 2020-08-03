@@ -75,7 +75,7 @@
  background      : white;
  width           : 30%;
  background      : url("../img/service-bg.png") no-repeat;
- background-size : 100%;
+ /*background-size : 100%;*/
  margin-left     : 20px;
 }
 
@@ -86,8 +86,6 @@
 
 .service__title {
  font-weight : normal;
- font-size   : 40px;
- line-height : 46px;
 }
 
 .service__text {

@@ -25,6 +25,11 @@
  margin-bottom : 70px;
 }
 
+.title {
+ font-size   : 40px;
+ line-height : 48px;
+}
+
 .caption__left {
  text-align : left;
 }

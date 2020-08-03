@@ -29,10 +29,10 @@
   /***************************************/
 
   .body {
-   background : black;
+   background : cyan;
   }
 
-  @media all and (min-width : 320px) and (max-width : 798px) {
+  @media all and (min-width : 320px) and (max-width : 767px) {
    .body {
     background : yellow;
    }
@@ -42,20 +42,52 @@
    .body {
     background : red;
    }
+
+   .wrapper, .wrapper1400 {
+    width : 95%;
+   }
+
+   .title {
+    font-size   : 30px;
+    line-height : 36px;
+   }
+
+   .target-offers__link {
+    font-size : 12px;
+   }
+   .portfolio-content{
+    padding: 0 20px;
+   }
   }
 
-  @media all and (min-width : 1202px) and (max-width : 1500px) {
+  @media all and (min-width : 1200px) and (max-width : 1568px) {
    .body {
     background : green;
    }
+
+   .wrapper, .wrapper1400 {
+    width : 95%;
+   }
+
+   .title {
+    font-size   : 30px;
+    line-height : 36px;
+   }
+
+   .target-offers__link {
+    font-size : 12px;
+   }
+   .portfolio-content{
+    padding: 0 20px;
+   }
   }
-/**/
-  @media all and (min-width : 1502px) and (max-width : 1920px) {
+
+  /**/
+  @media all and (min-width : 1570px) and (max-width : 1920px) {
    .body {
     background : blue;
    }
   }
-
 
  </style>
 
@@ -202,7 +234,7 @@
     <div class="portfolio-content">
      <div class="portfolio-text">
       <div class="portfolio__caption">Портфолио</div>
-      <div class="portfolio__object">НИИ скорой помощи им. Н.В. Склифосовского</div>
+      <div class="portfolio__object title">НИИ скорой помощи им. Н.В. Склифосовского</div>
       <div class="portfolio__equipment">Обороудование для пищеблоков</div>
       <a class="button button__orange" href="#">Подробнее</a>
      </div>
@@ -222,7 +254,7 @@
      <div class="sell-content">
       <img src="img/sell.svg" width="76px" height="104px" class="sell__img"></img>
       <div class="sell__slogan">Самые низкие цены</div>
-      <div class="sell__caption">Распродажа</div>
+      <div class="sell__caption title">Распродажа</div>
       <a href="#" class="sell__link">Каталог распродаж ></a></div>
     </div>
    </div>
@@ -297,7 +329,7 @@
    </div>
    <div class="service">
     <div class="service-info">
-     <div class="service__title theme__orange">Сервис</div>
+     <div class="service__title title theme__orange">Сервис</div>
      <div class="service__text theme__orange">Гарантийное обслуживание, монтажи и т.д.</div>
      <a href="#" class="service__link link theme__orange">Подробнее ></a>
     </div>
