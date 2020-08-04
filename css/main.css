@@ -11,7 +11,7 @@
 /*****************************************************/
 .target-offers {
  width      : 20%;
- min-width  : 255px;
+ min-width  : 225px;
  background : white;
  overflow   : hidden;
 }
@@ -40,13 +40,15 @@
  box-sizing   : border-box;
  padding-left : 30px;
  cursor       : pointer;
+ position     : relative;
 }
 
 .target-offers__li:after {
- content       : '>';
- display       : inline-block;
- float         : right;
- padding-right : 20px;
+ content  : '>';
+ display  : inline-block;
+ position : absolute;
+ top      : 0;
+ right    : 15px;
 }
 
 .target-offers__link {
@@ -112,18 +114,20 @@
 /****************** sell *******************/
 /********************************************/
 .sell {
+ background : white;
  width : 20%;
+ min-width: 225px;
 }
 
 .sell-content {
- position : absolute;
- bottom   : 50px;
+ position   : absolute;
+ bottom     : 50px;
 }
 
 .sell-content-wrapper {
  position   : relative;
  box-sizing : border-box;
- border     : 1px solid #faad3d;
+ border     : 2px solid #faad3d;
  padding    : 30px;
  height     : 100%;
 }
