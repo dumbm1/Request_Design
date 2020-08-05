@@ -54,6 +54,18 @@
  vertical-align : middle;
 }
 
+.menu-top__mail_text {
+ display : inline-block;
+}
+
+.menu-top__mail-img {
+ display : inline-block;
+}
+
+.menu-top__mail-img__img {
+ vertical-align : middle;
+}
+
 /**********************************************/
 /***************** menu-search ******************/
 /**********************************************/
@@ -90,11 +102,11 @@
 }
 
 .menu-search-form {
- width       : 885px;
- display     : flex;
- align-items : center;
- /* margin-bottom : 0;
-  max-width     : 100%;*/
+ width        : 90%;
+ display      : flex;
+ align-items  : center;
+ margin-left  : 10px;
+ margin-right : 10px;
 }
 
 .menu-serch-form__filter-category {
@@ -245,6 +257,7 @@
  display         : flex;
  justify-content : space-between;
  align-content   : center;
+ position        : relative;
 }
 
 .category {

@@ -2,25 +2,6 @@
  background : darkviolet;
 }
 
-@media (max-width : 319.98px) {
- .body {
-  background : coral;
- }
-
-}
-
-@media (min-width : 320px) and (max-width : 575.98px) {
- .body {
-  background : yellow;
- }
-}
-
-@media (min-width : 576px) and (max-width : 767.98px) {
- .body {
-  background : lime;
- }
-}
-
 @media (min-width : 768px) and (max-width : 1199.98px) {
  .body {
   background : green;
@@ -45,7 +26,25 @@
  }
 }
 
-@media (max-width : 1199.98px) {
+@media (max-width : 1349.98px) {
+
+ .menu-top__mail_text {
+  display : none;
+ }
+
+ .menu-top__ul:nth-child(2) {
+  width   : 50%;
+  padding : 0 1%;
+ }
+
+ .menu-top__ul:first-child {
+  width : 32%;
+ }
+
+ .menu-top__ul:last-child {
+  width : 20%;
+ }
+
  .title {
   font-size   : 30px;
   line-height : 36px;
@@ -53,6 +52,24 @@
 
  .target-offers__link {
   font-size : 12px;
+ }
+}
+
+@media (max-width : 1199.98px) {
+ .category:first-child, .category:nth-child(2), .category:last-child {
+  display : none;
+ }
+
+ .categories::after {
+  content     : '>';
+  display     : flex;
+  align-items : center;
+ }
+
+ .categories::before {
+  content     : '<';
+  display     : flex;
+  align-items : center;
  }
 
  .portfolio-content {
@@ -80,6 +97,7 @@
 }
 
 @media (max-width : 866px) {
+
  /****************************/
  /********* .main **********/
  /****************************/
