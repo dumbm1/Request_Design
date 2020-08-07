@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/57102994/file-watcher-an-output-directory-must-be-specified-when-compiling-a-directory
+
+Program:
+C:\Users\m.shagiev\AppData\Roaming\npm\node-sass
+Arguments:
+$FileName$
+Output paths to refresh:
+$FileNameWithoutExtension$.css
+Working directory:
+$FileDir$
