@@ -4,27 +4,13 @@
  <meta charset="UTF-8">
  <title>Обороудование для кухни</title>
  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
- <link rel="stylesheet" href="css/fonts.css">
- <link rel="stylesheet" href="css/styles.css">
- <link rel="stylesheet" href="css/menu.css">
- <link rel="stylesheet" href="css/swiper.css">
- <link rel="stylesheet" href="css/footer.css">
- <link rel="stylesheet" href="css/clients.css">
- <link rel="stylesheet" href="css/brands.css">
- <link rel="stylesheet" href="css/advice.css">
- <link rel="stylesheet" href="css/news.css">
- <link rel="stylesheet" href="css/spec-offers-service.css">
- <link rel="stylesheet" href="css/seo.css">
- <link rel="stylesheet" href="css/main.css">
-
- <link rel="stylesheet" href="css/media-queries.css">
- <link rel="stylesheet" href="css/media-queries-mobile.css">
+ <link rel="stylesheet" href="css/style.css">
+ <!-- <link rel="stylesheet" href="css/test.css">-->
 
  <style>
-
  </style>
 
 </head>
@@ -73,8 +59,18 @@
      <a href="#" class="menu-logo__link">
       <div class="menu-logo-img-container">
        <img src="img/icon_logo-fork-knife.svg" alt="Лого Столовая.РУ" width="40px" height="40px"></div>
-      <div class="menu-logo__title">Столовая.РУ</div>
+      <div class="menu-logo__title">
+       <span>Столовая.РУ</span>
+       <span>Создание пищеблоков</span></div>
      </a>
+    </div>
+    <div class="menu-search-mobi">
+     <a href="#" class="menu-search-mobi__search">
+      <img src="img/icon_search.svg" alt="Поиск по сайту" class="menu-search-mobi__search-img" height="35px"
+           width="35px"></a>
+     <a href="#" class="menu-search-mobi__phone">
+      <img src="img/icon_telephone.svg" alt="Позвонить" class="menu-search-mobi__phone-img" height="35px"
+           width="35px"></a>
     </div>
     <form action="get" class="menu-search-form">
      <div class="menu-serch-form__filter-category">
@@ -100,7 +96,7 @@
     <a href="#" class="search-basket">
      <div class="basket-left"><span class="basket-count">0</span>
       <div class="basket-img">
-       <img src="img/icon_basked.svg" alt="Ваша корзина" width="28px" height="27px"></div>
+       <img class="basket-img__img" src="img/icon_basked.svg" alt="Ваша корзина" width="28px" height="27px"></div>
      </div>
      <div class="basket-right">
       <div class="basket-sum"><span>Сумма</span></div>
@@ -112,6 +108,9 @@
  </div>
  <div class="menu-categories">
   <div class="wrapper">
+   <a class="menu-categories__mobile-link">
+    <span class="menu-categories__mobile-title">Оборудование</span>
+   </a>
    <div class="categories">
     <div class="category"><a href="#" class="category__link">
      <img src="img/menu_catalog/teplovoe.png" alt="Категория" class="category__img">

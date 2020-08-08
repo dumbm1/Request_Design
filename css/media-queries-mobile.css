@@ -1,236 +1,230 @@
-@media (max-width : 319.98px) {
- .body {
-  background : coral;
- }
-
+@media (max-width: 319.98px) {
+  .body {
+    background: coral;
+  }
 }
-
-@media (min-width : 320px) and (max-width : 575.98px) {
- .body {
-  background : yellow;
- }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .body {
+    background: yellow;
+  }
 }
-
-@media (min-width : 576px) and (max-width : 767.98px) {
- .body {
-  background : lime;
- }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .body {
+    background: lime;
+  }
 }
+@media (max-width: 767.98px) {
+  * {
+    box-sizing: border-box;
+  }
 
-@media (max-width : 767.98px) {
- * {
-  box-sizing : border-box;
- }
+  .body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
 
- .body {
-  font-size : 16px;
-  margin    : 0;
-  padding   : 0;
- }
+  .wrapper .wrapper1400 {
+    width: 95%;
+  }
 
- .wrapper .wrapper1400 {
-  width : 95%;
- }
+  .menu {
+    display: none;
+  }
 
- .menu {
-  display : none;
- }
+  /**************************************/
+  /************ .main *************/
+  /**************************************/
+  .target-offers {
+    display: none;
+  }
 
- /**************************************/
- /************ .main *************/
- /**************************************/
- .target-offers {
-  display : none;
- }
+  .portfolio {
+    width: 100%;
+    margin: 0px;
+  }
 
- .portfolio {
-  width  : 100%;
-  margin : 0px;
- }
+  /**************************************/
+  /************ .brands *************/
+  /**************************************/
+  .brands__ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
- /**************************************/
- /************ .brands *************/
- /**************************************/
- .brands__ul {
-  height    : 100%;
-  display   : flex;
-  flex-wrap : wrap;
- }
+  .brands__li {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-bottom: 1px solid lightgray;
+  }
 
- .brands__li {
-  width           : 50%;
-  height          : 100px;
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
-  border-left     : none;
-  border-bottom   : 1px solid lightgray;
- }
+  .brands__li:nth-child(odd) a {
+    width: 100%;
+    height: 80px;
+    border-right: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
- .brands__li:nth-child(odd) a {
-  width           : 100%;
-  height          : 80px;
-  border-right    : 1px solid lightgray;
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
- }
+  .brands__li:nth-last-child(2), .brands__li:last-child {
+    border-bottom: none;
+  }
 
- .brands__li:nth-last-child(2), .brands__li:last-child {
-  border-bottom : none;
- }
+  .brands__img {
+    width: 90%;
+    height: auto;
+  }
 
- .brands__img {
-  width  : 90%;
-  height : auto;
- }
+  .brands__li:nth-child(even) {
+    margin-bottom: 10px;
+  }
 
- .brands__li:nth-child(even) {
-  margin-bottom : 10px;
- }
+  .brands__li:last-child {
+    margin-bottom: 0px;
+  }
 
- .brands__li:last-child {
-  margin-bottom : 0px;
- }
+  /**************************************/
+  /************ .spec-offers-service *************/
+  /**************************************/
+  .spec-offers {
+    height: 100%;
+  }
 
- /**************************************/
- /************ .spec-offers-service *************/
- /**************************************/
- .spec-offers {
-  height : 100%;
- }
+  .spec-offers-service-content {
+    flex-wrap: wrap;
+  }
 
- .spec-offers-service-content {
-  flex-wrap : wrap;
- }
+  .spec-offers-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
 
- .spec-offers-content {
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
-  text-align      : center;
-  flex-wrap       : wrap;
- }
+  .spec-offer__link {
+    width: 100%;
+    /*text-decoration : none;*/
+    /*padding         : 30px;*/
+    /*color           : black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #e8e8e8;
+    height: 100%;
+  }
 
- .spec-offer__link {
-  width           : 100%;
-  /*text-decoration : none;*/
-  /*padding         : 30px;*/
-  /*color           : black;*/
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
-  border          : none;
-  border-bottom   : 2px solid #e8e8e8;
-  height          : 100%;
- }
+  /**************************************/
+  /************ .footer *************/
+  /**************************************/
+  .footer-content {
+    flex-direction: column;
+  }
 
- /**************************************/
- /************ .footer *************/
- /**************************************/
- .footer-content {
-  flex-direction : column;
- }
+  /**************************************/
+  /************ .links *************/
+  /**************************************/
+  .links-content {
+    display: block;
+  }
 
- /**************************************/
- /************ .links *************/
- /**************************************/
- .links-content {
-  display : block;
- }
+  .links__ul {
+    display: none;
+  }
 
- .links__ul {
-  display : none;
- }
+  .links__title {
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    cursor: pointer;
+  }
 
- .links__title {
-  color   : #fff;
-  width   : 100%;
-  display : block;
-  padding : 30px 0;
-  cursor  : pointer;
- }
+  .links__title::after {
+    content: "+";
+    float: right;
+    margin-right: 15px;
+    font-size: 30px;
+  }
 
- .links__title::after {
-  content      : '+';
-  float        : right;
-  margin-right : 15px;
-  font-size    : 30px;
- }
+  .links-col {
+    border-bottom: solid 2px #4b4b4b;
+  }
 
- .links-col {
-  border-bottom : solid 2px #4b4b4b;
- }
+  .links-col:last-child {
+    border-bottom: none;
+  }
 
- .links-col:last-child {
-  border-bottom : none;
- }
+  /***************************/
+  /********* .clients **********/
+  /***************************/
+  .clients-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
 
- /***************************/
- /********* .clients **********/
- /***************************/
- .clients-content {
-  flex-direction  : column;
-  flex-wrap       : wrap;
-  justify-content : center;
-  margin          : 0;
- }
+  .client-more {
+    display: none;
+  }
 
- .client-more {
-  display : none;
- }
+  .client {
+    width: 50%;
+  }
 
- .client {
-  width : 50%;
- }
+  .client__img {
+    height: 75px;
+  }
 
- .client__img {
-  height : 75px;
- }
+  .client__link {
+    box-sizing: border-box;
+  }
 
- .client__link {
-  box-sizing : border-box;
- }
+  /***************************/
+  /********* .seo **********/
+  /***************************/
+  .seo-content {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
 
- /***************************/
- /********* .seo **********/
- /***************************/
- .seo-content {
-  flex-direction : column-reverse;
-  flex-wrap      : wrap;
+  .seo__col-left {
+    width: 100%;
+    padding-right: 0;
+  }
 
- }
+  .seo__col-right {
+    width: 100%;
+  }
 
- .seo__col-left {
-  width         : 100%;
-  padding-right : 0;
- }
+  .seo__more {
+    display: none;
+  }
 
- .seo__col-right {
-  width : 100%;
- }
+  .show-more-but {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    line-height: 97px;
+  }
 
- .seo__more {
-  display : none;
- }
+  .h1 {
+    line-height: normal;
+    font-weight: normal;
+  }
 
- .show-more-but {
-  width       : 100px;
-  height      : 100px;
-  font-size   : 50px;
-  line-height : 97px;
- }
-
- .h1 {
-  line-height : normal;
-  font-weight : normal;
- }
-
- /****************************/
- /*********** .news ************/
- /****************************/
- .news {
-  display : none;
- }
+  /****************************/
+  /*********** .news ************/
+  /****************************/
+  .news {
+    display: none;
+  }
 }
-

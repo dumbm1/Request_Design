@@ -1,15 +1,15 @@
 .advice {
- margin-bottom : 230px;
+  margin-bottom: 230px;
 }
 
 .advice-caption {
- text-align : center;
- width      : 47%;
- display    : block;
- margin     : 0 auto 65px auto;
+  text-align: center;
+  width: 47%;
+  display: block;
+  margin: 0 auto 65px auto;
 }
 
 .advice-caption__plain {
- text-align : center;
- margin-top : -18px;
+  text-align: center;
+  margin-top: -18px;
 }
