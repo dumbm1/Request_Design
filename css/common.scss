@@ -1,3 +1,7 @@
+* {
+ box-sizing : border-box;
+}
+
 .body {
  margin      : 0;
  background  : #f3f1f1;
@@ -52,22 +56,29 @@
 .button__orange {
  background : #faad3d;
  border     : transparent solid 1px;
- color      : #fff;
+ color      : #ffffff;
  margin     : 20px 0;
 }
 
-.button__show-more{
- width: 45px;
- height: 45px;
- background: #383838;
- border-radius: 100%;
- color: #fff;
- line-height: 44px;
- text-align: center;
- cursor: pointer;
- font-size: 16px;
- font-weight: 100;
- margin-top: 45px;
+.button__silver {
+ background : $col-gray__bg;
+ border     : $col-black__txt solid 1px;
+ color      : $col-black__txt;
+ margin     : 20px 0;
+}
+
+.button__show-more {
+ width         : 45px;
+ height        : 45px;
+ background    : #383838;
+ border-radius : 100%;
+ color         : #ffffff;
+ line-height   : 44px;
+ text-align    : center;
+ cursor        : pointer;
+ font-size     : 16px;
+ font-weight   : 100;
+ margin-top    : 45px;
 }
 
 .col_45ps {

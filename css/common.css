@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .body {
   margin: 0;
   background: #f3f1f1;
@@ -52,7 +56,14 @@
 .button__orange {
   background: #faad3d;
   border: transparent solid 1px;
-  color: #fff;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.button__silver {
+  background: #faad3d;
+  border: transparent solid 1px;
+  color: #ffffff;
   margin: 20px 0;
 }
 
@@ -61,7 +72,7 @@
   height: 45px;
   background: #383838;
   border-radius: 100%;
-  color: #fff;
+  color: #ffffff;
   line-height: 44px;
   text-align: center;
   cursor: pointer;
