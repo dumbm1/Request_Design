@@ -1,5 +1,10 @@
 * {
- box-sizing : border-box;
+ box-sizing      : border-box;
+ text-decoration : none;
+}
+
+.hide{
+ display: none;
 }
 
 .body {
@@ -18,6 +23,11 @@
  line-height : 48px;
  font-size   : 40px;
  font-weight : normal;
+}
+
+.img {
+ vertical-align : middle;
+ border-style   : none;
 }
 
 .caption {
@@ -86,8 +96,13 @@
 }
 
 .theme__orange {
- background : #faad3d;
+ background : $col-orange__middle;
  color      : white;
+
+ &:hover {
+  background : white;
+  color      : $col-orange__middle;
+ }
 }
 
 .theme__black {
@@ -113,9 +128,16 @@
  padding : 0;
 }
 
-.wrapper1400 {
+.wrapper1400, .wrapper-service {
  max-width : 1400px;
  width     : 100%;
  margin    : 0 auto;
  padding   : 0;
 }
+
+.wrapper-main-section {
+ width     : 100%;
+ max-width : 1552px;
+ margin    : 0 auto;
+}
+

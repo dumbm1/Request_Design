@@ -1,5 +1,5 @@
 .body {
- background : darkviolet;
+ //background : darkviolet;
 }
 
 .mobi {
@@ -8,24 +8,24 @@
 
 @media (min-width : 768px) and (max-width : 1199.98px) {
  .body {
-  background : green;
+  //background : green;
  }
 }
 
 @media (min-width : 1200px) and (max-width : 1567.98px) {
  .body {
-  background : cyan;
+  //background : cyan;
  }
 }
 
 @media (min-width : 1568px) and (max-width : 1919.98px) {
  .body {
-  background : blue;
+  //background : blue;
  }
 }
 
 @media (max-width : 1567.98px) {
- .wrapper, .wrapper1400 {
+ .wrapper, .wrapper1400, .wrapper-service, .wrapper-main-section {
   width : 95%;
  }
 }

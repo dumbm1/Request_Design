@@ -1,8 +1,4 @@
 @media (max-width: 768px) {
-  .body {
-    background: lime;
-  }
-
   .mobi {
     display: block;
   }
@@ -16,6 +12,12 @@
   .wrapper, .wrapper1400 {
     width: 95%;
     height: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper-main-section, .wrapper-service {
+    height: 100%;
+    width: 100%;
   }
 
   /**************************************/
@@ -158,6 +160,12 @@
     margin: 0px;
   }
 
+  .sell {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /**************************************/
   /************ .brands *************/
   /**************************************/
@@ -184,7 +192,7 @@
     justify-content: center;
     align-items: center;
   }
-  .brands__li:nth-last-child(2), .brands__li .brands__li:last-child {
+  .brands__li:nth-last-child(2), .brands__li:last-child {
     border-bottom: none;
   }
   .brands__li:nth-child(even) {
@@ -204,6 +212,9 @@
   /**************************************/
   .spec-offers {
     height: 100%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .spec-offers-service-content {
@@ -226,6 +237,9 @@
     border: none;
     border-bottom: 2px solid #e8e8e8;
     height: 100%;
+  }
+  .spec-offer__link:last-child {
+    border-bottom: none;
   }
 
   /**************************************/
@@ -331,12 +345,46 @@
   .news {
     display: none;
   }
-}
-@media (max-width: 576px) {
-  .body {
-    background: yellow;
+
+  /*********************************/
+  /********** .advice ********/
+  /*********************************/
+  .advice-row {
+    flex-wrap: wrap;
   }
 
+  .advice-elem {
+    padding: 20px;
+  }
+
+  .advice-horizontal-lg {
+    margin: 0;
+    width: 100%;
+  }
+  .advice-horizontal-lg .advice-info .advice-info-plain {
+    margin: 0 0 10px 0;
+  }
+  .advice-vertical-sm {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .advice-row-elem-2x {
+    width: 100%;
+    margin: 0;
+  }
+
+  .advice-vertical-lg {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .advice-horizontal-sm-black {
+    margin: 0 0 10px 0;
+  }
+  .advice-horizontal-sm-white {
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 576px) {
   .menu-top {
     width: 65px;
     height: 65px;
@@ -365,11 +413,6 @@
     height: 44px;
     width: 35px;
     margin: 0 5px;
-  }
-}
-@media (max-width: 320px) {
-  .body {
-    background: coral;
   }
 }
 @media (max-width: 280px) {
