@@ -1,13 +1,13 @@
-var header     = $('.header'),
+var header     = $('.scroll-out-elem'),
     scrollPrev = 0;
 
 $(window).scroll(function () {
   var scrolled = $(window).scrollTop();
 
   if (scrolled > 100 && scrolled > scrollPrev) {
-    header.addClass('out');
+    header.addClass('scroll-out-elem__out');
   } else {
-    header.removeClass('out');
+    header.removeClass('scroll-out-elem__out');
   }
   scrollPrev = scrolled;
 });

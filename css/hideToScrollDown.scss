@@ -1,11 +1,14 @@
-.header {
- position   : fixed;
- top        : 0;
- left       : 0;
+.scroll-out-elem {
+ /* position   : fixed;
+  top        : 0;
+  left       : 0;*/
  width      : 100%;
  transition : all .3s ease;
+ position   : relative;
+ z-index    : -1;
 }
 
-.header.out {
+.scroll-out-elem__out {
  transform : translateY(-100%);
 }
+

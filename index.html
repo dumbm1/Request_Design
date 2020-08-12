@@ -3,8 +3,8 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
  <link rel="stylesheet" href="css/style.css">
 
  <title>Hello, world!</title>
@@ -15,36 +15,51 @@
    border : 1px dotted black;
   }
 
+  .theme__night_black {
+   color      : white;
+   background : black;
+  }
+  .body{
+   font-family: "Myriad Pro Light SemiExtended";
+  }
+
  </style>
+
 </head>
 
-<body>
-<header>
- <div class="container-fluid">
+<body class="body">
+
+<header class="fixed-top">
+
+ <div class="menu-main bg-success">
   <div class="container-xxxxl">
    <div class="row">
-    <div class="col-xxl-12">menu-main-top</div>
+    <div class="col-xxl-12">menu-main</div>
    </div>
   </div>
  </div>
- <div class="container-fluid">
+
+ <div class="menu-search bg-danger">
   <div class="container-xxxxl">
    <div class="row">
-    <div class="col-xxl-12">menu-main-top</div>
+    <div class="col-xxl-12">menu-search</div>
    </div>
   </div>
  </div>
- <div class="container-fluid">
+
+ <div class="menu-targ-offers bg-light scroll-out-elem">
   <div class="container-xxxxl">
    <div class="row">
-    <div class="col-xxl-12">menu-main-top</div>
+    <div class="col-xxl-12">menu-targ-offers</div>
    </div>
   </div>
  </div>
+
 </header>
 
 <section class="main">
- <div class="container">
+
+ <div class="container-xxxxl">
   <div class="row">
    <div class="col-md-4 col-lg-3">main-target-offers</div>
    <div class="col-md-8 col-lg-6">main-portfolio</div>
@@ -55,10 +70,10 @@
 
 <section class="advice">
 
- <div class="container">
+ <div class="container-xxxxl">
 
   <div class="row">
-   <div class="col-md-6">horizontal-lg</div>
+   <div class="col-md-6 theme__night_black"><img class="img-fluid float-left" src="img/KOTO-HARMONY.png" alt=""></div>
    <div class="col-md-3">vertical-sm</div>
    <div class="col-md-3">vertical-sm</div>
   </div>
@@ -68,7 +83,7 @@
    <div class="col-md-8">
     <!--  2.2-->
     <div class="row">
-     <div class="col-12">horizontal-sm</div>
+     <div class="col-12 theme__night_black">horizontal-sm</div>
     </div>
     <div class="row">
      <div class="col-12">horizontal-sm</div>
@@ -80,20 +95,11 @@
  </div>
 </section>
 
-<div class="container"><h2>a</h2>
- <div class="row">
-  <div class="col-sm-12 col-md-6 col-lg-4">1</div>
-  <div class="col-sm-12 col-md-6 col-lg-4">2</div>
-  <div class="col-sm-12 col-md-12 col-lg-4">3</div>
+<footer class="bg-dark text-white">
+ <div class="container-xxxxl text-center">
+  А дно-то не упало!
  </div>
-</div>
-<div class="container"><h2>a</h2>
- <div class="row">
-  <div class="col-md-6 col-lg-4">1</div>
-  <div class="col-md-6 col-lg-4">2</div>
-  <div class="col-md-12 col-lg-4">3</div>
- </div>
-</div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -104,6 +110,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+<script src="js/hideToScrollDown.js"></script>
 
 </body>
 </html>
