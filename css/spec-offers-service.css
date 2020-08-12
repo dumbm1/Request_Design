@@ -1,18 +1,15 @@
 .spec-offers-service {
-  margin-bottom: 170px;
-}
+  margin-bottom: 170px; }
 
 .spec-offers-service-content {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .spec-offers {
   background: white;
   width: 70%;
   height: 430px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .spec-offers__title {
   padding: 20px 30px;
@@ -20,15 +17,13 @@
   font-size: 24px;
   color: #191919;
   line-height: 24px;
-  display: block;
-}
+  display: block; }
 
 .spec-offers-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .spec-offer__link {
   width: 33.3%;
@@ -36,34 +31,27 @@
   height: 366px;
   padding: 30px;
   border-right: 2px solid #e8e8e8;
-  color: black;
-}
+  color: black; }
 
 .spec-offer__link:last-child {
-  border-right: none;
-}
+  border-right: none; }
 
 .spec-offer__img {
-  max-height: 210px;
-}
+  max-height: 210px; }
 
 .spec-offer__standard-img {
   width: 30px;
-  height: auto;
-}
+  height: auto; }
 
 .spec-offer__title {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .spec-offer__price {
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .spec-offer__brand-img {
   width: 100px;
-  height: auto;
-}
+  height: auto; }
 
 /******************************************/
 /**************  service  ****************/
@@ -72,18 +60,14 @@
   background: white;
   width: 30%;
   background: url("../img/service-bg.png") no-repeat;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 .service-info {
   padding: 255px 50px 0;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .service__title {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .service__text {
-  margin: 10px 0 10px 0;
-}
+  margin: 10px 0 10px 0; }
