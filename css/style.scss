@@ -1,7 +1,16 @@
-@import "custom.scss";
-@import "fonts.scss";
-@import "hideToScrollDown.scss";
-
+/**********************************************/
+/*** custom variables and !important styles ***/
+/**********************************************/
+@import "custom";
+@import "fonts";
+@import "hideToScrollDown";
+/***********************/
+/*** bootstrap 4.5.2 ***/
+/***********************/
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-@import "card_custom.scss";
+/*************************************************/
+/*** styles, that overraiden no-default styles ***/
+/*************************************************/
+@import "card";
+@import "carousel";
+@import "menu";

@@ -1,0 +1,82 @@
+@import "colors";
+
+.menu-main {
+ background  : $green-main;
+ color       : white;
+ height      : 50px;
+ display     : flex;
+ align-items : center;
+
+ .nav {
+  display         : flex;
+  justify-content : space-around;
+  align-items     : center;
+
+  &:nth-child(2) {
+   border-left  : 3px solid white;
+   border-right : 3px solid white;
+  }
+
+  .nav-link {
+   padding : 0;
+   color   : white;
+   @media (max-width : 1100px) {
+    font-size : 0.7rem;
+   }
+  }
+
+  @media (max-width : 768px) {
+   display : none;
+  }
+ }
+
+ @media (max-width : 768px) {
+  cursor        : pointer;
+  display       : block;
+  position      : absolute;
+  top           : 10px;
+  left          : 10px;
+  width         : 74px;
+  height        : 74px;
+  border-radius : 100%;
+  background    : $orange-main;
+  &:after {
+   content  : url("../img/icon_menu.svg");
+   height   : 36px;
+   width    : 36px;
+   position : absolute;
+   top      : 20px;
+   left     : 20px;
+  }
+ }
+
+}
+
+.menu-main-list {
+ display : none;
+}
+
+.show-me {
+ display       : block;
+ position      : absolute;
+ border        : none;
+ border-radius : 20px;
+ top           : 50px;
+ left          : 88px;
+ background    : white;
+ z-index       : 20000;
+
+ .nav-link {
+  color           : $black-lite;
+  text-decoration : none;
+ }
+
+}
+
+.menu-search {
+ background : $gray-light;
+}
+
+.menu-ranks {
+ background : white;
+}
