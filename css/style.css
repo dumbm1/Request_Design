@@ -13671,23 +13671,24 @@ h3 {
 /*************************************************/
 /*** styles, that overraiden no-default styles ***/
 /*************************************************/
-.card-text {
+.clients .card-text {
   text-align: center;
   line-height: 1rem;
 }
-
-.card-body {
+.clients .card-body {
   padding: 0;
 }
-
-.card-img-top {
+.clients .card-img-top {
   max-height: 100px;
   width: auto;
   filter: grayscale(1);
 }
-
-.card {
+.clients .card {
   align-items: center;
+}
+
+.spec-offers .card {
+  background: red;
 }
 
 .carousel {
@@ -13822,6 +13823,25 @@ h3 {
     display: none;
   }
 }
+.menu-main .mail:hover {
+  background: #5db975;
+}
+.menu-main .mail .dropdown-menu {
+  background: transparent;
+}
+.menu-main .mail button {
+  background: black;
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  padding-left: 26px;
+  padding-right: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 20px #777777;
+}
 @media (max-width: 768px) {
   .menu-main {
     cursor: pointer;
@@ -13869,4 +13889,73 @@ h3 {
 
 .menu-ranks {
   background: white;
+}
+.menu-ranks a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 1rem;
+}
+.menu-ranks .card {
+  width: 9%;
+  text-align: center;
+}
+.menu-ranks .card .card-body {
+  padding: 0;
+  padding-top: 0.1rem;
+}
+.menu-ranks .card .card-text {
+  padding: 0;
+}
+
+.brands {
+  height: 100px;
+  /* .container {
+    height      : 100%;
+    display     : flex;
+    align-items : center;
+    background  : white;
+   }*/
+}
+@media (max-width: 768px) {
+  .brands {
+    margin-bottom: 210px;
+  }
+}
+
+.brands-item {
+  width: 16.66%;
+}
+.brands-item:last-child .vl-container {
+  border-right: none;
+}
+@media (max-width: 768px) {
+  .brands-item {
+    width: 50%;
+    background: white;
+  }
+}
+
+.vl-container {
+  border-right: 2px solid #ededed;
+  padding: 0 20px;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vl-container img {
+  max-width: 90%;
+}
+
+.body {
+  background: #f3f1f1;
+}
+
+.spec-offers-item {
+  width: 33.33%;
+}
+@media (max-width: 768px) {
+  .spec-offers-item {
+    width: 100%;
+  }
 }

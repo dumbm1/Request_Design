@@ -30,6 +30,30 @@
   }
  }
 
+ .mail {
+  &:hover {
+   background : $green-active;
+  }
+
+  .dropdown-menu {
+   background : transparent;
+  }
+
+  button {
+   background      : black;
+   border          : none;
+   border-radius   : 24px;
+   height          : 48px;
+   padding-left    : 26px;
+   padding-right   : 26px;
+   display         : flex;
+   justify-content : center;
+   align-items     : center;
+   color           : white;
+   box-shadow      : 0 10px 20px $gray-dark;
+  }
+ }
+
  @media (max-width : 768px) {
   cursor        : pointer;
   display       : block;
@@ -79,4 +103,25 @@
 
 .menu-ranks {
  background : white;
+
+ a {
+  text-decoration : none;
+  color           : $black-lite;
+  font-size       : 1rem;
+ }
+
+ .card {
+  width      : 9%;
+  text-align : center;
+
+  .card-body {
+   padding     : 0;
+   padding-top : 0.1rem;
+  }
+
+  .card-text {
+   padding : 0;
+  }
+
+ }
 }

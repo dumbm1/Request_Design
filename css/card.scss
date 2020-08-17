@@ -1,18 +1,26 @@
-.card-text {
- text-align  : center;
- line-height : 1rem;
+.clients {
+ .card-text {
+  text-align  : center;
+  line-height : 1rem;
+ }
+
+ .card-body {
+  padding : 0;
+ }
+
+ .card-img-top {
+  max-height : 100px;
+  width      : auto;
+  filter     : grayscale(1);
+ }
+
+ .card {
+  align-items : center;
+ }
 }
 
-.card-body {
- padding : 0;
-}
-
-.card-img-top {
- max-height : 100px;
- width      : auto;
- filter     : grayscale(1);
-}
-
-.card {
- align-items : center;
+.spec-offers {
+ .card {
+  background : red;
+ }
 }

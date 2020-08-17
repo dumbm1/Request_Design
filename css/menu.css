@@ -28,6 +28,25 @@
     display: none;
   }
 }
+.menu-main .mail:hover {
+  background: #5db975;
+}
+.menu-main .mail .dropdown-menu {
+  background: transparent;
+}
+.menu-main .mail button {
+  background: black;
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  padding-left: 26px;
+  padding-right: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 20px #777777;
+}
 @media (max-width: 768px) {
   .menu-main {
     cursor: pointer;
@@ -75,4 +94,20 @@
 
 .menu-ranks {
   background: white;
+}
+.menu-ranks a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 1rem;
+}
+.menu-ranks .card {
+  width: 9%;
+  text-align: center;
+}
+.menu-ranks .card .card-body {
+  padding: 0;
+  padding-top: 0.1rem;
+}
+.menu-ranks .card .card-text {
+  padding: 0;
 }

@@ -50,10 +50,15 @@
      <a class="nav-link" href="#">Сервис</a>
      <a class="nav-link" href="#">Контакты</a>
      <a class="nav-link" href="#">
-      <div class="mail">
+      <div class="mail" id="dropdownCopyButton" data-toggle="dropdown">
        <img src="img/mail.png" alt="...">
        <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">info@stolovaya.ru</span>
+
+       <div class="dropdown-menu">
+        <button>Скопировать</button>
+       </div>
       </div>
+
      </a>
      <a class="nav-link" href="#">
       <div class="phone">
@@ -78,13 +83,67 @@
 
  <nav class="menu-ranks scroll-out-elem">
   <div class="container-xxxxl">
-   <div class="row">
-    <div class="col-xxl-20">menu-ranks</div>
+   <div class="row justify-content-between">
+
+     <a href="#" class="card col-auto">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
+
    </div>
   </div>
  </nav>
 
 </header>
+
+<!-- <div class="" type="" id="dropdownMenu2" data-toggle="dropdown">
+&lt;!&ndash; <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ndash;&gt;
+  Dropdown
+ </div>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+  <button class="" type="button">Скопировать</button>
+ </div>-->
+
 <div class="menu-main-list">
  <div>
   <a class="nav-link" href="#">Компания</a>
@@ -124,6 +183,15 @@
       <li data-target="#carouselMainPortfolio" data-slide-to="2"></li>
       <li data-target="#carouselMainPortfolio" data-slide-to="3"></li>
      </ol>
+
+     <a class="carousel-control-prev" href="#carouselMainPortfolio" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"><</span>
+      <span class="sr-only">Previous</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselMainPortfolio" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true">></span>
+      <span class="sr-only">Next</span>
+     </a>
 
      <div class="carousel-inner">
 
@@ -173,15 +241,6 @@
 
      </div>
 
-     <a class="carousel-control-prev" href="#carouselMainPortfolio" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"><</span>
-      <span class="sr-only">Previous</span>
-     </a>
-     <a class="carousel-control-next" href="#carouselMainPortfolio" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">></span>
-      <span class="sr-only">Next</span>
-     </a>
-
     </div>
     <!--carousel-->
 
@@ -191,9 +250,91 @@
  </div>
 </section>
 
-<section class="brands">brands</section>
+<section class="brands">
+ <div class="container-xxxxl bg-white h-100">
+  <div class="row h-100">
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <img src="img/from_base/brand/abat.png" alt="..." class="img-fluid"></div>
+   </div>
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <img src="img/from_base/brand/atesy.png" alt="..." class="img-fluid"></div>
+   </div>
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <img src="img/from_base/brand/hicold.png" alt="..." class="img-fluid"></div>
+   </div>
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <img src="img/from_base/brand/rational.png" alt="..." class="img-fluid"></div>
+   </div>
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <img src="img/from_base/brand/rational.png" alt="..." class="img-fluid"></div>
+   </div>
+   <div class="brands-item h-100 d-flex align-items-center justify-content-center">
+    <div class="w-100 text-center vl-container">
+     <span>Все бренды</span></div>
+   </div>
+  </div>
+ </div>
+</section>
 
-<section class="spec-offers">spec-offers</section>
+<section class="spec-offers">
+ <div class="container-xxxxl">
+  <div class="row">
+   <div class="col-md-14">
+    <div class="row">
+     <div class="col-20">Специальные предложения ></div>
+    </div>
+    <div class="row">
+     <div class="spec-offers-item">
+      <div class="card justify-content-center align-items-center">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" class="card-img-top w-75 h-auto text-center"
+            alt="...">
+       <div class="card-body text-center">
+        <img src="img/nation-standard/ru.svg" alt="..." class="img-thumbnail">
+        <p class="card-text">Пароконвектомат</p>
+        <p class="card-text">ПКН-6</p>
+        <p class="card-text">160 000 руб</p>
+        <img src="img/from_base/brand/abat.png" alt="..." class="img-thumbnail">
+       </div>
+      </div>
+     </div>
+     <div class="spec-offers-item">
+      <div class="card justify-content-center align-items-center">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" class="card-img-top w-75 h-auto text-center"
+            alt="...">
+       <div class="card-body text-center">
+        <img src="img/nation-standard/ru.svg" alt="..." class="img-thumbnail">
+        <p class="card-text">Пароконвектомат</p>
+        <p class="card-text">ПКН-6</p>
+        <p class="card-text">160 000 руб</p>
+        <img src="img/from_base/brand/abat.png" alt="..." class="img-thumbnail">
+       </div>
+      </div>
+     </div>
+     <div class="spec-offers-item">
+      <div class="card justify-content-center align-items-center">
+       <img src="img/from_base/spec-offer/parokonvektmat_pkn-6.png" class="card-img-top w-75 h-auto text-center"
+            alt="...">
+       <div class="card-body text-center">
+        <img src="img/nation-standard/ru.svg" alt="..." class="img-thumbnail">
+        <p class="card-text">Пароконвектомат</p>
+        <p class="card-text">ПКН-6</p>
+        <p class="card-text">160 000 руб</p>
+        <img src="img/from_base/brand/abat.png" alt="..." class="img-thumbnail">
+       </div>
+      </div>
+     </div>
+
+    </div>
+   </div>
+   <div class="col-md-6">Service</div>
+  </div>
+ </div>
+</section>
 
 <section class="advice">
 
@@ -232,7 +373,7 @@
 </section>
 
 <section class="clients">
- <div class="container-lg m-l-lg-2 m-r-lg-2">
+ <div class="container-lg">
   <div class="row">
 
    <div class="col-lg-3 col-md-5 col-10 container-fluid p-0">
