@@ -1,17 +1,19 @@
 .clients .card-text {
   text-align: center;
-  line-height: 1rem; }
-
+  line-height: 1rem;
+}
 .clients .card-body {
-  padding: 0; }
-
+  padding: 0;
+}
 .clients .card-img-top {
   max-height: 100px;
   width: auto;
-  filter: grayscale(1); }
-
+  filter: grayscale(1);
+}
 .clients .card {
-  align-items: center; }
+  align-items: center;
+}
 
 .spec-offers .card {
-  background: red; }
+  background: red;
+}

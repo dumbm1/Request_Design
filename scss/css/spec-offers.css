@@ -1,0 +1,8 @@
+.spec-offers-item {
+  width: 33.33%;
+}
+@media (max-width: 768px) {
+  .spec-offers-item {
+    width: 100%;
+  }
+}
