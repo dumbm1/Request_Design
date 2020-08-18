@@ -49,8 +49,8 @@
     <div class="nav col-md-5 col-xl-7">
      <a class="nav-link" href="#">Сервис</a>
      <a class="nav-link" href="#">Контакты</a>
-     <a class="nav-link" href="#">
-      <div class="mail" id="dropdownCopyButton" data-toggle="dropdown">
+     <a class="nav-link" href="#" id="dropdownCopyButton">
+      <div class="mail" data-toggle="dropdown">
        <img src="img/mail.png" alt="...">
        <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">info@stolovaya.ru</span>
 
@@ -60,12 +60,35 @@
       </div>
 
      </a>
-     <a class="nav-link" href="#">
+
+     <a class="nav-link" href="#"  data-toggle="modal" data-target="#exampleModal">
       <div class="phone">
        <img src="img/phone.png" alt="...">
        <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">8 495 790-72-05</span>
       </div>
      </a>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content">
+        <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+         </button>
+        </div>
+        <div class="modal-body">
+         ...
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+       </div>
+      </div>
+     </div>
+
     </div>
    </div>
 
@@ -85,10 +108,10 @@
   <div class="container-xxxxl">
    <div class="row justify-content-between">
 
-     <a href="#" class="card col-auto">
-      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-      <div class="card-body"><p class="card-text">Тепловое</p></div>
-     </a>
+    <a href="#" class="card col-auto">
+     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+     <div class="card-body"><p class="card-text">Тепловое</p></div>
+    </a>
     <a href="#" class="card col-auto">
      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
      <div class="card-body"><p class="card-text">Тепловое</p></div>
@@ -565,6 +588,15 @@
 <script src="js/hideToScrollDown.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/showMainMenu.js"></script>
+
+<script>
+  $('#dropdownCopyButton').on('shown.bs.dropdown', function () {
+    document.querySelector('.mail').classList.add('mail_active');
+  });
+  $('#dropdownCopyButton').on('hidden.bs.dropdown', function () {
+    document.querySelector('.mail').classList.remove('mail_active');
+  });
+</script>
 
 </body>
 </html>

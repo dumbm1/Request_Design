@@ -13827,6 +13827,9 @@ h3 {
     display: none;
   }
 }
+.menu-main .mail:active {
+  background: #5db975;
+}
 .menu-main .mail .dropdown-menu {
   background: transparent;
 }
@@ -13842,9 +13845,6 @@ h3 {
   align-items: center;
   color: white;
   box-shadow: 0 10px 20px #777777;
-}
-.menu-main .mail_active {
-  background: #5db975;
 }
 @media (max-width: 768px) {
   .menu-main {
@@ -13874,8 +13874,9 @@ h3 {
 
 .show-me {
   display: block;
-  position: fixed;
+  position: absolute;
   border: none;
+  border-radius: 20px;
   top: 50px;
   left: 88px;
   background: white;

@@ -32,9 +32,6 @@
     display: none;
   }
 }
-.menu-main .mail:hover {
-  background: #5db975;
-}
 .menu-main .mail .dropdown-menu {
   background: transparent;
 }
@@ -50,6 +47,9 @@
   align-items: center;
   color: white;
   box-shadow: 0 10px 20px #777777;
+}
+.menu-main .mail_active {
+  background: #5db975;
 }
 @media (max-width: 768px) {
   .menu-main {
@@ -79,9 +79,8 @@
 
 .show-me {
   display: block;
-  position: absolute;
+  position: fixed;
   border: none;
-  border-radius: 20px;
   top: 50px;
   left: 88px;
   background: white;
