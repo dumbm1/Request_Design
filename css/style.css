@@ -13793,6 +13793,10 @@ h3 {
   text-shadow: 1px 1px 2px black;
 }
 
+.sticky-top {
+  height: 10px;
+}
+
 .menu-main {
   background: #34a853;
   color: white;

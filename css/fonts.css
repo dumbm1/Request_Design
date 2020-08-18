@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/myriad-pro/MyriadPro-LightSemiExt.eot");
   src: local("Myriad Pro Light SemiExtended"), local("MyriadPro-LightSemiExt"), url("../fonts/myriad-pro/MyriadPro-LightSemiExt.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad-pro/MyriadPro-LightSemiExt.woff") format("woff"), url("../fonts/myriad-pro/MyriadPro-LightSemiExt.ttf") format("truetype");
   font-weight: 300;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/myriad-pro/MyriadPro-Regular.eot");
   src: local("Myriad Pro Regular"), local("MyriadPro-Regular"), url("../fonts/myriad-pro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad-pro/MyriadPro-Regular.woff") format("woff"), url("../fonts/myriad-pro/MyriadPro-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/myriad-pro/MyriadPro-Semibold.eot");
   src: local("Myriad Pro Semibold"), local("MyriadPro-Semibold"), url("../fonts/myriad-pro/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad-pro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/myriad-pro/MyriadPro-Semibold.ttf") format("truetype");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+}
