@@ -36,7 +36,6 @@
 
  .mail {
 
-
   .dropdown-menu {
    background : transparent;
   }
@@ -87,14 +86,13 @@
 }
 
 .show-me {
- display       : block;
- position      : fixed;
- border        : none;
- top           : 50px;
- left          : 88px;
- background    : white;
- z-index       : 20000;
-
+ display    : block;
+ position   : fixed;
+ border     : none;
+ top        : 50px;
+ left       : 88px;
+ background : white;
+ z-index    : 20000;
 
  .nav-link {
   color           : $black-lite;
@@ -131,4 +129,13 @@
   }
 
  }
+
+ .menu-modal {
+  .img-thumbnail {
+   width  : 22px;
+   height : 22px;
+  }
+ }
 }
+
+
