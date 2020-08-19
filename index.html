@@ -29,52 +29,57 @@
 
 <body class="body">
 <!-- Modal -->
-<div class="modal fade menu-modal" id="call-n-back-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="call-n-back-modal" tabindex="-1"
+     role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
  <div class="modal-dialog" role="document">
-  <div class="modal-content">
+  <div class="modal-content call-n-back-content">
+
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-     <span aria-hidden="true">&times;</span>
+     <span aria-hidden="true">X</span>
     </button>
    </div>
+
    <div class="modal-body">
-    <div class="col-10">
-     <ul class="list-group">
-      <li class="list-group-item"><a href="#">
-       <img src="img/phone_black.png" alt="..." class="img-thumbnail"><span>Телефон</span></a></li>
-      <li class="list-group-item"><a href="#">
-       <img src="img/viber.png" alt="..." class="img-thumbnail"><span>Вайбер</span></a></li>
-      <li class="list-group-item">
-       <a href="#"><img src="img/telegram.png" alt="..." class="img-thumbnail"><span>Телеграм</span></a></li>
-      <li class="list-group-item">
-       <a href="#"><img src="img/whatsapp.png" alt="..." class="img-thumbnail"><span>Вацап</span></a></li>
-     </ul>
+
+    <div class="row">
+     <div class="col-10 call-content">
+      <div class="title"><h5>8 495 790-72-05</h5>
+       <span>Мы принимаем звонки без выходных</span></div>
+      <span class="ul-title">Выбирите способ связи:</span>
+      <ul class="list-group">
+       <li class="list-group-item"><a href="#">
+        <img src="img/phone_black.png" alt="..." class="img-thumbnail"><span>Мобильный</span></a></li>
+       <li class="list-group-item"><a href="#">
+        <img src="img/viber.png" alt="..." class="img-thumbnail"><span>Viber</span></a></li>
+       <li class="list-group-item">
+        <a href="#"><img src="img/telegram.png" alt="..." class="img-thumbnail"><span>Telegram</span></a></li>
+       <li class="list-group-item">
+        <a href="#"><img src="img/whatsapp.png" alt="..." class="img-thumbnail"><span>Whatsapp</span></a></li>
+      </ul>
+     </div>
+
+     <form class="col-10 callback-content">
+      <div class="title"><h5>Обратный звонок:</h5>
+       <span>Мы перезвоним Вам в течении часа</span></div>
+      <div class="form-group">
+       <label for="client-name" class="col-form-label">Имя:</label>
+       <input type="text" class="form-control" id="client-name">
+      </div>
+      <div class="form-group">
+       <label for="client-phone" class="col-form-label">Телефон:</label>
+       <input type="tel" class="form-control" id="client-phone">
+      </div>
+      <button class="button btn_orange border-0">Отправить</button>
+     </form>
     </div>
 
-    <form class="col-10">
-     <div class="form-group">
-      <label for="recipient-name" class="col-form-label">Recipient:</label>
-      <input type="text" class="form-control" id="recipient-name">
-     </div>
-     <div class="form-group">
-      <label for="message-text" class="col-form-label">Message:</label>
-      <textarea class="form-control" id="message-text"></textarea>
-     </div>
-    </form>
    </div>
-   <div class="modal-footer">
-    <button type="button" class="btn btn-primary">Send message</button>
-   </div>
+
   </div>
  </div>
-</div><!-- <div class="" type="" id="dropdownMenu2" data-toggle="dropdown">
-&lt;!&ndash; <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ndash;&gt;
-  Dropdown
- </div>
- <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-  <button class="" type="button">Скопировать</button>
- </div>-->
+</div>
 
 <header class="sticky-top">
 

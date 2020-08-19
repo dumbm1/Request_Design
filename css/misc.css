@@ -1,3 +1,15 @@
 .body {
   background: #f3f1f1;
 }
+
+.button {
+  padding: 0.7rem 1.4rem;
+  border-radius: 2.8rem;
+  line-height: 1rem;
+  font-weight: 300;
+}
+
+.btn_orange {
+  background: #faad3d;
+  color: white;
+}
