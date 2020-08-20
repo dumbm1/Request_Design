@@ -13827,10 +13827,14 @@ h3 {
     display: none;
   }
 }
+.menu-main .mail, .menu-main .phone {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
 .menu-main .mail .dropdown-menu {
   background: transparent;
 }
-.menu-main .mail button {
+.menu-main .mail .dropdown-menu button {
   background: black;
   border: none;
   border-radius: 24px;
@@ -13845,6 +13849,17 @@ h3 {
 }
 .menu-main .mail_active {
   background: #5db975;
+}
+.menu-main .container-xxxxl, .menu-main .row, .menu-main .nav, .menu-main .nav-link {
+  height: 100%;
+}
+.menu-main #copyMailButton:active, .menu-main #copyMailButton:hover,
+.menu-main .phone-link:active, .menu-main .phone-link:hover {
+  background: #5db975;
+}
+.menu-main .nav-link {
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .menu-main {
