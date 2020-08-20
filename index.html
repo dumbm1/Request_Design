@@ -23,6 +23,17 @@
    background : black;
   }
 
+  .overlay {
+   position   : absolute;
+   top        : 0px;
+   left       : 0px;
+   background : #000;
+   opacity    : 0.5;
+   z-index    : 9000;
+   width      : 100%;
+   height     : 100%;
+  }
+
  </style>
 
 </head>
@@ -618,6 +629,16 @@
   });
   $('#dropdownCopyButton').on('hidden.bs.dropdown', function () {
     document.querySelector('.mail').classList.remove('mail_active');
+  });
+</script>
+<script>
+  'use strict';
+  let menu_runks = document.querySelector('.menu-ranks');
+  let _body = document.querySelector('.body');
+
+  menu_runks.addEventListener('click', (e) => {
+    menu_runks.style.zIndex = 90100;
+    _body.classList.toggle('overlay');
   });
 </script>
 
