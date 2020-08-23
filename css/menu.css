@@ -109,8 +109,50 @@
   text-decoration: none;
 }
 
+/*******************************/
+/******** menu-search *******/
+/*******************************/
 .menu-search {
-  background: #f3f1f1;
+  background: #e7e6e6;
+  height: 64px !important;
+}
+.menu-search .menu-search-logo, .menu-search .menu-search-partners-ad, .menu-search .menu-search-backet {
+  width: 16%;
+}
+.menu-search .menu-search-form {
+  width: 52%;
+}
+.menu-search .menu-search-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-search .menu-search-submit {
+  background: #faad3d url("../img/icon_search.png") no-repeat center;
+  width: 48px !important;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.menu-search .menu-search__input {
+  justify-self: stretch;
+}
+.menu-search .menu-search__dropdown {
+  width: 68px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.menu-search .menu-search__btn {
+  background: #f1f1f1;
+  color: #777777;
+  font-size: 1.1rem;
+  align-items: center;
+  display: flex;
+}
+.menu-search .dropdown-toggle::after {
+  border-top: 0.5rem solid;
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  color: black;
 }
 
 /*******************************/

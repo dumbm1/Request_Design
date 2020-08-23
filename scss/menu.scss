@@ -125,8 +125,60 @@
 
 }
 
+/*******************************/
+/******** menu-search *******/
+/*******************************/
 .menu-search {
-  background : $gray-light;
+  background : $gray-middle;
+  height     : 64px !important;
+
+  .menu-search-logo, .menu-search-partners-ad, .menu-search-backet {
+    width : 16%;
+  }
+
+  .menu-search-form {
+    width : 52%;
+  }
+
+  .menu-search-logo {
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-start;
+  }
+
+  .menu-search-submit {
+    background                 : $orange-main url("../img/icon_search.png") no-repeat center;
+    width                      : 48px !important;
+    border-top-right-radius    : .5rem;
+    border-bottom-right-radius : .5rem;
+
+  }
+
+  .menu-search__input {
+    justify-self : stretch;
+  }
+
+  .menu-search__dropdown {
+    width           : 68px !important;
+    display         : flex !important;
+    justify-content : center !important;
+  }
+
+  .menu-search__btn {
+    background  : $gray-light;
+    color       : $gray-dark;
+    font-size   : 1.1rem;
+    align-items : center;
+    display     : flex;
+  }
+
+  .dropdown-toggle::after {
+    border-top   : 0.5rem solid;
+    border-right : 0.5rem solid transparent;
+    border-left  : 0.5rem solid transparent;
+    color        : black;
+  }
+
 }
 
 /*******************************/

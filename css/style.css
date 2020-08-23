@@ -13904,8 +13904,50 @@ h3 {
   text-decoration: none;
 }
 
+/*******************************/
+/******** menu-search *******/
+/*******************************/
 .menu-search {
-  background: #f3f1f1;
+  background: #e7e6e6;
+  height: 64px !important;
+}
+.menu-search .menu-search-logo, .menu-search .menu-search-partners-ad, .menu-search .menu-search-backet {
+  width: 16%;
+}
+.menu-search .menu-search-form {
+  width: 52%;
+}
+.menu-search .menu-search-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-search .menu-search-submit {
+  background: #faad3d url("../img/icon_search.png") no-repeat center;
+  width: 48px !important;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.menu-search .menu-search__input {
+  justify-self: stretch;
+}
+.menu-search .menu-search__dropdown {
+  width: 68px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.menu-search .menu-search__btn {
+  background: #f1f1f1;
+  color: #777777;
+  font-size: 1.1rem;
+  align-items: center;
+  display: flex;
+}
+.menu-search .dropdown-toggle::after {
+  border-top: 0.5rem solid;
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  color: black;
 }
 
 /*******************************/
@@ -13967,7 +14009,7 @@ h3 {
 }
 
 .vl-container {
-  border-right: 2px solid #ededed;
+  border-right: 2px solid #e7e6e6;
   padding: 0 20px;
   height: 70%;
   display: flex;
@@ -13979,7 +14021,7 @@ h3 {
 }
 
 .body {
-  background: #f3f1f1;
+  background: #f1f1f1;
 }
 
 .button {
@@ -14081,6 +14123,20 @@ h3 {
 .ranks-dropdown-menu {
   width: 400px;
   height: 600px;
+  transform: translate(0, 0) !important;
+  position: fixed !important;
+  top: 204px !important;
+  left: 0 !important;
+  margin: 0 !important;
+}
+.ranks-dropdown-menu .subranks-dropdown-wripper {
+  width: 700px;
+  height: 600px;
+  transform: translate(0, 0) !important;
+  position: fixed !important;
+  top: 0px !important;
+  left: 400px !important;
+  margin: 0 !important;
 }
 .ranks-dropdown-menu .subranks-dropdown {
   width: 700px;
