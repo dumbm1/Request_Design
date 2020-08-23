@@ -38,6 +38,8 @@
 }
 .menu-main .mail .dropdown-menu {
   background: transparent;
+  border: none;
+  box-shadow: none;
 }
 .menu-main .mail .dropdown-menu button {
   background: black;
@@ -51,6 +53,7 @@
   align-items: center;
   color: white;
   box-shadow: 0 10px 20px #777777;
+  align-self: center;
 }
 .menu-main .mail_active {
   background: #5db975;
@@ -112,6 +115,7 @@
 
 .menu-ranks {
   background: white;
+  position: relative;
 }
 .menu-ranks a {
   text-decoration: none;
@@ -119,7 +123,7 @@
   font-size: 1rem;
 }
 .menu-ranks .card {
-  width: 9%;
+  width: auto;
   text-align: center;
 }
 .menu-ranks .card .card-body {

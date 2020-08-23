@@ -13833,6 +13833,8 @@ h3 {
 }
 .menu-main .mail .dropdown-menu {
   background: transparent;
+  border: none;
+  box-shadow: none;
 }
 .menu-main .mail .dropdown-menu button {
   background: black;
@@ -13846,6 +13848,7 @@ h3 {
   align-items: center;
   color: white;
   box-shadow: 0 10px 20px #777777;
+  align-self: center;
 }
 .menu-main .mail_active {
   background: #5db975;
@@ -13907,6 +13910,7 @@ h3 {
 
 .menu-ranks {
   background: white;
+  position: relative;
 }
 .menu-ranks a {
   text-decoration: none;
@@ -13914,7 +13918,7 @@ h3 {
   font-size: 1rem;
 }
 .menu-ranks .card {
-  width: 9%;
+  width: auto;
   text-align: center;
 }
 .menu-ranks .card .card-body {
@@ -13990,7 +13994,10 @@ h3 {
   }
 }
 
-.call-n-back-content {
+/***************************/
+/********* call-form *******/
+/***************************/
+.call-form-content {
   box-sizing: border-box;
   width: 750px !important;
   font-size: 0.8rem !important;
@@ -13998,50 +14005,54 @@ h3 {
   color: black;
   border: none;
 }
-.call-n-back-content .title {
+.call-form-content .call-form-body__title {
   margin-bottom: 1.5rem;
 }
-.call-n-back-content .title h5 {
+.call-form-content .call-form-body__title h5 {
   margin: 0 !important;
 }
-.call-n-back-content .title span {
+.call-form-content .call-form-body__title span {
   color: #777777;
   line-height: 0.5 !important;
 }
-.call-n-back-content .modal-header span {
+.call-form-content .call-form-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.call-form-content .call-form-header span {
   font-family: "Myriad Pro";
   font-weight: 300;
   font-size: 1.4rem;
   color: black;
 }
-.call-n-back-content .call-content .title h5 {
+.call-form-content .call-form-select-method .call-form-body__title h5 {
   color: #34a853;
 }
-.call-n-back-content .call-content ul, .call-n-back-content .call-content li {
+.call-form-content .call-form-select-method ul, .call-form-content .call-form-select-method li {
   padding: 0.3rem 0 0.3rem 0 !important;
   margin-left: 0 !important;
 }
-.call-n-back-content .call-content ul a, .call-n-back-content .call-content li a {
+.call-form-content .call-form-select-method ul a, .call-form-content .call-form-select-method li a {
   color: black;
   font-size: 0.9rem;
 }
-.call-n-back-content .call-content .img-thumbnail {
+.call-form-content .call-form-select-method .img-thumbnail {
   width: 30px;
   height: auto;
   border: none !important;
   margin-right: 0.3rem;
 }
-.call-n-back-content .callback-content .form-group {
+.call-form-content .call-form-callback .call-form-select-method__list-group {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.call-n-back-content .callback-content .form-group:first-child {
+.call-form-content .call-form-callback .call-form-select-method__list-group:first-child {
   margin-bottom: 0;
 }
-.call-n-back-content .callback-content label {
+.call-form-content .call-form-callback label {
   padding: 0.3rem 0 0.3rem 0 !important;
 }
-.call-n-back-content .callback-content input {
+.call-form-content .call-form-callback input {
   outline: none;
   border: none;
   border-radius: 0;
@@ -14049,8 +14060,24 @@ h3 {
   font-weight: 600;
   border-bottom: 1px solid #777777;
 }
-.call-n-back-content .callback-content input:active, .call-n-back-content .callback-content input:hover, .call-n-back-content .callback-content input:focus {
+.call-form-content .call-form-callback input:active, .call-form-content .call-form-callback input:hover, .call-form-content .call-form-callback input:focus {
   outline: 0 !important;
   outline-offset: 0 !important;
   border-bottom-color: #faad3d;
+}
+
+/********************************/
+/********* ranks-dropdown *******/
+/********************************/
+.ranks-dropdown {
+  width: 400px;
+  height: 600px;
+}
+.ranks-dropdown .subranks-dropdown {
+  width: 700px;
+  height: 600px;
+  display: flex;
+}
+.ranks-dropdown .subranks-dropdown .subranks-dropdown-list {
+  width: 300px;
 }

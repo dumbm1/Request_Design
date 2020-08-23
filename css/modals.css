@@ -1,4 +1,4 @@
-.call-n-back-content {
+.call-form-content {
   box-sizing: border-box;
   width: 750px !important;
   font-size: 0.8rem !important;
@@ -6,50 +6,50 @@
   color: black;
   border: none;
 }
-.call-n-back-content .title {
+.call-form-content .title {
   margin-bottom: 1.5rem;
 }
-.call-n-back-content .title h5 {
+.call-form-content .title h5 {
   margin: 0 !important;
 }
-.call-n-back-content .title span {
+.call-form-content .title span {
   color: #777777;
   line-height: 0.5 !important;
 }
-.call-n-back-content .modal-header span {
+.call-form-content .modal-header span {
   font-family: "Myriad Pro";
   font-weight: 300;
   font-size: 1.4rem;
   color: black;
 }
-.call-n-back-content .call-content .title h5 {
+.call-form-content .call-form-select-method .title h5 {
   color: #34a853;
 }
-.call-n-back-content .call-content ul, .call-n-back-content .call-content li {
+.call-form-content .call-form-select-method ul, .call-form-content .call-form-select-method li {
   padding: 0.3rem 0 0.3rem 0 !important;
   margin-left: 0 !important;
 }
-.call-n-back-content .call-content ul a, .call-n-back-content .call-content li a {
+.call-form-content .call-form-select-method ul a, .call-form-content .call-form-select-method li a {
   color: black;
   font-size: 0.9rem;
 }
-.call-n-back-content .call-content .img-thumbnail {
+.call-form-content .call-form-select-method .img-thumbnail {
   width: 30px;
   height: auto;
   border: none !important;
   margin-right: 0.3rem;
 }
-.call-n-back-content .callback-content .form-group {
+.call-form-content .callback-content .form-group {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.call-n-back-content .callback-content .form-group:first-child {
+.call-form-content .callback-content .form-group:first-child {
   margin-bottom: 0;
 }
-.call-n-back-content .callback-content label {
+.call-form-content .callback-content label {
   padding: 0.3rem 0 0.3rem 0 !important;
 }
-.call-n-back-content .callback-content input {
+.call-form-content .callback-content input {
   outline: none;
   border: none;
   border-radius: 0;
@@ -57,7 +57,7 @@
   font-weight: 600;
   border-bottom: 1px solid #777777;
 }
-.call-n-back-content .callback-content input:active, .call-n-back-content .callback-content input:hover, .call-n-back-content .callback-content input:focus {
+.call-form-content .callback-content input:active, .call-form-content .callback-content input:hover, .call-form-content .callback-content input:focus {
   outline: 0 !important;
   outline-offset: 0 !important;
   border-bottom-color: #faad3d;
