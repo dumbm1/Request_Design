@@ -73,15 +73,15 @@
 /********************************/
 /********* ranks-dropdown *******/
 /********************************/
-.ranks-dropdown {
+.ranks-dropdown-menu {
   width: 400px;
   height: 600px;
 }
-.ranks-dropdown .subranks-dropdown {
+.ranks-dropdown-menu .subranks-dropdown {
   width: 700px;
   height: 600px;
   display: flex;
 }
-.ranks-dropdown .subranks-dropdown .subranks-dropdown-list {
+.ranks-dropdown-menu .subranks-dropdown .subranks-dropdown-list {
   width: 300px;
 }

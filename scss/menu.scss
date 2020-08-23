@@ -129,19 +129,28 @@
   background : $gray-light;
 }
 
+/*******************************/
+/******** menu-ranks *******/
+/*******************************/
 .menu-ranks {
   background : white;
-  position: relative;
+  position   : relative;
 
   a {
     text-decoration : none;
     color           : $black-lite;
     font-size       : 1rem;
+    align-items     : center;
+    padding-left    : 0 !important;
+    padding-right   : 0 !important;
+  }
+
+  img {
+    width  : 60px;
+    height : auto;
   }
 
   .card {
-    //width      : 9%;
-    width      : auto;
     text-align : center;
 
     .card-body {

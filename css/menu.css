@@ -113,6 +113,9 @@
   background: #f3f1f1;
 }
 
+/*******************************/
+/******** menu-ranks *******/
+/*******************************/
 .menu-ranks {
   background: white;
   position: relative;
@@ -121,9 +124,15 @@
   text-decoration: none;
   color: #1d1d1d;
   font-size: 1rem;
+  align-items: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.menu-ranks img {
+  width: 60px;
+  height: auto;
 }
 .menu-ranks .card {
-  width: auto;
   text-align: center;
 }
 .menu-ranks .card .card-body {
