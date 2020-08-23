@@ -13908,6 +13908,9 @@ h3 {
   background: #f3f1f1;
 }
 
+/*******************************/
+/******** menu-ranks *******/
+/*******************************/
 .menu-ranks {
   background: white;
   position: relative;
@@ -13916,9 +13919,15 @@ h3 {
   text-decoration: none;
   color: #1d1d1d;
   font-size: 1rem;
+  align-items: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.menu-ranks img {
+  width: 60px;
+  height: auto;
 }
 .menu-ranks .card {
-  width: auto;
   text-align: center;
 }
 .menu-ranks .card .card-body {
@@ -14069,15 +14078,15 @@ h3 {
 /********************************/
 /********* ranks-dropdown *******/
 /********************************/
-.ranks-dropdown {
+.ranks-dropdown-menu {
   width: 400px;
   height: 600px;
 }
-.ranks-dropdown .subranks-dropdown {
+.ranks-dropdown-menu .subranks-dropdown {
   width: 700px;
   height: 600px;
   display: flex;
 }
-.ranks-dropdown .subranks-dropdown .subranks-dropdown-list {
+.ranks-dropdown-menu .subranks-dropdown .subranks-dropdown-list {
   width: 300px;
 }
