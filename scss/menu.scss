@@ -11,14 +11,20 @@
   display     : flex;
   align-items : center;
 
+  .menu-main__section-separator_right {
+    padding-right : 1rem;
+    margin-right  : -1rem;
+    border-right  : 1px solid $green-active;
+  }
+
   .nav {
     display         : flex;
     justify-content : space-around;
     align-items     : center;
 
     &:nth-child(2) {
-      border-left  : 3px solid white;
-      border-right : 3px solid white;
+      /*border-left  : 3px solid white;
+      border-right : 3px solid white;*/
     }
 
     .nav-link {
@@ -132,15 +138,16 @@
   background : $gray-middle;
   height     : 64px !important;
 
-  .menu-search-logo, .menu-search-partners-ad, .menu-search-backet {
-    width : 16%;
+  .menu-search-partners-ad, .menu-search-backet {
+    width : 12%;
   }
 
   .menu-search-form {
-    width : 52%;
+    width : 58%;
   }
 
   .menu-search-logo {
+    width           : 18%;
     display         : flex;
     align-items     : center;
     justify-content : flex-start;
@@ -179,6 +186,76 @@
     color        : black;
   }
 
+}
+
+.menu-search-partners-ad {
+
+  .menu-search-partners-ad-link {
+    display     : flex;
+    flex-wrap   : nowrap;
+    align-items : center;
+  }
+
+  .menu-search-partners-ad__img {
+    width        : 36px;
+    height       : 36px;
+    filter       : grayscale(100);
+    margin-right : 0.4rem;
+
+    &:hover {
+      filter : grayscale(0);
+    }
+  }
+}
+
+.search-basket {
+  background-color : transparent;
+  text-decoration  : none;
+  //height           : 65px;
+  padding-left     : 10px;
+  align-items      : center;
+  min-width        : 120px;
+  display          : flex;
+  justify-content  : center;
+  color            : black;
+
+  .basket-left {
+    position : relative;
+  }
+
+  .basket-count {
+    position  : absolute;
+    right     : 10px;
+    color     : #ea8b00;
+    font-size : 14px;
+    top       : -3px;
+  }
+
+  .basket-img {
+    margin-right : 5px;
+    padding-top  : 12px;
+  }
+
+  .basket-img > img {
+    vertical-align : middle;
+    border-style   : none;
+  }
+
+  .basket-right {
+    position        : relative;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+  }
+
+  .basket-sum > span {
+    color : #777777;
+  }
+
+  .basket-num {
+    color : #1d1d1d;
+    top   : 16px;
+  }
 }
 
 /*******************************/

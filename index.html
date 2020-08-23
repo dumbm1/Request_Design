@@ -50,7 +50,7 @@
       <div>Портфолио</div>
      </a>
      <a class="nav-link" href="#">
-      <div>Проектирование</div>
+      <div class="menu-main__section-separator_right">Проектирование</div>
      </a>
     </div>
     <div class="nav col-md-9 col-xl-8">
@@ -64,7 +64,7 @@
       <div>Госзаказчикам</div>
      </a>
      <a class="nav-link" href="#">
-      <div>Таблет-питание</div>
+      <div class="menu-main__section-separator_right">Таблет-питание</div>
      </a>
     </div>
     <div class="nav col-md-5 col-xl-7">
@@ -174,8 +174,9 @@
   <div class="container-xxxxl h-100">
    <div class="row h-100 align-items-center">
     <div class="col-auto menu-search-logo bg-danger">
-     <img src="img/icon_logo-fork-knife.svg" alt="..." width="40px" height="40px" class="w-25">
-     <h6 class="m-0 p-0">Столовая.РУ</h6>
+     <a href="#"><img src="img/logo_main.png" alt="..."></a>
+     <!--<img src="img/icon_logo-fork-knife.svg" alt="..." width="40px" height="40px" class="w-25">
+     <h6 class="m-0 p-0">Столовая.РУ</h6>-->
     </div>
     <div class="col-auto menu-search-form">
      <div class="row m-0 p-0 justify-content-center">
@@ -200,14 +201,33 @@
         Электромеханическое
        </div>
       </div>
-      <input type="text" class="col-12 col-md-13 col-lg-15 col-xl-16 p-0 m-0 menu-search__input" placeholder="input here…">
+      <input type="text" class="col-12 col-md-13 col-lg-15 col-xl-16 p-0 m-0 menu-search__input"
+             placeholder="input here…">
       <div class="col-auto menu-search-submit"></div>
 
      </div>
     </div>
 
-    <div class="col-auto menu-search-partners-ad">Partners AD</div>
-    <div class="col-auto menu-search-backet">Backet</div>
+    <div class="col-auto menu-search-partners-ad">
+     <a href="#" class="link menu-search-partners-ad-link">
+      <img src="img/icon_portal-postavschikov.png" class="menu-search-partners-ad__img" alt="...">
+      <span class="menu-search-partners-ad__text">Мы на портале поставщиков</span>
+     </a>
+    </div>
+    <div class="col-auto menu-search-backet">
+     <a href="#" class="search-basket">
+      <div class="basket-left"><span class="basket-count">
+                           0                        </span>
+       <div class="basket-img">
+        <img src="img/icon_basked.svg" height="30px" width="28px" alt="..."></div>
+      </div>
+      <div class="basket-right">
+       <div class="basket-sum"><span>Сумма</span></div>
+       <div class="basket-num"><span>160 000 руб.</span></div>
+      </div>
+     </a>
+
+    </div>
    </div>
   </div>
  </nav>
