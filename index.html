@@ -4,8 +4,8 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <link rel="stylesheet" href="css/style.css">
- <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+ <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
 
  <title>Hello, world!</title>
 
@@ -13,10 +13,6 @@
 
   header, footer, section, nav, div {
    border : 1px dotted;
-  }
-
-  .carousel-inner {
-   /*background : black;*/
   }
 
   .bg-k {
@@ -39,58 +35,6 @@
 </head>
 
 <body class="body">
-<!-- Modal -->
-<div class="modal fade" id="call-n-back-modal" tabindex="-1"
-     role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
- <div class="modal-dialog" role="document">
-  <div class="modal-content call-n-back-content">
-
-   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-     <span aria-hidden="true">X</span>
-    </button>
-   </div>
-
-   <div class="modal-body">
-
-    <div class="row">
-     <div class="col-10 call-content">
-      <div class="title"><h5>8 495 790-72-05</h5>
-       <span>Мы принимаем звонки без выходных</span></div>
-      <span class="ul-title">Выбирите способ связи:</span>
-      <ul class="list-group">
-       <li class="list-group-item"><a href="#">
-        <img src="img/phone_black.png" alt="..." class="img-thumbnail"><span>Мобильный</span></a></li>
-       <li class="list-group-item"><a href="#">
-        <img src="img/viber.png" alt="..." class="img-thumbnail"><span>Viber</span></a></li>
-       <li class="list-group-item">
-        <a href="#"><img src="img/telegram.png" alt="..." class="img-thumbnail"><span>Telegram</span></a></li>
-       <li class="list-group-item">
-        <a href="#"><img src="img/whatsapp.png" alt="..." class="img-thumbnail"><span>Whatsapp</span></a></li>
-      </ul>
-     </div>
-
-     <form class="col-10 callback-content">
-      <div class="title"><h5>Обратный звонок:</h5>
-       <span>Мы перезвоним Вам в течении часа</span></div>
-      <div class="form-group">
-       <label for="client-name" class="col-form-label">Имя:</label>
-       <input type="text" class="form-control" id="client-name">
-      </div>
-      <div class="form-group">
-       <label for="client-phone" class="col-form-label">Телефон:</label>
-       <input type="tel" class="form-control" id="client-phone">
-      </div>
-      <button class="button btn_orange border-0">Отправить</button>
-     </form>
-    </div>
-
-   </div>
-
-  </div>
- </div>
-</div>
 
 <header class="sticky-top">
 
@@ -106,7 +50,7 @@
       <div>Портфолио</div>
      </a>
      <a class="nav-link" href="#">
-      <div>Проектирование</div>
+      <div class="menu-main__section-separator_right">Проектирование</div>
      </a>
     </div>
     <div class="nav col-md-9 col-xl-8">
@@ -120,7 +64,7 @@
       <div>Госзаказчикам</div>
      </a>
      <a class="nav-link" href="#">
-      <div>Таблет-питание</div>
+      <div class="menu-main__section-separator_right">Таблет-питание</div>
      </a>
     </div>
     <div class="nav col-md-5 col-xl-7">
@@ -130,135 +74,4472 @@
      <a class="nav-link" href="#">
       <div>Контакты</div>
      </a>
-     <a class="nav-link" href="#" id="copyMailButton">
-      <div class="mail" data-toggle="dropdown">
-       <img src="img/mail.png" alt="...">
-       <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">info@stolovaya.ru</span>
+     <div>
+      <a class="nav-link" href="#" id="copyMailButton" data-toggle="dropdown">
+       <div class="mail">
+        <img src="img/mail.png" alt="...">
+        <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">info@stolovaya.ru</span>
 
-       <div class="dropdown-menu dropdown-menu-right">
-        <button>Скопировать</button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="copyMailButton">
+         <button class="float-right">Скопировать</button>
+        </div>
        </div>
-      </div>
+      </a>
+     </div>
+     <div>
+      <a class="nav-link phone-link" href="#" id="callBackForm" data-toggle="dropdown">
+       <div class="phone">
+        <img src="img/phone.png" alt="...">
+        <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">8 495 790-72-05</span>
+       </div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
 
-     </a>
+       <div class="call-form-content">
 
-     <a class="nav-link phone-link" href="#" data-toggle="modal" data-target="#call-n-back-modal">
-      <div class="phone">
-       <img src="img/phone.png" alt="...">
-       <span class="d-none d-sm-none d-md-none d-lg-none d-xl-inline">8 495 790-72-05</span>
+        <div class="container">
+
+         <div class="row">
+
+          <div class="col-auto w-100">
+           <div class="call-form-header">
+            <button type="button" class="close-call-form-btn">
+             <span class="close-call-form__x">X</span>
+            </button>
+           </div>
+          </div>
+
+          <div class="col-auto w-100">
+           <div class="call-form-body">
+            <div class="row">
+             <div class="col-auto w-50 call-form-select-method">
+              <div class="call-form-body__title call-form-select-method__title">
+               <h5>8 495 790-72-05</h5>
+               <span>Мы принимаем звонки без выходных</span>
+              </div>
+
+              <span>Выбирите способ связи:</span>
+              <ul class="list-group call-form-select-method__list-group">
+               <li class="list-group-item">
+                <a href="#">
+                 <img src="img/phone_black.png" alt="..." class="img-thumbnail">
+                 <span>Мобильный</span></a></li>
+               <li class="list-group-item">
+                <a href="#">
+                 <img src="img/viber.png" alt="..." class="img-thumbnail">
+                 <span>Viber</span></a></li>
+               <li class="list-group-item">
+                <a href="#">
+                 <img src="img/telegram.png" alt="..." class="img-thumbnail">
+                 <span>Telegram</span></a></li>
+               <li class="list-group-item">
+                <a href="#">
+                 <img src="img/whatsapp.png" alt="..." class="img-thumbnail">
+                 <span>Whatsapp</span></a></li>
+              </ul>
+             </div>
+             <form class="col-auto w-50 call-form-callback">
+              <div class="call-form-body__title"><h5>Обратный звонок:</h5>
+               <span>Мы перезвоним Вам в течении часа</span></div>
+              <div class="form-group">
+               <label for="client-name" class="col-form-label">Имя:</label>
+               <input type="text" class="form-control" id="client-name">
+              </div>
+              <div class="form-group">
+               <label for="client-phone" class="col-form-label">Телефон:</label>
+               <input type="tel" class="form-control" id="client-phone">
+              </div>
+              <button class="button btn_orange border-0">Отправить</button>
+             </form>
+            </div>
+           </div>
+          </div>
+
+         </div>
+
+        </div>
+
+       </div>
+
       </div>
-     </a>
+     </div>
 
     </div>
    </div>
-
-  </div>
-
-  <div style="display: none">
-   <nav menu-ranks-dropdown>
-    <ul>
-     <li>Пароконвектоматы</li>
-     <li>Конвекционные печи</li>
-     <li>Плиты</li>
-     <li>Электросковороды</li>
-     <li>Шкафы жарочные</li>
-     <li>Котлы</li>
-     <li>Фритюрницы</li>
-     <li>Жарочные поверхности</li>
-     <li>Кипятильники</li>
-     <li>Водонагреватели</li>
-     <li>Столы тепловые</li>
-     <li>Мармиты</li>
-     <li>Тостеры</li>
-     <li>Шкафы тепловые</li>
-    </ul>
-   </nav>
-
-   <nav menu-sub-ranks-dropdown>
-    <ul>
-     <li>Бойлерные</li>
-     <li>Инжекторные</li>
-     <li>Все сразу</li>
-    </ul>
-
-    <h5>Бренды</h5>
-    <ul>
-     <li>Abat</li>
-     <li>Unox</li>
-     <li>Проммаш</li>
-     <li>Atesy</li>
-     <li>Rational</li>
-    </ul>
-
-    <h5>Страны</h5>
-    <ul>
-     <li>Испания</li>
-     <li>Италия</li>
-     <li>Германия</li>
-     <li>Турция</li>
-    </ul>
-   </nav>
   </div>
 
  </div>
 
  <nav class="menu-search">
-  <div class="container-xxxxl">
-   <div class="row">
-    <div class="col-xxl-20">menu-search</div>
+  <div class="container-xxxxl h-100">
+   <div class="row h-100 align-items-center">
+    <div class="col-auto menu-search-logo bg-danger">
+     <a href="#"><img src="img/logo_main.png" alt="..."></a>
+     <!--<img src="img/icon_logo-fork-knife.svg" alt="..." width="40px" height="40px" class="w-25">
+     <h6 class="m-0 p-0">Столовая.РУ</h6>-->
+    </div>
+    <div class="col-auto menu-search-form">
+     <div class="row m-0 p-0 justify-content-center">
+
+      <div class="dropdown col-auto menu-search__dropdown">
+       <button class="btn dropdown-toggle menu-search__btn" type="button" data-toggle="dropdown">Все</button>
+       <div class="dropdown-menu">
+        Выберите категорию:
+
+        Все
+        Весовое
+        Для магазинов
+        Для обеденных залов
+        Нейтральное
+        Для бара
+        Для фаст-фуда
+        Посудомоечное
+        Тепловое
+        Термоподносы
+        Хлебопекарное
+        Холодильное
+        Электромеханическое
+       </div>
+      </div>
+      <input type="text" class="col-12 col-md-13 col-lg-15 col-xl-16 p-0 m-0 menu-search__input"
+             placeholder="input here…">
+      <div class="col-auto menu-search-submit"></div>
+
+     </div>
+    </div>
+
+    <div class="col-auto menu-search-partners-ad">
+     <a href="#" class="link menu-search-partners-ad-link">
+      <img src="img/icon_portal-postavschikov.png" class="menu-search-partners-ad__img" alt="...">
+      <span class="menu-search-partners-ad__text">Мы на портале поставщиков</span>
+     </a>
+    </div>
+    <div class="col-auto menu-search-backet">
+     <a href="#" class="search-basket">
+      <div class="basket-left"><span class="basket-count">
+                           0                        </span>
+       <div class="basket-img">
+        <img src="img/icon_basked.svg" height="30px" width="28px" alt="..."></div>
+      </div>
+      <div class="basket-right">
+       <div class="basket-sum"><span>Сумма</span></div>
+       <div class="basket-num"><span>160 000 руб.</span></div>
+      </div>
+     </a>
+
+    </div>
    </div>
   </div>
  </nav>
 
  <nav class="menu-ranks scroll-out-elem">
   <div class="container-xxxxl">
-   <div class="row justify-content-between">
+   <div class="row justify-content-around flex-nowrap">
 
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
-    <a href="#" class="card col-auto">
-     <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
-     <div class="card-body"><p class="card-text">Тепловое</p></div>
-    </a>
 
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu p-0">
+
+
+      <div class="dropdown dropright  p-0">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu subranks-dropdown-wripper p-0">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dropdown dropright  p-0">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu subranks-dropdown-wripper  p-0">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/holodilnoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Холодильное</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/electromehanicheskoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Электромеханическое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="dropdown ranks-dropdown">
+     <a href="#" class="card col-auto" data-toggle="dropdown">
+      <img src="img/menu_ranks/teplovoe.png" class="card-img-top" alt="...">
+      <div class="card-body"><p class="card-text">Тепловое</p></div>
+     </a>
+     <div class="dropdown-menu ranks-dropdown-menu">
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Пароконвектоматы</a>
+       <div class="dropdown-menu">
+        <div class="subranks-dropdown">
+         <div class="container-fluid h-100">
+          <div class="row h-100">
+           <div class="col-auto subranks-dropdown-list">
+            <ul>
+             <li><a href="#">Бойлерные</a></li>
+             <li><a href="#">Инжекторные</a></li>
+             <li><a href="#">Все сразу</a></li>
+            </ul>
+
+            <h5>Бренды</h5>
+            <ul>
+             <li><a href="#">Abat</a></li>
+             <li><a href="#">Unox</a></li>
+             <li><a href="#">Проммаш</a></li>
+             <li><a href="#">Atesy</a></li>
+             <li><a href="#">Rational</a></li>
+            </ul>
+
+            <h5>Страны</h5>
+            <ul>
+             <li><a href="#">Испания</a></li>
+             <li><a href="#">Италия</a></li>
+             <li><a href="#">Германия</a></li>
+             <li><a href="#">Турция</a></li>
+            </ul>
+           </div>
+           <div class="col subranks-dropdown-image">image section</div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="dropdown dropright">
+       <a class="dropdown-item" href="#" data-toggle="dropdown">Конвекционные печи</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Россия</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Плиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Электросковороды</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы жарочные</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Котлы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Фритюрницы</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Жарочные поверхности</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Кипятильники</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Водонагреватели</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Столы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Мармиты</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Тостеры</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+      <div class="dropdown dropright"><a class="dropdown-item" href="#" data-toggle="dropdown">Шкафы тепловые</a>
+       <div class="dropdown-menu">
+        <ul>
+         <li><a href="#">Бойлерные</a></li>
+         <li><a href="#">Инжекторные</a></li>
+         <li><a href="#">Все сразу</a></li>
+        </ul>
+
+        <h5>Бренды</h5>
+        <ul>
+         <li><a href="#">Abat</a></li>
+         <li><a href="#">Unox</a></li>
+         <li><a href="#">Проммаш</a></li>
+         <li><a href="#">Atesy</a></li>
+         <li><a href="#">Rational</a></li>
+        </ul>
+
+        <h5>Страны</h5>
+        <ul>
+         <li><a href="#">Испания</a></li>
+         <li><a href="#">Италия</a></li>
+         <li><a href="#">Германия</a></li>
+         <li><a href="#">Турция</a></li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+    </div>
+
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> f06fa8ba7bffea2d335cb8aae341f6c78c8b1eb2
    </div>
   </div>
  </nav>
@@ -392,7 +4673,7 @@
    </div>
    <div class="brands-item h-100 d-flex align-items-center justify-content-center">
     <div class="w-100 text-center vl-container">
-     <img src="img/from_base/brand/rational.png" alt="..." class="img-fluid"></div>
+     <img src="img/from_base/brand/simeco.png" alt="..." class="img-fluid"></div>
    </div>
    <div class="brands-item h-100 d-flex align-items-center justify-content-center">
     <div class="w-100 text-center vl-container">
@@ -684,7 +4965,14 @@
         crossorigin="anonymous"></script>
 
 <script src="js/hideToScrollDown.js"></script>
-<script src="js/swiper.js"></script>
+<script>
+  $('.call-form-content').on('click', function (event) {
+    event.stopPropagation();
+  });
+  $('.close-call-form__x').on('click', function (e) {
+    $('#callBackForm').dropdown('hide');
+  });
+</script>
 <script src="js/showMainMenu.js"></script>
 
 <script>
@@ -695,16 +4983,37 @@
     document.querySelector('.mail').classList.remove('mail_active');
   });
 </script>
-<script>
-  'use strict';
-  let menu_runks = document.querySelector('.menu-ranks');
-  let _body = document.querySelector('.body');
 
-  menu_runks.addEventListener('click', (e) => {
-    menu_runks.style.zIndex = 90100;
-    _body.classList.toggle('overlay');
+<script>
+  $.fn.dropdown = (function () {
+    var $bsDropdown = $.fn.dropdown;
+    return function (config) {
+      if (typeof config === 'string' && config === 'toggle') { // dropdown toggle trigged
+        $('.has-child-dropdown-show').removeClass('has-child-dropdown-show');
+        $(this).closest('.dropdown').parents('.dropdown').addClass('has-child-dropdown-show');
+      }
+      var ret = $bsDropdown.call($(this), config);
+      $(this).off('click.bs.dropdown'); // Turn off dropdown.js click event, it will call 'this.toggle()' internal
+      return ret;
+    };
+  })();
+
+  $(function () {
+    $('.dropdown [data-toggle="dropdown"]').on('click', function (e) {
+      $(this).dropdown('toggle');
+      e.stopPropagation(); // do not fire dropdown.js click event, it will call 'this.toggle()' internal
+    });
+    $('.dropdown').on('hide.bs.dropdown', function (e) {
+      if ($(this).is('.has-child-dropdown-show')) {
+        $(this).removeClass('has-child-dropdown-show');
+        e.preventDefault();
+      }
+      e.stopPropagation();    // do not need pop in multi level mode
+    });
   });
 </script>
+
+<script src="js/calcAbsRanksDropdowns.js"></script>
 
 </body>
 </html>

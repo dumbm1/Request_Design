@@ -1,6 +1,6 @@
 @import "colors";
 
-.call-n-back-content {
+.call-form-content {
  box-sizing  : border-box;
  width       : 750px !important;
  font-size   : 0.8rem !important;
@@ -31,7 +31,7 @@
   }
  }
 
- .call-content {
+ .call-form-select-method {
   .title {
    h5 {
     color : $green-main;
