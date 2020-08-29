@@ -170,67 +170,58 @@
 
  </div>
 
- <nav class="menu-search">
-  <div class="container-xxxxl h-100">
-   <div class="row h-100 align-items-center">
-    <div class="col-auto menu-search-logo bg-danger">
-     <a href="#"><img src="img/logo_main.png" alt="..."></a>
-     <!--<img src="img/icon_logo-fork-knife.svg" alt="..." width="40px" height="40px" class="w-25">
-     <h6 class="m-0 p-0">Столовая.РУ</h6>-->
+ <section class="menu-search">
+  <div class="container-xxxxl h-100 d-flex justify-content-between align-items-center flex-nowrap">
+
+   <a href="#" class="menu-search__logo">
+    <img src="img/logo_main.png" alt="Логотип Столовая.РУ">
+   </a>
+
+   <form class="menu-search-form">
+    <button class="button menu-search-form__filter-ranks-btn">
+     <span class="menu-search-form__filter-ranks-btn-title">Все</span>
+    </button>
+    <div class="d-none">
+     <span class="menu-search-form__filter-ranks-list-title">Выберите категорию</span>
+     <ul class="menu-search-form__filter-ranks-list">
+      <li> Все</li>
+      <li> Весовое</li>
+      <li> Для магазинов</li>
+      <li> Для обеденных залов</li>
+      <li> Нейтральное</li>
+      <li> Для бара</li>
+      <li> Для фаст-фуда</li>
+      <li> Посудомоечное</li>
+      <li> Тепловое</li>
+      <li> Термоподносы</li>
+      <li> Хлебопекарное</li>
+      <li> Холодильное</li>
+      <li> Электромеханическое</li>
+     </ul>
     </div>
-    <div class="col-auto menu-search-form">
-     <div class="row m-0 p-0 justify-content-center">
+    <input class="menu-search-form__input" type="text" placeholder="...">
+    <button class="button menu-search-form__submit-btn"></button>
+   </form>
 
-      <div class="dropdown col-auto menu-search__dropdown">
-       <button class="btn dropdown-toggle menu-search__btn" type="button" data-toggle="dropdown">Все</button>
-       <div class="dropdown-menu">
-        Выберите категорию:
+   <a href="#" class="link menu-search__portal-postavshiki">
+    <img class="menu-search__portal-postavshiki-img" src="img/icon_portal-postavschikov.png" alt="...">
+    <div class="menu-search__portal-postavshiki-txt"><span>Мы на портале</span>
+     <span>поставщиков</span></div>
+   </a>
 
-        Все
-        Весовое
-        Для магазинов
-        Для обеденных залов
-        Нейтральное
-        Для бара
-        Для фаст-фуда
-        Посудомоечное
-        Тепловое
-        Термоподносы
-        Хлебопекарное
-        Холодильное
-        Электромеханическое
-       </div>
-      </div>
-      <input type="text" class="col-12 col-md-13 col-lg-15 col-xl-16 p-0 m-0 menu-search__input"
-             placeholder="input here…">
-      <div class="col-auto menu-search-submit"></div>
-
-     </div>
+   <a href="#" class="link menu-search-basket">
+    <div class="menu-search-basket__left-col">
+     <span class="menu-search-basket__number-of-goods">100</span>
+     <span class="menu-search-basket__img"></span>
     </div>
-
-    <div class="col-auto menu-search-partners-ad">
-     <a href="#" class="link menu-search-partners-ad-link">
-      <img src="img/icon_portal-postavschikov.png" class="menu-search-partners-ad__img" alt="...">
-      <span class="menu-search-partners-ad__text">Мы на портале поставщиков</span>
-     </a>
+    <div class="menu-search-basket__right-col">
+     <span>Сумма</span>
+     <span>100 000 руб.</span>
     </div>
-    <div class="col-auto menu-search-backet">
-     <a href="#" class="search-basket">
-      <div class="basket-left"><span class="basket-count">
-                           0                        </span>
-       <div class="basket-img">
-        <img src="img/icon_basked.svg" height="30px" width="28px" alt="..."></div>
-      </div>
-      <div class="basket-right">
-       <div class="basket-sum"><span>Сумма</span></div>
-       <div class="basket-num"><span>160 000 руб.</span></div>
-      </div>
-     </a>
+   </a>
 
-    </div>
-   </div>
   </div>
- </nav>
+ </section>
 
  <nav class="menu-ranks scroll-out-elem">
   <div class="container-xxxxl">
@@ -1117,6 +1108,23 @@
 </script>
 
 <script src="js/calcAbsRanksDropdowns.js"></script>
+
+<script>
+  ;(function recolorBasketElems() {
+    'use strict';
+    let basket = document.querySelector('.menu-search-basket');
+    let numbOfGoods = basket.querySelector('.menu-search-basket__number-of-goods');
+    let basketImg = basket.querySelector('.menu-search-basket__img');
+    basket.addEventListener('mouseover', (e) => {
+      numbOfGoods.classList.add('menu-search-basket__number-of-goods_hover');
+      basketImg.classList.add('menu-search-basket__img_hover');
+    });
+    basket.addEventListener('mouseout', (e) => {
+      numbOfGoods.classList.remove('menu-search-basket__number-of-goods_hover');
+      basketImg.classList.remove('menu-search-basket__img_hover');
+    });
+  }());
+</script>
 
 </body>
 </html>
