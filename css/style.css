@@ -14060,6 +14060,36 @@ h3 {
   padding: 0;
 }
 
+.ranks-dropdown-menu {
+  width: 400px;
+  height: 600px;
+  transform: translate(0, 0) !important;
+  position: fixed !important;
+  top: 204px !important;
+  left: 0 !important;
+  margin: 0 !important;
+}
+.ranks-dropdown-menu .subranks-dropdown-wripper {
+  width: 700px;
+  height: 600px;
+  transform: translate(0, 0) !important;
+  position: fixed !important;
+  top: 0px !important;
+  left: 400px !important;
+  margin: 0 !important;
+}
+.ranks-dropdown-menu .subranks-dropdown {
+  width: 700px;
+  height: 600px;
+  display: flex;
+}
+.ranks-dropdown-menu .subranks-dropdown .subranks-dropdown-list {
+  width: 300px;
+}
+.ranks-dropdown-menu .dropdown-item {
+  justify-self: center;
+}
+
 .brands {
   height: 100px;
   /* .container {
@@ -14114,13 +14144,14 @@ h3 {
   outline: none !important;
 }
 
-/*.button {
-  padding       : 0.7rem 1.4rem;
-  border-radius : 2.8rem;
-  line-height   : 1rem;
-  font-weight   : 300;
-}*/
-.btn_orange {
+.btn-main {
+  padding: 0.7rem 1.4rem;
+  border-radius: 2.8rem;
+  line-height: 1rem;
+  font-weight: 300;
+}
+
+.btn-main__orange {
   background: #faad3d;
   color: white;
 }
@@ -14204,36 +14235,6 @@ h3 {
   outline: 0 !important;
   outline-offset: 0 !important;
   border-bottom-color: #faad3d;
-}
-
-/********************************/
-/********* ranks-dropdown *******/
-/********************************/
-.ranks-dropdown-menu {
-  width: 400px;
-  height: 600px;
-  transform: translate(0, 0) !important;
-  position: fixed !important;
-  top: 204px !important;
-  left: 0 !important;
-  margin: 0 !important;
-}
-.ranks-dropdown-menu .subranks-dropdown-wripper {
-  width: 700px;
-  height: 600px;
-  transform: translate(0, 0) !important;
-  position: fixed !important;
-  top: 0px !important;
-  left: 400px !important;
-  margin: 0 !important;
-}
-.ranks-dropdown-menu .subranks-dropdown {
-  width: 700px;
-  height: 600px;
-  display: flex;
-}
-.ranks-dropdown-menu .subranks-dropdown .subranks-dropdown-list {
-  width: 300px;
 }
 
 .main {

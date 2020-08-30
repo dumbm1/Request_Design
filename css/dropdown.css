@@ -69,33 +69,3 @@
   outline-offset: 0 !important;
   border-bottom-color: #faad3d;
 }
-
-/********************************/
-/********* ranks-dropdown *******/
-/********************************/
-.ranks-dropdown-menu {
-  width: 400px;
-  height: 600px;
-  transform: translate(0, 0) !important;
-  position: fixed !important;
-  top: 204px !important;
-  left: 0 !important;
-  margin: 0 !important;
-}
-.ranks-dropdown-menu .subranks-dropdown-wripper {
-  width: 700px;
-  height: 600px;
-  transform: translate(0, 0) !important;
-  position: fixed !important;
-  top: 0px !important;
-  left: 400px !important;
-  margin: 0 !important;
-}
-.ranks-dropdown-menu .subranks-dropdown {
-  width: 700px;
-  height: 600px;
-  display: flex;
-}
-.ranks-dropdown-menu .subranks-dropdown .subranks-dropdown-list {
-  width: 300px;
-}

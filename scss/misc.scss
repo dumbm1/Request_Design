@@ -14,14 +14,14 @@
   outline : none !important;
 }
 
-/*.button {
+.btn-main {
   padding       : 0.7rem 1.4rem;
   border-radius : 2.8rem;
   line-height   : 1rem;
   font-weight   : 300;
-}*/
+}
 
-.btn_orange {
+.btn-main__orange {
   background : $orange-main;
   color      : white;
 }
