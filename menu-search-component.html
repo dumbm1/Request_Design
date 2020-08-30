@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+ <title>menu-search component</title>
+ <style>
+
+  .link, .link:hover, .link:active, .link:visited {
+   color           : black;
+   text-decoration : none;
+  }
+
+  .button, .button:active, .button:visited {
+   border  : none;
+   outline : none !important;
+  }
+
+  .menu-search {
+   background : silver;
+   height     : 65px;
+  }
+
+  .menu-search__logo {
+   height        : 100%;
+   display       : flex;
+   align-items   : center;
+   padding-right : 0.5rem;
+  }
+
+  .menu-search__img {
+   width  : 222px;
+   height : 40px;
+  }
+
+  .menu-search-form {
+   display     : flex;
+   align-items : center;
+   flex-grow   : 1;
+  }
+
+  .menu-search-form__filter-ranks-btn {
+   height                    : 35px;
+   width                     : 64px;
+   border-bottom-left-radius : 0.4rem;
+   border-top-left-radius    : 0.4rem;
+   display                   : flex;
+   align-items               : center;
+   justify-content           : center;
+  }
+
+  .menu-search-form__filter-ranks-btn-title {
+   position      : relative;
+   padding-right : 1rem;
+  }
+
+  .menu-search-form__filter-ranks-btn-title::after {
+   content    : "";
+   border     : 0.5rem solid transparent;
+   border-top : 0.5rem solid black;
+   position   : absolute;
+   top        : 0.6rem;
+   right      : -0.2rem;
+  }
+
+  .menu-search-form__input {
+   height    : 35px;
+   border    : none;
+   flex-grow : 1;
+  }
+
+  .menu-search-form__submit-btn {
+   background                 : url("img/icon_search.png") no-repeat center orange;
+   width                      : 49px;
+   height                     : 35px;
+   border-bottom-right-radius : 0.4rem;
+   border-top-right-radius    : 0.4rem;
+  }
+
+  .menu-search__portal-postavshiki {
+   display     : flex;
+   align-items : center;
+   min-width   : 160px;
+   padding     : 0 0.5rem;
+  }
+
+  .menu-search__portal-postavshiki-img {
+   height : 35px;
+   widows : 35px;
+   filter : grayscale(100%);
+  }
+
+  .menu-search__portal-postavshiki-img:hover {
+   filter : grayscale(0%);
+  }
+
+  .menu-search__portal-postavshiki-txt {
+   display        : inline-flex;
+   flex-direction : column;
+   margin-left    : 0.5rem;
+   line-height    : 1rem;
+   align-items    : flex-start;
+  }
+
+  .menu-search-basket {
+   display         : flex;
+   align-items     : center;
+   justify-content : center;
+   height          : 100%;
+   min-width       : 160px;
+   padding         : 0 0.5rem;
+  }
+
+  .menu-search-basket:hover {
+   background : orange;
+   color      : white;
+  }
+
+  .menu-search-basket__left-col, .menu-search-basket__right-col {
+   display         : flex;
+   flex-direction  : column;
+   justify-content : center;
+   align-items     : center;
+   line-height     : 1rem;
+  }
+
+  .menu-search-basket__right-col {
+   align-items : flex-start;
+   margin-left : 0.2rem;
+  }
+ </style>
+</head>
+<body>
+
+<section class="menu-search">
+ <div class="container-xl h-100 d-flex justify-content-between align-items-center flex-nowrap">
+
+  <a href="#" class="menu-search__logo">
+   <img src="img/logo_main.png" alt="Логотип Столовая.РУ">
+  </a>
+
+  <form class="menu-search-form">
+   <button class="button menu-search-form__filter-ranks-btn">
+    <span class="menu-search-form__filter-ranks-btn-title">Все</span>
+   </button>
+   <div class="d-none">
+    <span class="menu-search-form__filter-ranks-list-title">Выберите категорию</span>
+    <ul class="menu-search-form__filter-ranks-list">
+     <li>rank 1</li>
+     <li>rank 2</li>
+     <li>rank 3</li>
+     <li>rank 4</li>
+     <li>rank 5</li>
+     <li>rank 6</li>
+     <li>rank 7</li>
+     <li>rank 8</li>
+     <li>rank 9</li>
+    </ul>
+   </div>
+   <input class="menu-search-form__input" type="text" placeholder="...">
+   <button class="button menu-search-form__submit-btn"></button>
+  </form>
+
+  <a href="#" class="link menu-search__portal-postavshiki">
+   <img class="menu-search__portal-postavshiki-img" src="img/icon_portal-postavschikov.png" alt="...">
+   <div class="menu-search__portal-postavshiki-txt"><span>Мы на портале</span>
+    <span>поставщиков</span></div>
+  </a>
+
+  <a href="#" class="link menu-search-basket">
+   <div class="menu-search-basket__left-col">
+    <span class="menu-search-basket__">9999</span>
+    <img src="img/icon_basked.svg" alt="..." width="29px" height="27px">
+   </div>
+   <div class="menu-search-basket__right-col">
+    <span>Сумма</span>
+    <span>777 666 555 руб.</span>
+   </div>
+  </a>
+
+ </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
