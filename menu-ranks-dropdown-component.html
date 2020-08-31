@@ -9,98 +9,229 @@
  <title>menu-ranks dropdown-menu component</title>
  <style>
 
-  .link, .link:hover, .link:active, .link:visited {
-   color           : black;
-   text-decoration : none;
+  /* .link, .link:hover, .link:active, .link:visited {
+    color           : black;
+    text-decoration : none;
+   }
+
+   .button, .button:active, .button:visited {
+    border  : none;
+    outline : none !important;
+   }
+
+   .menu-ranks-sub {
+    width           : 1400px;
+    height          : 600px;
+    background      : white;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+   }
+
+   .menu-ranks-sub-lvl1 {
+    height : 600px;
+    width  : 30%;
+   }
+
+   .menu-ranks-sub-lvl1__list {
+
+   }
+
+   .menu-ranks-sub-lvl1-list__item {
+    display         : flex;
+    justify-content : space-between;
+    padding         : 0.5rem 1rem 0.5rem 5rem;
+    border-bottom   : 1px solid silver;
+    position        : relative;
+   }
+
+   .menu-ranks-sub-lvl1-list__item:last-child {
+    border-bottom : none;
+   }
+
+   .menu-ranks-sub-lvl1-list__item:first-child {
+    padding-top : 2rem;
+   }
+
+   .menu-ranks-sub-lvl1-list__item::after {
+    content   : '>';
+    color     : silver;
+    font-size : 1.1rem;
+   }
+
+   .menu-ranks-sub-lvl2 {
+    width           : 70%;
+    height          : 600px;
+    display         : flex;
+    background      : magenta;
+    justify-content : space-between;
+   }
+
+   .menu-ranks-sub-lvl2-ranks {
+    display     : flex;
+    border-left : 1px solid silver;
+   }
+
+   .menu-ranks-sub-lvl2-list__item {
+    display         : flex;
+    justify-content : space-between;
+    padding         : 0.25rem 1rem;
+    position        : relative;
+   }
+
+   .menu-ranks-sub-lvl2__types {
+
+   }
+
+   .menu-ranks-sub-lvl2__countries {
+
+   }
+
+   .menu-ranks-sub-lvl2__brands {
+
+   }
+
+   .menu-ranks-sub-lvl2-img {
+    display        : flex;
+    flex-direction : column;
+   }*/
+
+  .main {
+   background : orange; /*demo*/
+   display    : none;
+   height     : 600px;
   }
 
-  .button, .button:active, .button:visited {
-   border  : none;
-   outline : none !important;
+  .col1 {
+   background : lightcyan; /*demo*/
+   /*height     : 600px;*/
+   display    : none;
   }
 
-  .menu-ranks-sub {
-   width           : 1400px;
-   height          : 600px;
-   background      : white;
-   display         : flex;
-   justify-content : center;
-   align-items     : center;
+  @media (min-width : 768px) {
+   .col1, .main {
+    width   : 200px;
+    display : flex;
+   }
   }
 
-  .menu-ranks-sub-lvl1 {
-   height : 600px;
-   width  : 30%;
+  @media (min-width : 992px) {
+   .col1, .main {
+    width : 300px;
+   }
   }
 
-  .menu-ranks-sub-lvl1__list {
-
+  @media (min-width : 1200px) {
+   .col1, .main {
+    width : 350px;
+   }
   }
 
-  .menu-ranks-sub-lvl1-list__item {
-   display         : flex;
-   justify-content : space-between;
-   padding         : 0.5rem 1rem 0.5rem 5rem;
-   border-bottom   : 1px solid silver;
-   position        : relative;
+  @media (min-width : 1400px) {
+   .col1, .main {
+    width : 400px;
+   }
   }
 
-  .menu-ranks-sub-lvl1-list__item:last-child {
-   border-bottom : none;
+  .col2 {
+   background : tomato;
+   display    : none;
   }
 
-  .menu-ranks-sub-lvl1-list__item:first-child {
-   padding-top : 2rem;
+  @media (min-width : 768px) {
+   .col2 {
+    /*width   : 320px;*/
+    display   : flex;
+    flex-grow : 1;
+   }
   }
 
-  .menu-ranks-sub-lvl1-list__item::after {
-   content   : '>';
-   color     : silver;
-   font-size : 1.1rem;
+  .main-full {
+   display : none;
   }
 
-  .menu-ranks-sub-lvl2 {
-   width           : 70%;
-   height          : 600px;
-   display         : flex;
-   background      : magenta;
-   justify-content : space-between;
+  @media (min-width : 768px) {
+   /*  .main {
+      width   : 200px;
+      display : flex;
+     }*/
+   .main-full {
+    width   : 760px;
+    display : flex;
+   }
   }
 
-  .menu-ranks-sub-lvl2-ranks {
-   display     : flex;
-   border-left : 1px solid silver;
+  @media (min-width : 992px) {
+   .main-full {
+    width : 990px;
+   }
   }
 
-  .menu-ranks-sub-lvl2-list__item {
-   display         : flex;
-   justify-content : space-between;
-   padding         : 0.25rem 1rem;
-   position        : relative;
+  @media (min-width : 1200px) {
+   .main-full {
+    width : 1200px;
+   }
   }
 
-  .menu-ranks-sub-lvl2__types {
-
+  @media (min-width : 1400px) {
+   .main-full {
+    width : 1400px;
+   }
   }
 
-  .menu-ranks-sub-lvl2__countries {
-
+  .col2-1 {
+   background : blueviolet;
+   display    : none;
   }
 
-  .menu-ranks-sub-lvl2__brands {
-
+  @media (min-width : 768px) {
+   .col2-1 {
+    width   : 320px;
+    display : flex;
+   }
   }
 
-  .menu-ranks-sub-lvl2-img {
-   display        : flex;
-   flex-direction : column;
+  @media (min-width : 992px) {
+   .col2-1 {
+    width : 380px;
+   }
+  }
+
+  @media (min-width : 1200px) {
+   .col2-1 {
+    width : 450px;
+   }
+  }
+
+  @media (min-width : 1400px) {
+   .col2-1 {
+    width : 560px;
+   }
+  }
+
+  .col2-2 {
+   background : darkviolet;
+   flex-grow  : 1;
   }
 
  </style>
 </head>
 <body class="bg-light">
 
-<div class="menu-ranks-sub">
+<button class="toggle-main">Toggle main menu</button>
+
+<div class="main">
+ <div class="col1 h-100"></div>
+ <div class="col2 d-none">
+  <div class="col2-1 h-100">
+   <div class="w-50 h-100 bg-danger"></div>
+   <div class="w-50 h-100 bg-success"></div>
+  </div>
+  <div class="col2-2 h-100"></div>
+ </div>
+</div>
+
+<!--<div class="menu-ranks-sub">
 
  <div class="menu-ranks-sub-lvl1">
   <div class="menu-ranks-sub-lvl1__list">
@@ -167,9 +298,8 @@
   </div>
 
  </div>
-</div>
 
-</div>
+</div>-->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -180,5 +310,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+<script>
+  'use strict';
+  let toggleBtn = document.querySelector('.toggle-main');
+  let mainMenu = document.querySelector('.main');
+  let col2 = document.querySelector('.col2');
+  toggleBtn.addEventListener('click', (e) => {
+    mainMenu.classList.toggle('main-full');
+    col2.classList.toggle('d-none');
+  });
+</script>
 </body>
 </html>
