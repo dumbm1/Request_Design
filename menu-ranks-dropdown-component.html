@@ -29,18 +29,18 @@
   }
 
   .menu-ranks-sub-lvl1 {
-   height     : 600px;
-   width      : 30%;
-   }
+   height : 600px;
+   width  : 30%;
+  }
 
-  .menu-ranks-sub-lvl1-list {
+  .menu-ranks-sub-lvl1__list {
 
   }
 
   .menu-ranks-sub-lvl1-list__item {
    display         : flex;
    justify-content : space-between;
-   padding         : 0.5rem 1rem 0.5rem 5rem ;
+   padding         : 0.5rem 1rem 0.5rem 5rem;
    border-bottom   : 1px solid silver;
    position        : relative;
   }
@@ -54,9 +54,9 @@
   }
 
   .menu-ranks-sub-lvl1-list__item::after {
-   content    : '>';
-   color      : silver;
-   font-size  : 1.1rem;
+   content   : '>';
+   color     : silver;
+   font-size : 1.1rem;
   }
 
   .menu-ranks-sub-lvl2 {
@@ -67,10 +67,16 @@
    justify-content : space-between;
   }
 
-  .menu-ranks-sub-lvl2-list {
-   display        : flex;
-   flex-wrap      : wrap;
-   flex-direction : column;
+  .menu-ranks-sub-lvl2-ranks {
+   display     : flex;
+   border-left : 1px solid silver;
+  }
+
+  .menu-ranks-sub-lvl2-list__item {
+   display         : flex;
+   justify-content : space-between;
+   padding         : 0.25rem 1rem;
+   position        : relative;
   }
 
   .menu-ranks-sub-lvl2__types {
@@ -98,65 +104,70 @@
 
  <div class="menu-ranks-sub-lvl1">
   <div class="menu-ranks-sub-lvl1__list">
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Холодильные шкафы</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Камеры холодильные</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Моноблоки</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Сплит-системы</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Столы холодильные</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Витрины холодильные</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Горки холодильные</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Бонеты</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Лари морозильные</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Льдогенераторы</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Шкафы шоковой заморозки</span></a>
-    <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Кегераторы</span></a></div>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Холодильные шкафы</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Камеры холодильные</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Моноблоки</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Сплит-системы</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Столы холодильные</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Витрины холодильные</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Горки холодильные</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Бонеты</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Лари морозильные</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Льдогенераторы</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Шкафы шоковой заморозки</span></a>
+   <a href="#" class="link menu-ranks-sub-lvl1-list__item"><span>Кегераторы</span></a></div>
  </div>
 
  <div class="menu-ranks-sub-lvl2">
-  <div class="menu-ranks-sub-lvl2-list">
-   <div class="menu-ranks-sub-lvl2__types">
-    <ul class="menu-ranks-sub-lvl2__list">
-     <li class="menu-ranks-sub-lvl2-list__item">Среднетемпературные</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Низкотемпературные</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Универсальные</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Комбинированные</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Барные</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Все сразу</li>
-    </ul>
+
+  <div class="menu-ranks-sub-lvl2-ranks">
+
+   <div class="menu-ranks-sub-lvl2-ranks__col1">
+    <div class="menu-ranks-sub-lvl2__list">
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Среднетемпературные</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Низкотемпературные</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Универсальные</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Комбинированные</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Барные</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Все сразу</span></a>
+    </div>
+    <div class="menu-ranks-sub-lvl2__list">
+     <span>Страны</span>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Испания</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Италия</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Германия</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Турция</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Россия</span></a>
+    </div>
    </div>
-   <div class="menu-ranks-sub-lvl2__countries">
-    <span>Страны</span>
-    <ul class="menu-ranks-sub-lvl2__list">
-     <li class="menu-ranks-sub-lvl2-list__item">Испания</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Италия</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Германия</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Турция</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Россия</li>
-    </ul>
+
+   <div class="menu-ranks-sub-lvl2-ranks__col2">
+    <div class="menu-ranks-sub-lvl2__list">
+     <span>Бренды</span>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>ELECTROLUX</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Gastrorag</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>АРИАДА</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Abat</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>МХМ</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>ПОЛЮС</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Hicold</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>POLAIR</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Премьер</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>Бирюса</span></a>
+     <a href="#" class="link menu-ranks-sub-lvl2-list__item"><span>TEFCOLD</span></a>
+    </div>
    </div>
-   <div class="menu-ranks-sub-lvl2__brands">
-    <span>Бренды</span>
-    <ul class="menu-ranks-sub-lvl2__list">
-     <li class="menu-ranks-sub-lvl2-list__item">ELECTROLUX</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Gastrorag</li>
-     <li class="menu-ranks-sub-lvl2-list__item">АРИАДА</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Abat</li>
-     <li class="menu-ranks-sub-lvl2-list__item">МХМ</li>
-     <li class="menu-ranks-sub-lvl2-list__item">ПОЛЮС</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Hicold</li>
-     <li class="menu-ranks-sub-lvl2-list__item">POLAIR</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Премьер</li>
-     <li class="menu-ranks-sub-lvl2-list__item">Бирюса</li>
-     <li class="menu-ranks-sub-lvl2-list__item">TEFCOLD</li>
-    </ul>
-   </div>
+
   </div>
+
   <div class="menu-ranks-sub-lvl2-img">
    <img class="menu-ranks-sub-lvl2-img__img" src="img/from_base/ranks/refrigeration.png" alt="...">
    <span class="menu-ranks-sub-lvl2-img__title">Пароконвектоматы</span>
    <button class="menu-ranks-sub-lvl2-img__btn">Все сразу</button>
   </div>
+
  </div>
+</div>
 
 </div>
 
