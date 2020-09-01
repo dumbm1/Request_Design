@@ -1,0 +1,116 @@
+.main {
+ background : orange; /*demo*/
+ height     : 600px;
+
+}
+
+.col1 {
+ background : lightcyan; /*demo*/
+}
+
+.main, .col1 {
+ display : none;
+ @media (min-width : 768px) {
+  & {
+   width   : 200px;
+   display : flex;
+  }
+ }
+
+ @media (min-width : 992px) {
+  & {
+   width : 300px;
+  }
+ }
+
+ @media (min-width : 1200px) {
+  & {
+   width : 350px;
+  }
+ }
+
+ @media (min-width : 1400px) {
+  & {
+   width : 400px;
+  }
+ }
+}
+
+.col2 {
+ background : tomato;
+ display    : none;
+
+ @media (min-width : 768px) {
+  & {
+   display   : flex;
+   flex-grow : 1;
+  }
+ }
+}
+
+.main-full {
+ display : none;
+
+ @media (min-width : 768px) {
+  & {
+   width   : 760px;
+   display : flex;
+  }
+ }
+
+ @media (min-width : 992px) {
+  & {
+   width : 990px;
+  }
+ }
+
+ @media (min-width : 1200px) {
+  & {
+   width : 1200px;
+  }
+ }
+
+ @media (min-width : 1400px) {
+  & {
+   width : 1400px;
+  }
+ }
+}
+
+.col2-1 {
+ background : blueviolet;
+ display    : none;
+ @media (min-width : 768px) {
+  & {
+   width   : 320px;
+   display : flex;
+  }
+ }
+
+ @media (min-width : 992px) {
+  & {
+   width : 380px;
+  }
+ }
+
+ @media (min-width : 1200px) {
+  & {
+   width : 450px;
+  }
+ }
+
+ @media (min-width : 1400px) {
+  & {
+   width : 560px;
+  }
+ }
+}
+
+.col2-1-1, .col2-1-2 {
+ width : 50%;
+}
+
+.col2-2 {
+ background : darkviolet;
+ flex-grow  : 1;
+}
