@@ -1,14 +1,48 @@
-.main {
+.menu-ranks-sub {
  background : orange; /*demo*/
  height     : 600px;
-
+ position   : absolute;
+ top        : 30px;
+ left       : 0;
 }
 
-.col1 {
- background : lightcyan; /*demo*/
+.menu-ranks-sub__link {
+ display       : flex;
+ border-bottom : 1px solid black;
+ padding-left  : 10%;
+
+ @media (min-width : 768px) {
+  & {
+   padding-left : 5%;
+  }
+ }
+
+ @media (min-width : 992px) {
+  & {
+   padding-left : 5%;
+  }
+ }
+
+ @media (min-width : 1200px) {
+  & {
+   padding-left : 10%;
+  }
+ }
+
+ @media (min-width : 1400px) {
+  & {
+   padding-left : 20%;
+  }
+ }
 }
 
-.main, .col1 {
+.menu-ranks-sub__link_text::after {
+ content  : '>';
+ position : absolute;
+ right    : 0.5rem;
+}
+
+.menu-ranks-sub, .col1 {
  display : none;
  @media (min-width : 768px) {
   & {
@@ -36,6 +70,10 @@
  }
 }
 
+.col1 {
+ flex-direction : column;
+}
+
 .col2 {
  background : tomato;
  display    : none;
@@ -48,7 +86,7 @@
  }
 }
 
-.main-full {
+.menu-ranks-sub-full {
  display : none;
 
  @media (min-width : 768px) {
