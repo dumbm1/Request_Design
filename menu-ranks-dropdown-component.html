@@ -29,22 +29,22 @@
  </div>
  <div id="sub_menu_001" class="col2 d-none">
   <div class="col2-1">
-   <div class="col2-1-1 bg-danger"></div>
-   <div class="col2-1-2 bg-warning"></div>
+   <div class="col2-1-1 bg-danger"><span>sub_menu_001 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_001 col2-1-2</span></div>
   </div>
   <div class="col2-2 bg-dark"></div>
  </div>
  <div id="sub_menu_002" class="col2 d-none">
   <div class="col2-1">
-   <div class="col2-1-1 bg-danger"></div>
-   <div class="col2-1-2 bg-warning"></div>
+   <div class="col2-1-1 bg-danger"><span>sub_menu_002 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_002 col2-1-2</span></div>
   </div>
   <div class="col2-2 bg-dark"></div>
  </div>
- <div id="sub_menu_003" class="col2 col2_short d-none">
+ <div id="sub_menu_003" class="col2 d-none">
   <div class="col2-1">
-   <div class="col2-1-1 bg-danger"></div>
-   <div class="col2-1-2 bg-warning"></div>
+   <div class="col2-1-1 bg-danger"><span>sub_menu_003 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_003 col2-1-2</span></div>
   </div>
   <div class="col2-2 bg-dark"></div>
  </div>
@@ -67,27 +67,30 @@
     let linkToggleSub = document.querySelector('.menu-ranks-sub__link');
     let menuRanksSub = document.querySelector('.menu-ranks-sub');
     let menuRanksSubCol1 = menuRanksSub.querySelector('.col1');
-    let menuRanksSubCol2 = menuRanksSub.querySelector('.col2');
+    let menuRanksSubCol2All = menuRanksSub.querySelectorAll('.col2');
+    let menuRanksSubCol2 = menuRanksSubCol2All[0];
 
     btnToggleMenu.addEventListener('click', (e) => {
       menuRanksSub.classList.toggle('d-none');
-      menuRanksSubCol2.classList.add('d-none');
+      menuRanksSubCol2All.forEach((item) => {
+        item.classList.add('d-none');
+      });
       menuRanksSub.classList.remove('menu-ranks-sub-full');
     });
+
+    menuRanksSubCol1.addEventListener('click', (e) => {
+      let targ = e.target;
+      let menuRanksSubLink = targ.closest('.menu-ranks-sub__link');
+      if (!menuRanksSubLink) return;
+      menuRanksSubCol2.classList.toggle('d-none');
+      menuRanksSub.classList.toggle('menu-ranks-sub-full');
+
+    });
+
     document.addEventListener('click', (e) => {
       let targ = e.target;
-      if (!targ.closest('.menu-ranks-sub') && targ != btnToggleMenu) {
-        menuRanksSub.classList.add('d-none');
-        menuRanksSubCol2.classList.add('d-none');
-        menuRanksSub.classList.remove('menu-ranks-sub-full');
-      }
-    });
-    menuRanksSubCol1.addEventListener('click', (e) => {
-      if ((e.target).closest('.menu-ranks-sub__link')) {
-        menuRanksSubCol2.classList.toggle('d-none');
-        menuRanksSub.classList.toggle('menu-ranks-sub-full');
-      }
-
+      if (targ.closest('.menu-ranks-sub') || targ == btnToggleMenu) return;
+      menuRanksSub.classList.add('d-none');
     });
   }());
 </script>
