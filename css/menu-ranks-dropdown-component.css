@@ -66,6 +66,7 @@
 
 .col1 {
   flex-direction: column;
+  position: relative;
 }
 
 .col2 {
