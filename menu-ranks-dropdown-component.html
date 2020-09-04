@@ -24,9 +24,12 @@
 
 <div data-toggle="menu-ranks-sub-1" class="menu-ranks-sub d-none" style="background: moccasin">
  <div class="col1" style="background: rosybrown">
-  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.1</span></a>
-  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.2</span></a>
-  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.3</span></a>
+  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu1.1</span></a>
+  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu1.2</span></a>
+  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu1.3</span></a>
  </div>
  <div id="sub_menu_001" class="col2 d-none">
   <div class="col2-1">
@@ -51,11 +54,14 @@
  </div>
 </div>
 
-<div data-toggle="menu-ranks-sub-2" class="menu-ranks-sub d-none" style="background: moccasin">
+<div data-toggle="menu-ranks-sub-2" class="menu-ranks-sub d-none short-menu" style="background: moccasin">
  <div class="col1" style="background: rosybrown">
-  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.1</span></a>
-  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.2</span></a>
-  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.3</span></a>
+  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu2.1</span></a>
+  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu2.2</span></a>
+  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span
+    class="menu-ranks-sub__link_text">Menu2.3</span></a>
  </div>
  <div id="sub_menu_001" class="col2 d-none">
   <div class="col2-1">
@@ -100,7 +106,7 @@
     let btnToggleMenu = document.getElementById(id);
     let menuRanksSub;
     let menuRanksSubAll = document.querySelectorAll('.menu-ranks-sub').forEach((item) => {
-      if(item.getAttribute('data-toggle') == id) menuRanksSub = item;
+      if (item.getAttribute('data-toggle') == id) menuRanksSub = item;
     });
     let menuRanksSubCol1 = menuRanksSub.querySelector('.col1');
     let menuRanksSubCol2All = menuRanksSub.querySelectorAll('.col2');
@@ -110,7 +116,12 @@
       menuRanksSubCol2All.forEach((item) => {
         item.classList.add('d-none');
       });
-      menuRanksSub.classList.remove('menu-ranks-sub-full');
+      if (menuRanksSub.classList.contains('short-menu')) {
+        menuRanksSub.classList.remove('menu-ranks-sub-full-short');
+      } else {
+        menuRanksSub.classList.remove('menu-ranks-sub-full');
+      }
+
     });
 
     menuRanksSubCol1.addEventListener('click', (e) => {
@@ -122,7 +133,11 @@
         menuRanksSubCol2All.forEach((item) => {
           item.classList.add('d-none');
         });
-        menuRanksSub.classList.remove('menu-ranks-sub-full');
+        if (menuRanksSub.classList.contains('short-menu')) {
+          menuRanksSub.classList.remove('menu-ranks-sub-full-short');
+        } else {
+          menuRanksSub.classList.remove('menu-ranks-sub-full');
+        }
 
         return;
       }
@@ -137,9 +152,17 @@
 
       menuToShow.classList.toggle('d-none');
       if (menuToShow.classList.contains('d-none')) {
-        menuRanksSub.classList.remove('menu-ranks-sub-full');
+        if (menuRanksSub.classList.contains('short-menu')) {
+          menuRanksSub.classList.remove('menu-ranks-sub-full-short');
+        } else {
+          menuRanksSub.classList.remove('menu-ranks-sub-full');
+        }
       } else {
-        menuRanksSub.classList.add('menu-ranks-sub-full');
+        if (menuRanksSub.classList.contains('short-menu')) {
+          menuRanksSub.classList.add('menu-ranks-sub-full-short');
+        } else {
+          menuRanksSub.classList.add('menu-ranks-sub-full');
+        }
       }
 
     });
