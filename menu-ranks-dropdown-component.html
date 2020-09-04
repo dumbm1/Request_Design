@@ -19,13 +19,14 @@
 </head>
 <body class="bg-light">
 
-<button class="toggle-menu-btn">Show menu-ranks-sub</button>
+<button id="menu-ranks-sub-1" class="toggle-menu-btn">Show menu-ranks-sub-1</button>
+<button id="menu-ranks-sub-2" class="toggle-menu-btn">Show menu-ranks-sub-2</button>
 
-<div class="menu-ranks-sub d-none" style="background: moccasin">
+<div data-toggle="menu-ranks-sub-1" class="menu-ranks-sub d-none" style="background: moccasin">
  <div class="col1" style="background: rosybrown">
-  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1</span></a>
-  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2</span></a>
-  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu3</span></a>
+  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.1</span></a>
+  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.2</span></a>
+  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu1.3</span></a>
  </div>
  <div id="sub_menu_001" class="col2 d-none">
   <div class="col2-1">
@@ -50,6 +51,35 @@
  </div>
 </div>
 
+<div data-toggle="menu-ranks-sub-2" class="menu-ranks-sub d-none" style="background: moccasin">
+ <div class="col1" style="background: rosybrown">
+  <a data="sub_menu_001" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.1</span></a>
+  <a data="sub_menu_002" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.2</span></a>
+  <a data="sub_menu_003" class="link menu-ranks-sub__link" href="#"><span class="menu-ranks-sub__link_text">Menu2.3</span></a>
+ </div>
+ <div id="sub_menu_001" class="col2 d-none">
+  <div class="col2-1">
+   <div class="col2-1-1 bg-danger"><span>sub_menu_2.1 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_2.1 col2-1-2</span></div>
+  </div>
+  <div class="col2-2 bg-dark"></div>
+ </div>
+ <div id="sub_menu_002" class="col2 d-none">
+  <div class="col2-1">
+   <div class="col2-1-1 bg-danger"><span>sub_menu_2.2 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_2.2 col2-1-2</span></div>
+  </div>
+  <div class="col2-2 bg-dark"></div>
+ </div>
+ <div id="sub_menu_003" class="col2 d-none">
+  <div class="col2-1">
+   <div class="col2-1-1 bg-danger"><span>sub_menu_2.3 col2-1-1</span></div>
+   <div class="col2-1-2 bg-warning"><span>sub_menu_2.3 col2-1-2</span></div>
+  </div>
+  <div class="col2-2 bg-dark"></div>
+ </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -62,13 +92,18 @@
 
 <script>
   ;'use strict';
-  (function f() {
-    let btnToggleMenu = document.querySelector('.toggle-menu-btn');
-    let linkToggleSub = document.querySelector('.menu-ranks-sub__link');
-    let menuRanksSub = document.querySelector('.menu-ranks-sub');
+
+  toggleMenuById('menu-ranks-sub-1');
+  toggleMenuById('menu-ranks-sub-2');
+
+  function toggleMenuById(id) {
+    let btnToggleMenu = document.getElementById(id);
+    let menuRanksSub;
+    let menuRanksSubAll = document.querySelectorAll('.menu-ranks-sub').forEach((item) => {
+      if(item.getAttribute('data-toggle') == id) menuRanksSub = item;
+    });
     let menuRanksSubCol1 = menuRanksSub.querySelector('.col1');
     let menuRanksSubCol2All = menuRanksSub.querySelectorAll('.col2');
-    let menuRanksSubCol2 = menuRanksSubCol2All[0];
 
     btnToggleMenu.addEventListener('click', (e) => {
       menuRanksSub.classList.toggle('d-none');
@@ -92,7 +127,7 @@
         return;
       }
 
-      let menuToShow = document.getElementById(menuRanksSubLink.getAttribute('data'));
+      let menuToShow = menuRanksSub.querySelector('#' + menuRanksSubLink.getAttribute('data'));
 
       menuRanksSubCol2All.forEach((item) => {
         if (item.getAttribute('id') != menuRanksSubLink.getAttribute('data')) {
@@ -114,7 +149,7 @@
       if (targ.closest('.menu-ranks-sub') || targ == btnToggleMenu) return;
       menuRanksSub.classList.add('d-none');
     });
-  }());
+  }
 </script>
 </body>
 </html>
