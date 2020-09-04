@@ -82,28 +82,30 @@
 
       let targ = e.target;
       let menuRanksSubLink = targ.closest('.menu-ranks-sub__link');
-      if (!menuRanksSubLink) return;
+
+      if (!menuRanksSubLink) {
+        menuRanksSubCol2All.forEach((item) => {
+          item.classList.add('d-none');
+        });
+        menuRanksSub.classList.remove('menu-ranks-sub-full');
+
+        return;
+      }
 
       let menuToShow = document.getElementById(menuRanksSubLink.getAttribute('data'));
-
-     /* menuRanksSubCol2.classList.toggle('d-none');
-      menuRanksSub.classList.toggle('menu-ranks-sub-full');*/
 
       menuRanksSubCol2All.forEach((item) => {
         if (item.getAttribute('id') != menuRanksSubLink.getAttribute('data')) {
           item.classList.add('d-none');
         }
-        // item.classList.add('d-none');
       });
-      // menuRanksSub.classList.remove('menu-ranks-sub-full');
 
       menuToShow.classList.toggle('d-none');
-      if (menuToShow.classList.contains('d-none')){
+      if (menuToShow.classList.contains('d-none')) {
         menuRanksSub.classList.remove('menu-ranks-sub-full');
       } else {
         menuRanksSub.classList.add('menu-ranks-sub-full');
       }
-
 
     });
 
