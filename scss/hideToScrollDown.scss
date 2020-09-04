@@ -9,5 +9,6 @@
 }
 
 .scroll-out-elem__out {
- transform : translateY(-100%);
+ transform  : translateY(-100%);
+ box-shadow : none !important;
 }
